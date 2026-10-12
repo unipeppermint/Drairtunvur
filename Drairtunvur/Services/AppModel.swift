@@ -10,6 +10,7 @@ import UIKit
   var saveError: String?
   var onChange: (() -> Void)?
   var loaded = false
+  var storageNeedsRecovery = false
   var lastSavedRevision = -1
   private var pendingSave: Task<Void, Never>?
   private init() {
@@ -28,6 +29,11 @@ import UIKit
         if ProcessInfo.processInfo.arguments.contains("-reset-test-save") {
           try? FileManager.default.removeItem(at: root)
         }
+        if ProcessInfo.processInfo.arguments.contains("-ui-test-corrupt-save") {
+          try? FileManager.default.createDirectory(at: root, withIntermediateDirectories: true)
+          try? Data("invalid save fixture".utf8).write(
+            to: root.appendingPathComponent("save-v1.json"))
+        }
       }
     #endif
     repository = SaveRepository(directory: root)
@@ -45,10 +51,18 @@ import UIKit
           "关卡已更新，当前关卡将重新开始。已完成进度保留。",
           "This level was updated. Your completed progress is preserved.")
       }
-    } catch {
+    } catch SaveError.unsupportedVersion {
+      storageNeedsRecovery = true
       loadMessage = L.text(
-        "存档暂时无法读取。原文件已保留，本次进度可能无法保存。",
-        "Your save could not be read. Original files are preserved; saving may be unavailable.")
+        "存档来自较新的应用版本。请先更新应用；原文件已保留，更新前无法继续游玩。",
+        "This save was created by a newer app version. Update the app to continue. The original files are preserved."
+      )
+    } catch {
+      storageNeedsRecovery = true
+      loadMessage = L.text(
+        "存档无法读取，原文件已保留。请先在设置中处理存档，再继续游玩。",
+        "Your save could not be read. Original files are preserved. Open Settings to recover before playing."
+      )
     }
     loaded = true
     onChange?()
@@ -60,13 +74,14 @@ import UIKit
     return index == 0 || save.bestMoves[levels[index - 1].id] != nil
       || save.bestMoves[level.id] != nil
   }
+  var campaignCompleted: Bool { levels.allSatisfy { save.bestMoves[$0.id] != nil } }
   var nextLevel: LevelDefinition {
     if let active = save.active, let l = level(active.levelID), active.state.outcome != .won,
       unlocked(l)
     {
       return l
     }
-    return levels.first(where: { save.bestMoves[$0.id] == nil }) ?? levels[0]
+    return levels.first(where: { save.bestMoves[$0.id] == nil }) ?? levels[levels.count - 1]
   }
   func start(_ level: LevelDefinition, restart: Bool = false) -> GameSession {
     if !restart, let s = save.active, s.levelID == level.id, s.state.outcome != .won { return s }
@@ -113,7 +128,7 @@ import UIKit
     onChange?()
   }
   func persist() {
-    guard loaded else { return }
+    guard loaded, !storageNeedsRecovery else { return }
     save.revision += 1
     let snapshot = save
     let repository = repository
@@ -129,6 +144,22 @@ import UIKit
         self?.onChange?()
       }
     }
+  }
+  func recoverStorage(reset: Bool) async -> Bool {
+    await flush()
+    do {
+      if reset {
+        save = try await repository.archiveAndReset()
+      } else {
+        save = try await repository.load(levels: levels).save
+      }
+      storageNeedsRecovery = false
+      saveError = nil
+      loadMessage = nil
+      lastSavedRevision = save.revision
+      onChange?()
+      return true
+    } catch { return false }
   }
   func flush() async { await pendingSave?.value }
 }

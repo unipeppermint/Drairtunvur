@@ -63,6 +63,10 @@ final class DailyViewController: ScreenController {
     ) { [weak self] in
       guard let self else { return }
       // Resolve at tap time as the day may have changed while this screen was visible.
+      guard !self.model.storageNeedsRecovery else {
+        self.navigationController?.pushViewController(SettingsViewController(), animated: true)
+        return
+      }
       let today = self.model.today
       self.navigationController?.pushViewController(
         GameViewController(level: self.model.dailyLevel(today), dailyDay: today), animated: true)

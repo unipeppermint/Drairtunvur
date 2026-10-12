@@ -115,15 +115,19 @@ final class CityViewController: ScreenController {
     }
     let target = active ?? destination
     let play = Theme.button(
-      L.text(
-        "继续修复",
-        "Continue restoring"), symbol: "chevron.right",
+      model.unlocked(target)
+        ? (count == 15 ? L.text("回顾光路", "Revisit the paths") : L.text("继续修复", "Continue restoring"))
+        : L.text("章节未解锁", "Chapter locked"), symbol: "chevron.right",
       primary: true
     ) { [weak self] in self?.open(target) }
     play.configuration?.subtitle = L.text(
       "第 \(String(format:"%02d",target.number)) 关", "LEVEL \(String(format:"%02d",target.number))")
     play.configuration?.titleAlignment = .center
     play.configuration?.imagePlacement = .trailing
+    play.isEnabled = model.unlocked(target)
+    if !play.isEnabled {
+      play.configuration?.subtitle = L.text("完成前一章后开放", "Complete the previous chapter")
+    }
     play.accessibilityIdentifier = "city.continue"
     let pages = Theme.stack([previous, range, next], axis: .horizontal, spacing: 10)
     Theme.panel(pages, radius: 23)
@@ -165,6 +169,10 @@ final class CityViewController: ScreenController {
     present(sheet, animated: true)
   }
   func open(_ level: LevelDefinition) {
+    guard !model.storageNeedsRecovery else {
+      navigationController?.pushViewController(SettingsViewController(), animated: true)
+      return
+    }
     guard model.unlocked(level) else {
       alert(
         L.text("光路尚未抵达", "The light has not reached here"),
@@ -255,13 +263,17 @@ final class ResultViewController: ScreenController {
     if level.chapter == 1 { background.picture.image = UIImage(named: "harbor-victory") }
     let model = AppModel.shared
     let count = model.completed(level.chapter)
+    let lastLevel = level.id == model.levels.last?.id
+    let allRestored = lastLevel && model.campaignCompleted
     background.progress = CGFloat(count) / 15
     header("\(L.chapter(level.chapter)) · \(String(format:"%02d",level.number))", back: false)
     let title = Theme.label(
-      [
-        L.text("灯塔亮了", "A little brighter"), L.text("温室亮了", "The glasshouse glows"),
-        L.text("站台亮了", "The station shines"),
-      ][level.chapter - 1], size: 46, weight: .regular, color: Theme.gold)
+      allRestored
+        ? L.text("城市已点亮", "The city shines")
+        : [
+          L.text("灯塔亮了", "A little brighter"), L.text("温室亮了", "The glasshouse glows"),
+          L.text("站台亮了", "The station shines"),
+        ][level.chapter - 1], size: 46, weight: .regular, color: Theme.gold)
     title.font = UIFont(name: "STSongti-SC-Bold", size: 46) ?? title.font
     title.textAlignment = .center
     title.accessibilityIdentifier = "result.title"
@@ -297,8 +309,24 @@ final class ResultViewController: ScreenController {
       ], axis: .horizontal)
     metrics.distribution = .fillEqually
     content.addArrangedSubview(metrics)
+    let best = Theme.label(
+      L.text(
+        "本关最好 \(model.save.bestMoves[level.id] ?? moves) 步",
+        "Best for this level: \(model.save.bestMoves[level.id] ?? moves) moves"), size: 13,
+      color: Theme.muted)
+    best.textAlignment = .center
+    content.addArrangedSubview(best)
+    if allRestored {
+      content.addArrangedSubview(
+        Theme.label(
+          L.text(
+            "45 条光路全部修复。你可以回顾关卡，或在每日修复中继续点亮城市。",
+            "All 45 paths are restored. Revisit your favorite levels or return for a daily challenge."
+          ), size: 15, color: Theme.cream))
+    }
     let next = Theme.button(
-      L.text("继续修复", "Continue restoring"), symbol: "arrow.right", primary: true
+      lastLevel ? L.text("回到城市", "Back to city") : L.text("继续修复", "Continue restoring"),
+      symbol: "arrow.right", primary: true
     ) { [weak self] in
       guard let self, let nav = self.navigationController,
         let index = model.levels.firstIndex(where: { $0.id == self.level.id })

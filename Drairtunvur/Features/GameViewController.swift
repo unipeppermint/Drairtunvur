@@ -374,6 +374,7 @@ final class GameViewController: ScreenController {
   func settleAnimation() {
     animationTask?.cancel()
     animationTask = nil
+    scroll.isScrollEnabled = true
     locked = false
     board.pulse = nil
     if isViewLoaded { render() }
@@ -461,11 +462,6 @@ final class GameViewController: ScreenController {
     present(panel, animated: true)
   }
   private func showRules() {
-    alert(
-      L.text("让光抵达每盏灯", "Bring light to every beacon"),
-      L.text(
-        "1. 选择方块再点棋盘，或拖到空格；朝向固定。\n2. 三块用完后补充下一批，每次放置消耗一步。\n3. 上下左右相连的方块导光，斜角不连通。\n4. 满行或满列先触发一次脉冲，再同时清除；相连目标各充能一次。\n5. 能量保留，方块不下落。充满全部目标即可通关，最后一步也能赢。\n6. 失败后可以撤销。提示只展示经过完整通关验证的下一步。",
-        "1. Select a piece and tap the board, or drag it into an empty space. Pieces cannot rotate.\n2. Use all three pieces to receive the next batch. Each placement costs one move.\n3. Light travels through orthogonally adjacent blocks, never diagonally.\n4. A full row or column triggers one pulse before all full lines clear. Connected targets gain one charge each.\n5. Energy remains; blocks do not fall. Charge every target to win, even on the last move.\n6. You can undo after failure. Hints show only a move verified to have a winning continuation."
-      ))
+    navigationController?.pushViewController(DrairtunvurHelpViewController(), animated: true)
   }
 }

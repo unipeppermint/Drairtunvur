@@ -72,7 +72,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     updateTitles()
     NotificationCenter.default.addObserver(
       self, selector: #selector(updateTitles), name: .languageChanged, object: nil)
-    if !AppModel.shared.save.tutorialCompleted {
+    if !AppModel.shared.save.tutorialCompleted && !AppModel.shared.storageNeedsRecovery {
       city.pushViewController(GameViewController(level: AppModel.shared.levels[0]), animated: false)
     }
     #if DEBUG

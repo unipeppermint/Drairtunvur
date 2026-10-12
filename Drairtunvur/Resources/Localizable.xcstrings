@@ -438,7 +438,7 @@
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "当前进度会保存在本机。"
+            "value": "进度已保存在本机。"
           }
         }
       }
@@ -490,23 +490,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "玩法说明"
-          }
-        }
-      }
-    },
-    "Bring light to every beacon": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bring light to every beacon"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "让光抵达每盏灯"
           }
         }
       }
@@ -596,6 +579,23 @@
         }
       }
     },
+    "Revisit the paths": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Revisit the paths"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "回顾光路"
+          }
+        }
+      }
+    },
     "Continue restoring": {
       "extractionState": "manual",
       "localizations": {
@@ -609,6 +609,40 @@
           "stringUnit": {
             "state": "translated",
             "value": "继续修复"
+          }
+        }
+      }
+    },
+    "Chapter locked": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Chapter locked"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "章节未解锁"
+          }
+        }
+      }
+    },
+    "Complete the previous chapter": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete the previous chapter"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "完成前一章后开放"
           }
         }
       }
@@ -660,6 +694,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "先完成前一关，再来修复这里。"
+          }
+        }
+      }
+    },
+    "The city shines": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The city shines"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "城市已点亮"
           }
         }
       }
@@ -762,6 +813,108 @@
           "stringUnit": {
             "state": "translated",
             "value": "再挑战一次"
+          }
+        }
+      }
+    },
+    "Describe the issue and steps to reproduce:": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Describe the issue and steps to reproduce:"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "问题描述与复现步骤（请填写）："
+          }
+        }
+      }
+    },
+    "Build a path": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Build a path"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "铺出光路"
+          }
+        }
+      }
+    },
+    "Complete a line": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Complete a line"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "补满一行或一列"
+          }
+        }
+      }
+    },
+    "Restore every light": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore every light"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "点亮所有灯"
+          }
+        }
+      }
+    },
+    "Explore, undo and get hints": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Explore, undo and get hints"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "尝试、撤销与提示"
+          }
+        }
+      }
+    },
+    "City and daily challenges": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "City and daily challenges"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "主线与每日"
           }
         }
       }
@@ -983,6 +1136,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "城市图鉴"
+          }
+        }
+      }
+    },
+    "All paths restored · 45 / 45": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All paths restored · 45 / 45"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "全部光路已修复 · 45 / 45"
           }
         }
       }
@@ -1293,6 +1463,91 @@
         }
       }
     },
+    "Save needs recovery": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Save needs recovery"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "存档需要处理"
+          }
+        }
+      }
+    },
+    "Try reading again": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Try reading again"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重新读取存档"
+          }
+        }
+      }
+    },
+    "Unable to read save": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unable to read save"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "仍无法读取"
+          }
+        }
+      }
+    },
+    "The original files are unchanged. You can keep copies and start fresh.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The original files are unchanged. You can keep copies and start fresh."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原文件未改动。你可以保留副本并开始新的进度。"
+          }
+        }
+      }
+    },
+    "Keep copies and start fresh": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep copies and start fresh"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保留副本并开始新进度"
+          }
+        }
+      }
+    },
     "Retry saving": {
       "extractionState": "manual",
       "localizations": {
@@ -1306,6 +1561,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "重试保存"
+          }
+        }
+      }
+    },
+    "Saved": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saved"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保存成功"
           }
         }
       }
@@ -1327,6 +1599,23 @@
         }
       }
     },
+    "Export issue details": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Export issue details"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "导出问题信息"
+          }
+        }
+      }
+    },
     "Privacy": {
       "extractionState": "manual",
       "localizations": {
@@ -1340,6 +1629,108 @@
           "stringUnit": {
             "state": "translated",
             "value": "隐私说明"
+          }
+        }
+      }
+    },
+    "Start fresh?": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Start fresh?"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "开始新进度？"
+          }
+        }
+      }
+    },
+    "Keep copies and reset": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep copies and reset"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "保留副本并重置"
+          }
+        }
+      }
+    },
+    "New save created": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New save created"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "已建立新进度"
+          }
+        }
+      }
+    },
+    "Recovery failed": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recovery failed"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "操作未完成"
+          }
+        }
+      }
+    },
+    "Copies of the original save files were kept on this device.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Copies of the original save files were kept on this device."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "原存档副本已保留在本机。"
+          }
+        }
+      }
+    },
+    "Check the available device storage and try again.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Check the available device storage and try again."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "请检查设备存储空间后重试。"
           }
         }
       }
@@ -1459,23 +1850,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "关卡已更新，当前关卡将重新开始。已完成进度保留。"
-          }
-        }
-      }
-    },
-    "Your save could not be read. Original files are preserved; saving may be unavailable.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Your save could not be read. Original files are preserved; saving may be unavailable."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "存档暂时无法读取。原文件已保留，本次进度可能无法保存。"
           }
         }
       }

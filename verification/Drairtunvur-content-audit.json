@@ -1,0 +1,26 @@
+{
+  "levels": 45,
+  "referenceMoves": 255,
+  "levelsWithOnlyOneClearedLineLocation": 45,
+  "pulseClearedLineCountHistogram": {
+    "1": 60
+  },
+  "referenceLengthHistogram": {
+    "1": 3,
+    "2": 1,
+    "3": 1,
+    "4": 4,
+    "5": 21,
+    "8": 9,
+    "9": 6
+  },
+  "usedPieceCellCountHistogram": {
+    "2": 93,
+    "4": 16,
+    "3": 81,
+    "1": 65
+  },
+  "collectionMilestones": 9,
+  "collectionSceneAssets": 3,
+  "dailyPoolSize": 33
+}

@@ -9,11 +9,15 @@ public enum HintSolver {
     state: GameState, level: LevelDefinition, budget: TimeInterval = 0.5,
     cancelled: @Sendable () -> Bool = { false }
   ) -> HintResult {
+    if cancelled() { return .cancelled }
     if state.outcome == .won { return .solved([]) }
     if state.outcome != .playing { return .noSolution }
     // A matching reference suffix is still verified in full against the current state.
     var cursor = GameState(level: level)
+    var preferred = [Int: Set<Move>]()
     for i in 0...level.referenceSolution.count {
+      if cancelled() { return .cancelled }
+      if i < level.referenceSolution.count { preferred[cursor.nextBatch, default: []].insert(level.referenceSolution[i]) }
       if cursor == state {
         let suffix = Array(level.referenceSolution.dropFirst(i))
         var end = state
@@ -64,8 +68,10 @@ public enum HintSolver {
         }
         guard let result = try? Rules.apply(move, to: current, level: level) else { continue }
         let score =
-          result.chargedTargets.count * 1000 + result.cleared.nonzeroBitCount * 4
+          (result.state.outcome == .won ? 1_000_000 : 0)
+          + result.chargedTargets.count * 1000 + result.cleared.nonzeroBitCount * 4
           + result.connected.nonzeroBitCount
+          + (preferred[current.nextBatch]?.contains(move) == true ? 500 : 0)
         children.append((move, result, score))
       }
       children.sort { $0.2 > $1.2 }

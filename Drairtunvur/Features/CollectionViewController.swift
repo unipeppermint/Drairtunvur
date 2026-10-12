@@ -30,9 +30,12 @@ final class CollectionViewController: ScreenController {
     hero.isAccessibilityElement = false
     hero.isUserInteractionEnabled = false
     if let caption = hero.viewWithTag(101) as? UILabel {
-      caption.text = L.text(
-        "修复进行中 · 已点亮 \(model.completed(model.nextLevel.chapter)) / 15",
-        "Restoring · \(model.completed(model.nextLevel.chapter)) / 15")
+      caption.text =
+        model.campaignCompleted
+        ? L.text("全部光路已修复 · 45 / 45", "All paths restored · 45 / 45")
+        : L.text(
+          "修复进行中 · 已点亮 \(model.completed(model.nextLevel.chapter)) / 15",
+          "Restoring · \(model.completed(model.nextLevel.chapter)) / 15")
     }
     content.addArrangedSubview(hero)
     var cards = [UIView]()

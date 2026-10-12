@@ -2,6 +2,8 @@
 
 可离线游玩的 UIKit 光路方块解谜首版，三章共 45 关。**按 2026-10-12 最新要求，不接入内购；所有章节随应用提供，按通关顺序解锁。** `design/` 中早期商业化设想仅作为历史设计资料。
 
+最新功能与内容审查见 [上线前审查报告](verification/Drairtunvur-release-audit.md)：已修复存档兼容与恢复、通关收尾、帮助和问题信息导出；关卡同质化、收藏内容差异及真机验证仍需完成。
+
 ## 原型还原更新
 
 城市页改为六个沿栈道排列的关卡节点、底部章节选择卡、双行金色按钮与全宽底部导航（城市／每日／图鉴）；对局采用紧凑灯塔 HUD 和统一玻璃材质；结算使用双灯塔背景和双列统计；图鉴采用港湾主图与双列收藏卡。新背景按原型参考生成，完整提示词见 `design/asset-prompts.txt`。所有控件仍是原生交互，关卡、剩余步数、收藏数量均来自真实状态。
@@ -14,7 +16,7 @@
 2. 选择共享 Scheme **Drairtunvur** 和 iOS 26.5 模拟器，直接 Run。
 3. 首次进入教学关；选择横向两格方块，再点第 4 行第 7 列，一步触发传光、消除、通关。支持拖放，也支持先选候选再点棋盘。
 
-也提供 [Release 模拟器构建包](deliverables/Lightworks-simulator-daily.zip)，解压后可将 `Drairtunvur.app` 拖入已启动的 iOS 26.5 Simulator 安装；它不能安装到真实 iPhone。
+也提供 [Release 模拟器构建包](deliverables/Lightworks-simulator-audited.zip)，解压后可将 `Drairtunvur.app` 拖入已启动的 iOS 26.5 Simulator 安装；它不能安装到真实 iPhone。
 
 当前应用最低版本配置为 iOS 15.6；本次仅将纯规则模块的最低声明降为 iOS 15 以兼容现有配置。保留 Swift 5 语言模式、`com.tmuo.Drairtunvur` Bundle ID、签名与设备方向配置。真机运行需要用户自己的有效签名团队与设备；本次没有上传、发布或提交审核。
 

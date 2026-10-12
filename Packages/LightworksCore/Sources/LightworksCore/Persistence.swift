@@ -95,26 +95,32 @@ public actor SaveRepository {
       encountered = true
       do {
         let data = try Data(contentsOf: url)
+        struct Header: Decodable { let schemaVersion: Int }
+        let header = try JSONDecoder().decode(Header.self, from: data)
+        guard header.schemaVersion == 1 else { throw SaveError.unsupportedVersion }
         var save = try JSONDecoder().decode(SaveEnvelope.self, from: data)
         guard save.schemaVersion == 1 else { throw SaveError.unsupportedVersion }
         guard save.revision >= 0,
           save.bestMoves.allSatisfy({ id, moves in
-            moves > 0 && levels.contains(where: { $0.id == id && moves <= $0.moveLimit })
+            !id.isEmpty && moves > 0
           })
         else { throw SaveError.invalidData }
         guard save.daily?.isValid() ?? true else { throw SaveError.invalidData }
         var reset = false
         if let active = save.active {
-          guard let level = levels.first(where: { $0.id == active.levelID }) else {
-            throw SaveError.invalidData
-          }
-          if active.contentVersion != level.contentVersion {
+          if let level = levels.first(where: { $0.id == active.levelID }) {
+            if active.contentVersion != level.contentVersion {
+              save.active = nil
+              reset = true
+            } else if !active.isValid(for: level) {
+              throw SaveError.invalidData
+            }
+          } else {
             save.active = nil
             reset = true
-          } else if !active.isValid(for: level) {
-            throw SaveError.invalidData
           }
         }
+        canWrite = true
         lastRevision = save.revision
         if isBackup {
           // Preserve damaged/newer data for support before any next write.
@@ -125,13 +131,37 @@ public actor SaveRepository {
           try data.write(to: primary, options: .atomic)
         }
         return LoadReport(save: save, recoveredBackup: isBackup, resetActive: reset)
+      } catch SaveError.unsupportedVersion {
+        // An older app must not replace a newer-format save with an older backup.
+        canWrite = false
+        throw SaveError.unsupportedVersion
       } catch { continue }
     }
     if encountered {
       canWrite = false
       throw SaveError.protectedCorruption
     }
+    canWrite = true
+    lastRevision = -1
     return LoadReport(save: SaveEnvelope(), recoveredBackup: false, resetActive: false)
+  }
+  /// Called only after the player explicitly chooses to archive and start over.
+  public func archiveAndReset() throws -> SaveEnvelope {
+    let fm = FileManager.default
+    let archive = directory.appendingPathComponent(
+      "recovery-\(UUID().uuidString)", isDirectory: true)
+    try fm.createDirectory(at: archive, withIntermediateDirectories: true)
+    for source in [primary, backup] where fm.fileExists(atPath: source.path) {
+      try fm.copyItem(at: source, to: archive.appendingPathComponent(source.lastPathComponent))
+    }
+    var fresh = SaveEnvelope()
+    fresh.revision = max(0, lastRevision + 1)
+    let data = try JSONEncoder().encode(fresh)
+    try data.write(to: primary, options: .atomic)
+    try data.write(to: backup, options: .atomic)
+    lastRevision = fresh.revision
+    canWrite = true
+    return fresh
   }
   @discardableResult public func write(_ save: SaveEnvelope) throws -> Bool {
     guard canWrite else { throw SaveError.protectedCorruption }

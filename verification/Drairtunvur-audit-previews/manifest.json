@@ -1,0 +1,17 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2B91A38B-87E1-46C5-B39D-60A964028A04",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "4B13C83A-6F7F-46B6-8788-1B3541E21189.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Drairtunvur-help_0_CB6C9BFC-1E23-4575-A64C-940DA66258E9.png",
+        "timestamp" : 1791792854.107
+      }
+    ],
+    "testIdentifier" : "DrairtunvurReleaseUITests/testCorruptSaveRecoveryAndHelp()",
+    "testIdentifierURL" : "test://com.apple.xcode/Drairtunvur/LightworksUITests/DrairtunvurReleaseUITests/testCorruptSaveRecoveryAndHelp"
+  }
+]
