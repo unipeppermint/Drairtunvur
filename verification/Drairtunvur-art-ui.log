@@ -1,0 +1,1432 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project Drairtunvur.xcodeproj -scheme Drairtunvur -destination "platform=iOS Simulator,id=2FB40C4D-C9B6-4CF0-859D-C57A86602FA1" -derivedDataPath /tmp/lightworks-art-final CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO "-only-testing:LightworksUITests/DrairtunvurReleaseUITests/testCompletedCityAndEveryRestoredKeepsake" "-only-testing:LightworksUITests/LightworksUITests/testTutorialWinReplayAndMap" -resultBundlePath /tmp/lightworks-art-final.xcresult test
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  LightworksCore: /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore @ local
+
+Writing result bundle at path:
+	/tmp/lightworks-art-final.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (4 targets)
+    Target 'LightworksUITests' in project 'Drairtunvur'
+        ➜ Explicit dependency on target 'Drairtunvur' in project 'Drairtunvur'
+    Target 'Drairtunvur' in project 'Drairtunvur'
+        ➜ Explicit dependency on target 'LightworksCore' in project 'LightworksCore'
+    Target 'LightworksCore' in project 'LightworksCore'
+        ➜ Explicit dependency on target 'LightworksCore' in project 'LightworksCore'
+    Target 'LightworksCore' in project 'LightworksCore' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/xcstringstool compile --dry-run --output-directory /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/Localizable.xcstrings
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: 9dc42eeb6e879e8ad50aeda054292838
+Build description path: /tmp/lightworks-art-final/Build/Intermediates.noindex/XCBuildData/9dc42eeb6e879e8ad50aeda054292838.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/lightworks-art-final/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/lightworks-art-final/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+CreateBuildDirectory /tmp/lightworks-art-final/Build/Products
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    builtin-create-build-directory /tmp/lightworks-art-final/Build/Products
+
+CreateBuildDirectory /tmp/lightworks-art-final/Build/Intermediates.noindex
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    builtin-create-build-directory /tmp/lightworks-art-final/Build/Intermediates.noindex
+
+CreateBuildDirectory /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    builtin-create-build-directory /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /tmp/lightworks-art-final/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    builtin-create-build-directory /tmp/lightworks-art-final/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur-bb566299361be7b4d32cd764737f5ea5-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur-bb566299361be7b4d32cd764737f5ea5-VFS-iphonesimulator/all-product-headers.yaml
+
+CreateBuildDirectory /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    builtin-create-build-directory /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator
+
+CreateBuildDirectory /tmp/lightworks-art-final/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    builtin-create-build-directory /tmp/lightworks-art-final/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+CreateBuildDirectory /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/PackageFrameworks
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    builtin-create-build-directory /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/PackageFrameworks
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur.hmap (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur.DependencyMetadataFileList (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur.DependencyStaticMetadataFileList (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftConstValuesFileList (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.LinkFileList (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.LinkFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftFileList (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_const_extract_protocols.json (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-OutputFileMap.json (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/empty-LightworksUITests.plist (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/empty-LightworksUITests.plist
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/ProductTypeInfoPlistAdditions.plist (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/ProductTypeInfoPlistAdditions.plist
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests_const_extract_protocols.json (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.SwiftConstValuesFileList (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.SwiftFileList (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.SwiftFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.LinkFileList (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.LinkFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests-OutputFileMap.json (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests.hmap (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests.DependencyStaticMetadataFileList (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests.DependencyMetadataFileList (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-project-headers.hmap (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-own-target-headers.hmap (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-generated-files.hmap (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-all-target-headers.hmap (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-all-non-framework-target-headers.hmap (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore_const_extract_protocols.json (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore_const_extract_protocols.json
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.SwiftFileList (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.SwiftFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.SwiftConstValuesFileList (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.LinkFileList (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.LinkFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-OutputFileMap.json (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-OutputFileMap.json
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/LightworksCore.modulemap (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/LightworksCore.modulemap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/LightworksCore.DependencyStaticMetadataFileList (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/LightworksCore.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/LightworksCore.DependencyMetadataFileList (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/LightworksCore.DependencyMetadataFileList
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-project-headers.hmap (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-project-headers.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-own-target-headers.hmap (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-own-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-generated-files.hmap (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-generated-files.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-all-target-headers.hmap (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-all-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-all-non-framework-target-headers.hmap (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-DebugDylibPath-normal-arm64.txt (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-DebugDylibInstallName-normal-arm64.txt (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    write-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-DebugDylibInstallName-normal-arm64.txt
+
+MkDir /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /bin/mkdir -p /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest
+
+Copy /tmp/lightworks-art-final/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/LightworksCore.modulemap /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/LightworksCore.modulemap (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/LightworksCore.modulemap /tmp/lightworks-art-final/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator
+
+MkDir /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /bin/mkdir -p /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app
+
+SwiftDriver LightworksCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LightworksCore -Onone @/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /tmp/lightworks-art-final/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-art-final/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-art-final/ModuleCache.noindex/Session.modulevalidation -package-name lightworkscore -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore_const_extract_protocols.json -Xcc -I/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/ptrauth-35HJKRZFT5L9OJUBTPSSI85VU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_stddef-3LWMCV3ZPCU8FK4ANZ1CX66UR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/SwiftShims-EWSB7YIR3TE9N12KZWTTDNJXX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_AvailabilityInternal-3G80UGSEJ33ZYC7U4C316GCEC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_stdarg-ENT78MPUD1F2Q6HLTW9UBXD4W.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_stdbool-7AP107KKWLHAV8OO1PH0E3QRE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_float-2HQ6JPGHP97IR023DFM6L10L8.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_SwiftConcurrencyShims-CT99VVOPTWMCVFLT4PZRADR62.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/ptrcheck-D3G9CVUSS5N4IX2FKJHEDAURI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_DarwinFoundation1-ELVMA2RNA58SVF9C600XFJAOO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_limits-RW2R0U5H7TQJESGJ5GV1A4B7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_DarwinFoundation2-BWQBU1XT0QJ7R8DZBFMSBGMFI.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/sys_types-2TTZIP8E443K63BKLHJQM8GIQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_stdint-4W5YSTO657SSI0QPJ6B9JCO2T.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_DarwinFoundation3-BE2UIEIP8IEWTGT63JE03C74L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_inttypes-9CXTKVGJT2PTF00Y14Y0J584Q.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Darwin-SL9FTBRZWC5UFCUWVRT5WD45.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/ObjectiveC-9WB59PZ87VZKGRHDGIGW76N9S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/os_object-3YDG8T40DJ6R4IKHHXXN1X5QC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/os_workgroup-7190UJAPBLN8KWW2OV8QU8T2L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Dispatch-6Y0OUEBNGV069E9577HCU3K38.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreFoundation-AFKSJRJ3SMIUX289VCHS56CUV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/XPC-EDYNXQVGKEBJQU11Q2AMIQDLP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Security-A3W5LE0R25S3A4P6Z1DWL15HM.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CFNetwork-DDEAU99EASF4PUIQBFC754PJ2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Foundation-2KAYOLRQH4B3J58LQJV027FBM.pcm
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ LightworksCore (in target 'LightworksCore' from project 'LightworksCore')
+
+EmitSwiftModule normal arm64 (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ HintSolver.swift /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore/Sources/LightworksCore/HintSolver.swift (in target 'LightworksCore' from project 'LightworksCore')
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore/Sources/LightworksCore/HintSolver.swift (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ DailyChallenge.swift /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore/Sources/LightworksCore/DailyChallenge.swift (in target 'LightworksCore' from project 'LightworksCore')
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore/Sources/LightworksCore/DailyChallenge.swift (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ Models.swift /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore/Sources/LightworksCore/Models.swift (in target 'LightworksCore' from project 'LightworksCore')
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore/Sources/LightworksCore/Models.swift (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ Persistence.swift /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore/Sources/LightworksCore/Persistence.swift (in target 'LightworksCore' from project 'LightworksCore')
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore/Sources/LightworksCore/Persistence.swift (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    
+
+SwiftCompile normal arm64 Compiling\ Rules.swift /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore/Sources/LightworksCore/Rules.swift (in target 'LightworksCore' from project 'LightworksCore')
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore/Sources/LightworksCore/Rules.swift (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for LightworksCore (in target 'LightworksCore' from project 'LightworksCore')
+
+SwiftDriver\ Compilation\ Requirements LightworksCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LightworksCore -Onone @/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /tmp/lightworks-art-final/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-art-final/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-art-final/ModuleCache.noindex/Session.modulevalidation -package-name lightworkscore -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore_const_extract_protocols.json -Xcc -I/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+SwiftMergeGeneratedHeaders /tmp/lightworks-art-final/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/LightworksCore-Swift.h /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-Swift.h (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    builtin-swiftHeaderTool -arch arm64 /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-Swift.h -o /tmp/lightworks-art-final/Build/Intermediates.noindex/GeneratedModuleMaps-iphonesimulator/LightworksCore-Swift.h
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftmodule (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftmodule /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftdoc (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftdoc /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.abi.json (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.abi.json /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftsourceinfo (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftsourceinfo /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+MkDir /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_output/unthinned (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /bin/mkdir -p /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_output/unthinned
+
+MkDir /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_output/thinned (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /bin/mkdir -p /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_output/thinned
+
+GenerateStringSymbols /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/GeneratedStringSymbols_Localizable.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/Localizable.xcstrings (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcstringstool generate-symbols --language swift --output-directory /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/Localizable.xcstrings
+
+GenerateAssetSymbols /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Assets.xcassets (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Assets.xcassets --compile /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_dependencies --output-partial-info-plist /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_generated_info.plist --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --minimum-deployment-target 16.0 --platform iphonesimulator --bundle-identifier com.tmuo.Drairtunvur --generate-swift-asset-symbols /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/GeneratedAssetSymbols.h
+/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CompileXCStrings /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/ /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/Localizable.xcstrings (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcstringstool compile --output-directory /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/Localizable.xcstrings
+
+CompileAssetCatalogVariant thinned /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Assets.xcassets (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Assets.xcassets --compile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_dependencies_thinned --output-partial-info-plist /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_generated_info.plist_thinned --app-icon AppIcon --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --filter-for-thinning-device-configuration iPhone14,6 --filter-for-device-os-version 26.5 --development-region en --target-device iphone --minimum-deployment-target 16.0 --platform iphonesimulator
+/* com.apple.actool.compilation-results */
+/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_generated_info.plist_thinned
+/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_output/thinned/AppIcon60x60@2x.png
+/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_output/thinned/AppIcon76x76@2x~ipad.png
+/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_output/thinned/Assets.car
+
+
+CopyStringsFile /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/zh-Hans.lproj/Localizable.strings /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/zh-Hans.lproj/Localizable.strings (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.strings --outdir /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/zh-Hans.lproj -- /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/zh-Hans.lproj/Localizable.strings
+/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/zh-Hans.lproj/Localizable.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'Drairtunvur' from project 'Drairtunvur')
+
+CopyStringsFile /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/en.lproj/Localizable.strings /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/en.lproj/Localizable.strings (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copyStrings --validate --outputencoding binary --outfilename Localizable.strings --outdir /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/en.lproj -- /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/en.lproj/Localizable.strings
+/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/en.lproj/Localizable.strings:1:1: note: detected encoding of input file as Unicode (UTF-8) (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftDriver Drairtunvur normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Drairtunvur -Onone @/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios16.0-simulator -g -module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/lightworks-art-final/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-art-final/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-art-final/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-generated-files.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-own-target-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur-bb566299361be7b4d32cd764737f5ea5-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-project-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/ptrcheck-BXRGL5MG5XIDSTZNXP0WSSM1E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_stdbool-8BPAE05SI7NJG8HLYEI53QBSD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_stdarg-6EZIHFTYA2FWAGRB1CKTP4O2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/SwiftShims-RXP7CZZQO2QVMLZ5R9JT9WUV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_SwiftConcurrencyShims-71HB7XLZBMRJOHPH2I11T6S7L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/ptrauth-BJ9DIF3T31LBYEU0WWD6HHHL3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_float-D6CQKDB21ELG1K6H94GWYZ0HU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_stddef-CV8T547SE70ZOX02VPXBHP4KP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/DeveloperToolsSupport-C35EP9MZZHQYHHYTHDATWJIHC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_AvailabilityInternal-67CEJ6QE9UJLS1AHJ9X8OL4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_DarwinFoundation1-487IXWPZ2TQ9D93QZZCETJ64G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_limits-3ZPXVAOOAK7EKCCDFADTWWSNQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_DarwinFoundation2-E4PKCCUD1X2MJQ9GT9NFSJP7V.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling HintSolver.swift (in target 'LightworksCore' from project 'LightworksCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Rules.swift (in target 'LightworksCore' from project 'LightworksCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling DailyChallenge.swift (in target 'LightworksCore' from project 'LightworksCore')
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_stdint-1BG2LMLL5HWG0JJWKWYEA086L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_tgmath-A6QLWJ8UMWEUJW7RXVYHY71UA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/sys_types-18OHQ4SU17ITA68L1Z8EGI06B.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling Persistence.swift (in target 'LightworksCore' from project 'LightworksCore')
+
+SwiftDriverJobDiscovery normal arm64 Compiling Models.swift (in target 'LightworksCore' from project 'LightworksCore')
+
+SwiftDriver\ Compilation LightworksCore normal arm64 com.apple.xcode.tools.swift.compiler (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LightworksCore -Onone @/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.SwiftFileList -DSWIFT_PACKAGE -DDEBUG -DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -DXcode -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.0-simulator -g -module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -suppress-warnings -index-store-path /tmp/lightworks-art-final/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-art-final/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-art-final/ModuleCache.noindex/Session.modulevalidation -package-name lightworkscore -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore_const_extract_protocols.json -Xcc -I/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/DerivedSources -Xcc -DSWIFT_PACKAGE -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.o normal (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios15.0-simulator -r -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -w -F/tmp/lightworks-art-final/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.LinkFileList -nostdlib -Xlinker -object_path_lto -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore_lto.o -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftmodule @/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-linker-args.resp -o /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.o
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_intrinsics-7BXUH96V2VWCHSMVDBLTM4FY2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_DarwinFoundation3-LZTBC5CUAZJ4VX238MMY4918.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_stdatomic-5H0UWU3CPZ5GVBF6ZOBC5OAXU.pcm
+
+ExtractAppIntentsMetadata (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name LightworksCore --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 15.0 --bundle-identifier lightworkscore.LightworksCore --output /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.appintents --target-triple arm64-apple-ios15.0-simulator --binary-file /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.o --dependency-file /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore_dependency_info.dat --stringsdata-file /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.SwiftFileList --metadata-file-list /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/LightworksCore.DependencyMetadataFileList --static-metadata-file-list /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/LightworksCore.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.SwiftConstValuesFileList --force --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-12 17:03:38.414 appintentsmetadataprocessor[31719:569914] Starting appintentsmetadataprocessor export
+2026-10-12 17:03:38.434 appintentsmetadataprocessor[31719:569914] Extracted no relevant App Intents symbols, skipping writing output
+
+RegisterExecutionPolicyException /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.o (in target 'LightworksCore' from project 'LightworksCore')
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore
+    builtin-RegisterExecutionPolicyException /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksCore.o
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/_Builtin_inttypes-Q4NGYODMZWV7LV0K4N9R2JZK.pcm
+
+CpResource /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/pulse.wav /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/pulse.wav (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/pulse.wav /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app
+
+CpResource /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/win.wav /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/win.wav (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/win.wav /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app
+
+CpResource /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/levels.json /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/levels.json (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/levels.json /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app
+
+Ld /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/__preview.dylib normal (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios16.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -install_name @rpath/Drairtunvur.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_dependency_info.dat -o /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/__preview.dylib
+
+CpResource /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/place.wav /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/place.wav (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/place.wav /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app
+
+CpResource /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/PrivacyInfo.xcprivacy /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/PrivacyInfo.xcprivacy (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/PrivacyInfo.xcprivacy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app
+
+CpResource /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur-daily-levels.json /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/Drairtunvur-daily-levels.json (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/Drairtunvur-daily-levels.json /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app
+
+CompileStoryboard /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Base.lproj/Main.storyboard (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module Drairtunvur --output-partial-info-plist /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Base.lproj/Main-SBPartialInfo.plist --auto-activate-custom-fonts --target-device iphone --minimum-deployment-target 16.0 --output-format human-readable-text /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Base.lproj/Main.storyboard --compilation-directory /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Base.lproj
+
+CompileStoryboard /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Base.lproj/LaunchScreen.storyboard (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module Drairtunvur --output-partial-info-plist /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Base.lproj/LaunchScreen-SBPartialInfo.plist --auto-activate-custom-fonts --target-device iphone --minimum-deployment-target 16.0 --output-format human-readable-text /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Base.lproj/LaunchScreen.storyboard --compilation-directory /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Base.lproj
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Darwin-Y9RN7K5CCEJRFQ4LB6PH2T8P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/simd-BO7VL98KB1PTW8D5DJKUROE32.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/ObjectiveC-2L0KREG9FNAOLFCIJHUB6RQ73.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/MachO-5MDBXHLB7VHJAG4MPEXBTCZKH.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/os_object-DEIU0ZMGD3U5A1EDO3BUB6X6B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/os_workgroup-AENY5ZN49L4ZPGSCQ379K5FL6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Dispatch-CI1HOCLT2EVR8BOUCS7Q1S96B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Spatial-2CXOOMVI3DPVZSCGV0ITDDD28.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreFoundation-C58PGEXE94G8LSC2JD1G5XY7E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/XPC-6PL4X8G0JM9Q53XCDH7Y7JGDP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/os-16C64C7T9AQEHN9L1SMRXY3HR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreAudioTypes-C6QD3WT974P9PU0GK6EYQUP4O.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Security-DKWUIOXZW69YS7OIQCHRJRJUR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreGraphics-EKM0ILMK5ACA1QCVVAOVJ77PD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CFNetwork-89SZDNOO6ZJHLKRSFFGQIOS1B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreAudio-61KLK6C59UJN13HX01C4Y7IAN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Foundation-9HE2V32W0MR3I89UWLOH3QK7H.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreText-65SAGILY57ZIDFA5LT1G0FL5R.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/ImageIO-E6URWC0NAW6R0R6J28TI165DP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Symbols-5D0P7PII8IR856YKOKWWMU3SF.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/UIUtilities-E8W60YN16XF5FDXDZ3D25VC8D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/UserNotifications-10HKLT2YWHRP8ZJA1L3WAPSRN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreTransferable-39OLJWT6RY4FBJOKINT6XUCV9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/OpenGLES-878RLAP7RDQ5J9LBEXSLI4VTZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/DataDetection-6OOOGC2FCKVAEJA6JJA72LGL3.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreMIDI-953HPHL57TO9C8KUN4XGXBX77.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/UniformTypeIdentifiers-815OIKMQLBVJMQ86N66TM0KQR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/IOSurface-8JM9AM5FL1Q13X4CDNWXRPKDJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/FileProvider-DIB0YHOAZGUAXCLPP45OCQV1C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Accessibility-3S56JZ10VB3QZQTICE9F04GRV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreData-739L6VBWT0Q921SRBQQMYHZEJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/OSLog-8LD6F409U0G8MSPTYTR56GJSZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/AudioToolbox-3JRCOQPSGCCZDI6E89ZKKKY1I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/Metal-A2B4A3E4MKA4S56THP7BDGOKL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreVideo-1DMHHK1AIFLNYBOGX3JASECJP.pcm
+
+LinkStoryboards (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --module Drairtunvur --target-device iphone --minimum-deployment-target 16.0 --output-format human-readable-text --link /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Base.lproj/LaunchScreen.storyboardc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Base.lproj/Main.storyboardc
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreMedia-D3279SN6JAKI82ZEQTOAYKTQR.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/CoreImage-41TX00WI9ZPVVMB1UYV4JKUYN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/QuartzCore-89V4Y8MYM6N2GVFI13IO2BJE2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/SwiftUICore-3S90NSTFL5UB6FQJUQ4JC5PK5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/UIKit-1F9R8QZC2I5ZU8WSZUUN2MG5I.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/AVFAudio-793DD21QM84G3J20T52GYYWG2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/ModuleCache.noindex/SwiftUI-BN250JWF27KUR72KE51NJGQOI.pcm
+
+SwiftCompile normal arm64 Compiling\ GeneratedAssetSymbols.swift /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftCompile normal arm64 /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ Drairtunvur (in target 'Drairtunvur' from project 'Drairtunvur')
+
+EmitSwiftModule normal arm64 (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 Compiling\ SurfaceDrawing.swift,\ Theme.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/SurfaceDrawing.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/Theme.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/SurfaceDrawing.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/Theme.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 Compiling\ AppDelegate.swift,\ SceneDelegate.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/AppDelegate.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/SceneDelegate.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/AppDelegate.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/SceneDelegate.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 Compiling\ SettingsViewController.swift,\ BoardView.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/SettingsViewController.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/BoardView.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/SettingsViewController.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/BoardView.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 Compiling\ CityTabController.swift,\ DrairtunvurLandmarkView.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/CityTabController.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/DrairtunvurLandmarkView.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/CityTabController.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/DrairtunvurLandmarkView.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 Compiling\ ViewController.swift,\ GeneratedStringSymbols_Localizable.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/ViewController.swift /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/GeneratedStringSymbols_Localizable.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/ViewController.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/GeneratedStringSymbols_Localizable.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 Compiling\ DrairtunvurSupport.swift,\ GameViewController.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/DrairtunvurSupport.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/GameViewController.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/DrairtunvurSupport.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/GameViewController.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 Compiling\ DailyViewController.swift,\ DrairtunvurCollectionStories.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/DailyViewController.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/DrairtunvurCollectionStories.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/DailyViewController.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/DrairtunvurCollectionStories.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 Compiling\ CityViewController.swift,\ CollectionViewController.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/CityViewController.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/CollectionViewController.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/CityViewController.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Features/CollectionViewController.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for Drairtunvur (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftDriver\ Compilation\ Requirements Drairtunvur normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Drairtunvur -Onone @/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios16.0-simulator -g -module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/lightworks-art-final/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-art-final/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-art-final/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-generated-files.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-own-target-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur-bb566299361be7b4d32cd764737f5ea5-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-project-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ AppModel.swift,\ Feedback.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Services/AppModel.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Services/Feedback.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Services/AppModel.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Services/Feedback.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling ViewController.swift, GeneratedStringSymbols_Localizable.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftDriverJobDiscovery normal arm64 Compiling AppDelegate.swift, SceneDelegate.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftDriverJobDiscovery normal arm64 Compiling CityTabController.swift, DrairtunvurLandmarkView.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftDriverJobDiscovery normal arm64 Compiling DailyViewController.swift, DrairtunvurCollectionStories.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftDriverJobDiscovery normal arm64 Compiling DrairtunvurSupport.swift, GameViewController.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SurfaceDrawing.swift, Theme.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftMergeGeneratedHeaders /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/Drairtunvur-Swift.h /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-Swift.h (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-swiftHeaderTool -arch arm64 /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-Swift.h -o /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/Drairtunvur-Swift.h
+
+SwiftDriverJobDiscovery normal arm64 Compiling SettingsViewController.swift, BoardView.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftmodule (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftmodule /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftdoc (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftdoc /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.abi.json (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.abi.json /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftsourceinfo (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftsourceinfo /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriver LightworksUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LightworksUITests -Onone @/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.5-simulator -g -module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/lightworks-art-final/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-art-final/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-art-final/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-generated-files.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-own-target-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur-bb566299361be7b4d32cd764737f5ea5-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-project-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur -experimental-emit-module-separately -disable-cmo
+
+SwiftDriverJobDiscovery normal arm64 Compiling CityViewController.swift, CollectionViewController.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftDriverJobDiscovery normal arm64 Compiling GeneratedAssetSymbols.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-9CQO8CV0I709RCVUKORSA921W.pcm
+
+SwiftDriverJobDiscovery normal arm64 Compiling AppModel.swift, Feedback.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftDriver\ Compilation Drairtunvur normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Drairtunvur -Onone @/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios16.0-simulator -g -module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/lightworks-art-final/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-art-final/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-art-final/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-generated-files.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-own-target-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur-bb566299361be7b4d32cd764737f5ea5-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-project-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur.debug.dylib normal (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios16.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/lightworks-art-final/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F/tmp/lightworks-art-final/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -filelist /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.LinkFileList -install_name @rpath/Drairtunvur.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftmodule @/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-linker-args.resp -Wl,-no_warn_duplicate_libraries -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur.debug.dylib -Xlinker -add_ast_path -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftmodule @/tmp/lightworks-art-final/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-linker-args.resp
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCUIAutomation-1GEJ66FJQCJDD.swiftmodule
+
+SwiftExplicitDependencyGeneratePcm arm64 /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-9UZZQNAOK497L0RQL3GHVNRAU.pcm
+
+SwiftExplicitDependencyCompileModuleFromInterface arm64 /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/XCTest-2VJ8D8QCH3SKI.swiftmodule
+
+ConstructStubExecutorLinkFileList /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-ExecutorLinkFileList-normal-arm64.txt (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    construct-stub-executor-link-file-list /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'Drairtunvur' from project 'Drairtunvur')
+
+Ld /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur normal (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios16.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-ExecutorLinkFileList-normal-arm64.txt /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur.debug.dylib -o /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur
+
+SwiftCompile normal arm64 Compiling\ DrairtunvurReleaseUITests.swift /Users/mac/Desktop/Projects/Drairtunvur/LightworksUITests/DrairtunvurReleaseUITests.swift (in target 'LightworksUITests' from project 'Drairtunvur')
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/LightworksUITests/DrairtunvurReleaseUITests.swift (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ LightworksUITests (in target 'LightworksUITests' from project 'Drairtunvur')
+
+EmitSwiftModule normal arm64 (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 Compiling\ LightworksUITests.swift /Users/mac/Desktop/Projects/Drairtunvur/LightworksUITests/LightworksUITests.swift (in target 'LightworksUITests' from project 'Drairtunvur')
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/LightworksUITests/LightworksUITests.swift (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for LightworksUITests (in target 'LightworksUITests' from project 'Drairtunvur')
+
+SwiftDriver\ Compilation\ Requirements LightworksUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LightworksUITests -Onone @/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.5-simulator -g -module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/lightworks-art-final/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-art-final/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-art-final/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-generated-files.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-own-target-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur-bb566299361be7b4d32cd764737f5ea5-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-project-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.swiftmodule (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.swiftmodule /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+SwiftMergeGeneratedHeaders /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/DerivedSources/LightworksUITests-Swift.h /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests-Swift.h (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-swiftHeaderTool -arch arm64 /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests-Swift.h -o /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/DerivedSources/LightworksUITests-Swift.h
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.swiftdoc (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.swiftdoc /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.abi.json (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.abi.json /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.swiftsourceinfo (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.swiftsourceinfo /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+LinkAssetCatalog /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Assets.xcassets (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-linkAssetCatalog --thinned /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_output/thinned --thinned-dependencies /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_generated_info.plist_thinned --unthinned /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_output/unthinned --unthinned-dependencies /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_generated_info.plist_unthinned --output /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app --plist-output /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_generated_info.plist
+note: Emplaced /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/AppIcon76x76@2x~ipad.png (in target 'Drairtunvur' from project 'Drairtunvur')
+note: Emplaced /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Assets.car (in target 'Drairtunvur' from project 'Drairtunvur')
+note: Emplaced /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/AppIcon60x60@2x.png (in target 'Drairtunvur' from project 'Drairtunvur')
+
+ProcessInfoPlistFile /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Info.plist /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Info.plist (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-infoPlistUtility /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Base.lproj/LaunchScreen-SBPartialInfo.plist -additionalcontentfile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Base.lproj/Main-SBPartialInfo.plist -additionalcontentfile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_generated_info.plist -o /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Info.plist
+
+CopySwiftLibs /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur.debug.dylib --scan-folder /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Frameworks --scan-folder /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/PlugIns --scan-folder /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/SystemExtensions --scan-folder /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name Drairtunvur --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 16.0 --bundle-identifier com.tmuo.Drairtunvur --output /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app --target-triple arm64-apple-ios16.0-simulator --binary-file /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur --dependency-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_dependency_info.dat --stringsdata-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftFileList --metadata-file-list /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur.DependencyMetadataFileList --static-metadata-file-list /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-12 17:03:43.290 appintentsmetadataprocessor[31796:570329] Starting appintentsmetadataprocessor export
+2026-10-12 17:03:43.291 appintentsmetadataprocessor[31796:570329] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+SwiftDriverJobDiscovery normal arm64 Compiling DrairtunvurReleaseUITests.swift (in target 'LightworksUITests' from project 'Drairtunvur')
+
+AppIntentsSSUTraining (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Info.plist --temp-dir-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/ssu --bundle-id com.tmuo.Drairtunvur --product-path /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app --extracted-metadata-path /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Metadata.appintents --metadata-file-list /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur.DependencyMetadataFileList --source-file /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Info.plist --archive-ssu-assets
+2026-10-12 17:03:43.306 appintentsnltrainingprocessor[31797:570333] Parsing options for appintentsnltrainingprocessor
+2026-10-12 17:03:43.306 appintentsnltrainingprocessor[31797:570333] Starting AppIntents SSU YAML Generation
+2026-10-12 17:03:43.307 appintentsnltrainingprocessor[31797:570333] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-RegisterExecutionPolicyException /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app
+
+Validate /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-validationUtility /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /usr/bin/touch -c /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/Drairtunvur.app
+
+CpResource /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/DailyReferenceSolution.json /Users/mac/Desktop/Projects/Drairtunvur/LightworksUITests/DailyReferenceSolution.json (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mac/Desktop/Projects/Drairtunvur/LightworksUITests/DailyReferenceSolution.json /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest
+
+CpResource /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/ReferenceSolutions.json /Users/mac/Desktop/Projects/Drairtunvur/LightworksUITests/ReferenceSolutions.json (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/mac/Desktop/Projects/Drairtunvur/LightworksUITests/ReferenceSolutions.json /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest
+
+ProcessInfoPlistFile /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Info.plist /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/empty-LightworksUITests.plist (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-infoPlistUtility /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/empty-LightworksUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Info.plist
+
+SwiftDriverJobDiscovery normal arm64 Compiling LightworksUITests.swift (in target 'LightworksUITests' from project 'Drairtunvur')
+
+SwiftDriver\ Compilation LightworksUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name LightworksUITests -Onone @/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-bare-slash-regex -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios26.5-simulator -g -module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/lightworks-art-final/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-art-final/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-art-final/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-art-final/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-art-final/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-generated-files.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-own-target-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur-bb566299361be7b4d32cd764737f5ea5-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests-project-headers.hmap -Xcc -I/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/LightworksUITests normal (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios26.5-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/lightworks-art-final/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/tmp/lightworks-art-final/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk/Developer/Library/Frameworks -filelist /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.LinkFileList -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.swiftmodule @/tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests-linker-args.resp -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/LightworksUITests
+
+CopySwiftLibs /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/LightworksUITests --scan-folder /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Frameworks --scan-folder /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/PlugIns --scan-folder /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/SystemExtensions --scan-folder /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name LightworksUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 26.5 --bundle-identifier com.tmuo.Drairtunvur.LightworksUITests --output /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest --target-triple arm64-apple-ios26.5-simulator --binary-file /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/LightworksUITests --dependency-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests_dependency_info.dat --stringsdata-file /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.SwiftFileList --metadata-file-list /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests.DependencyMetadataFileList --static-metadata-file-list /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/Objects-normal/arm64/LightworksUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-12 17:03:43.464 appintentsmetadataprocessor[31801:570360] Starting appintentsmetadataprocessor export
+2026-10-12 17:03:43.465 appintentsmetadataprocessor[31801:570360] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+AppIntentsSSUTraining (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Info.plist --temp-dir-path /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/ssu --bundle-id com.tmuo.Drairtunvur.LightworksUITests --product-path /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest --extracted-metadata-path /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Metadata.appintents --metadata-file-list /tmp/lightworks-art-final/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/LightworksUITests.DependencyMetadataFileList --source-file /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Info.plist --archive-ssu-assets
+2026-10-12 17:03:43.475 appintentsnltrainingprocessor[31802:570361] Parsing options for appintentsnltrainingprocessor
+2026-10-12 17:03:43.475 appintentsnltrainingprocessor[31802:570361] Starting AppIntents SSU YAML Generation
+2026-10-12 17:03:43.475 appintentsnltrainingprocessor[31802:570361] No AppShortcuts found - Skipping.
+
+CopyAndPreserveArchs /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/LightworksUITests-Runner (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/XCTRunner -output /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/LightworksUITests-Runner -extract arm64
+
+CopyPlistFile /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Info.plist /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copyPlist --validate --convert xml1 --macro-expansion WRAPPEDPRODUCTNAME LightworksUITests-Runner --macro-expansion WRAPPEDPRODUCTBUNDLEIDENTIFIER com.tmuo.Drairtunvur.LightworksUITests.xctrunner --macro-expansion TESTPRODUCTNAME LightworksUITests --macro-expansion TESTPRODUCTBUNDLEIDENTIFIER com.tmuo.Drairtunvur.LightworksUITests --copy-value UIDeviceFamily /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Info.plist --outdir /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app -- /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/Info.plist
+
+MkDir /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /bin/mkdir -p /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PkgInfo /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/XCTRunner.app/PkgInfo /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks/XCUIAutomation.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCUIAutomation.framework /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks/XCTestCore.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestCore.framework /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks/XCTest.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/XCTest.framework /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks/XCUnit.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCUnit.framework /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks/libXCTestSwiftSupport.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks/XCTestSupport.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTestSupport.framework /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks/XCTAutomationSupport.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks
+
+Copy /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks/Testing.framework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -exclude Headers -exclude PrivateHeaders -exclude Modules -exclude \*.tbd -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks/Testing.framework /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/Frameworks
+
+RegisterExecutionPolicyException /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-RegisterExecutionPolicyException /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest
+
+Touch /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /usr/bin/touch -c /tmp/lightworks-art-final/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest
+
+2026-10-12 17:03:58.858009+0800 LightworksUITests-Runner[32010:572560] [Default] Running tests...
+2026-10-12 17:03:58.899993+0800 LightworksUITests-Runner[32010:572872] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+2026-10-12 17:03:58.941998+0800 LightworksUITests-Runner[32010:572875] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+objc[32010]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x10b480310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10a068398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-12 17:04:02.307.
+Test Suite 'LightworksUITests.xctest' started at 2026-10-12 17:04:02.308.
+Test Suite 'DrairtunvurReleaseUITests' started at 2026-10-12 17:04:02.308.
+Test Case '-[LightworksUITests.DrairtunvurReleaseUITests testCompletedCityAndEveryRestoredKeepsake]' started.
+    t =     0.00s Start Test at 2026-10-12 17:04:02.308
+    t =     0.29s Set Up
+    t =     0.29s Open com.tmuo.Drairtunvur
+    t =     0.29s     Launch com.tmuo.Drairtunvur
+2026-10-12 17:04:03.001 xcodebuild[31635:569313] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-12 17:04:03.001 xcodebuild[31635:569313] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.52s         Setting up automation session
+    t =     2.25s         Wait for com.tmuo.Drairtunvur to idle
+    t =     3.90s Waiting 15.0s for "city.continue" Button to exist
+    t =     4.95s     Checking `Expect predicate `existsNoRetry == 1` for object "city.continue" Button`
+    t =     4.95s         Checking existence of `"city.continue" Button`
+    t =     5.00s Find the "city.continue" Button
+    t =     5.01s Tap "tab.collection" Button
+    t =     5.01s     Wait for com.tmuo.Drairtunvur to idle
+    t =     5.01s     Find the "tab.collection" Button
+    t =     5.03s     Check for interrupting elements affecting "tab.collection" Button
+    t =     5.06s     Synthesize event
+    t =     5.46s     Wait for com.tmuo.Drairtunvur to idle
+    t =     5.51s Waiting 5.0s for "已收藏 9 / 9" StaticText to exist
+    t =     6.55s     Checking `Expect predicate `existsNoRetry == 1` for object "已收藏 9 / 9" StaticText`
+    t =     6.55s         Checking existence of `"已收藏 9 / 9" StaticText`
+    t =     6.59s Find the "tab.collection" Button
+    t =     6.60s Find the "collection.1.5" Button
+    t =     6.62s Find the "collection.1.5" Button
+    t =     6.64s Find the "collection.1.5" Button
+    t =     6.65s Tap "collection.1.5" Button
+    t =     6.65s     Wait for com.tmuo.Drairtunvur to idle
+    t =     6.65s     Find the "collection.1.5" Button
+    t =     6.66s     Check for interrupting elements affecting "collection.1.5" Button
+    t =     6.67s     Synthesize event
+    t =     6.96s     Wait for com.tmuo.Drairtunvur to idle
+    t =     7.35s Waiting 5.0s for "collection.restoration" SegmentedControl to exist
+    t =     8.39s     Checking `Expect predicate `existsNoRetry == 1` for object "collection.restoration" SegmentedControl`
+    t =     8.39s         Checking existence of `"collection.restoration" SegmentedControl`
+    t =     8.40s Tap "点亮之前" Button
+    t =     8.40s     Wait for com.tmuo.Drairtunvur to idle
+    t =     8.40s     Find the "点亮之前" Button
+    t =     8.41s     Check for interrupting elements affecting "点亮之前" Button
+    t =     8.41s     Synthesize event
+    t =     8.70s     Wait for com.tmuo.Drairtunvur to idle
+    t =    10.05s Find the "点亮之前" Button
+    t =    10.07s Tap "修复之后" Button
+    t =    10.07s     Wait for com.tmuo.Drairtunvur to idle
+    t =    10.08s     Find the "修复之后" Button
+    t =    10.09s     Check for interrupting elements affecting "修复之后" Button
+    t =    10.10s     Synthesize event
+    t =    10.39s     Wait for com.tmuo.Drairtunvur to idle
+    t =    11.72s Find the "修复之后" Button
+    t =    11.82s Added attachment named 'Drairtunvur-keepsake-1-5'
+    t =    11.82s Tap "返回" Button
+    t =    11.82s     Wait for com.tmuo.Drairtunvur to idle
+    t =    11.82s     Find the "返回" Button
+    t =    11.83s     Check for interrupting elements affecting "返回" Button
+    t =    11.84s     Synthesize event
+    t =    12.13s     Wait for com.tmuo.Drairtunvur to idle
+    t =    12.41s Find the "tab.collection" Button
+    t =    12.44s Find the "collection.2.5" Button
+    t =    12.46s Find the "collection.2.5" Button
+    t =    12.47s Find the "collection.2.5" Button
+    t =    12.49s Tap "collection.2.5" Button
+    t =    12.49s     Wait for com.tmuo.Drairtunvur to idle
+    t =    12.49s     Find the "collection.2.5" Button
+    t =    12.50s     Check for interrupting elements affecting "collection.2.5" Button
+    t =    12.51s     Synthesize event
+    t =    12.79s     Wait for com.tmuo.Drairtunvur to idle
+    t =    13.13s Waiting 5.0s for "collection.restoration" SegmentedControl to exist
+    t =    14.17s     Checking `Expect predicate `existsNoRetry == 1` for object "collection.restoration" SegmentedControl`
+    t =    14.17s         Checking existence of `"collection.restoration" SegmentedControl`
+    t =    14.20s Tap "点亮之前" Button
+    t =    14.20s     Wait for com.tmuo.Drairtunvur to idle
+    t =    14.20s     Find the "点亮之前" Button
+    t =    14.21s     Check for interrupting elements affecting "点亮之前" Button
+    t =    14.23s     Synthesize event
+    t =    14.52s     Wait for com.tmuo.Drairtunvur to idle
+    t =    15.64s Find the "点亮之前" Button
+    t =    15.66s Tap "修复之后" Button
+    t =    15.66s     Wait for com.tmuo.Drairtunvur to idle
+    t =    15.66s     Find the "修复之后" Button
+    t =    15.67s     Check for interrupting elements affecting "修复之后" Button
+    t =    15.68s     Synthesize event
+    t =    15.97s     Wait for com.tmuo.Drairtunvur to idle
+    t =    17.22s Find the "修复之后" Button
+    t =    17.31s Added attachment named 'Drairtunvur-keepsake-2-5'
+    t =    17.31s Tap "返回" Button
+    t =    17.31s     Wait for com.tmuo.Drairtunvur to idle
+    t =    17.31s     Find the "返回" Button
+    t =    17.32s     Check for interrupting elements affecting "返回" Button
+    t =    17.33s     Synthesize event
+    t =    17.62s     Wait for com.tmuo.Drairtunvur to idle
+    t =    17.91s Find the "tab.collection" Button
+    t =    17.92s Find the "collection.3.5" Button
+    t =    17.94s Find the "collection.3.5" Button
+    t =    17.95s Press Target Application 'com.tmuo.Drairtunvur'[0.50, 0.75] for 0.1 seconds, then drag to Target Application 'com.tmuo.Drairtunvur'[0.50, 0.45] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    17.95s     Wait for com.tmuo.Drairtunvur to idle
+    t =    17.95s     Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    17.96s     Check for interrupting elements affecting "Drairtunvur" Application
+    t =    17.96s     Synthesize event
+    t =    17.97s         Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    17.97s         Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    17.98s         Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    17.98s         Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    17.99s         Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    18.69s     Wait for com.tmuo.Drairtunvur to idle
+    t =    20.29s Find the "tab.collection" Button
+    t =    20.31s Find the "collection.3.5" Button
+    t =    20.32s Find the "collection.3.5" Button
+    t =    20.34s Find the "collection.3.5" Button
+    t =    20.37s Tap "collection.3.5" Button
+    t =    20.37s     Wait for com.tmuo.Drairtunvur to idle
+    t =    20.38s     Find the "collection.3.5" Button
+    t =    20.39s     Check for interrupting elements affecting "collection.3.5" Button
+    t =    20.42s     Synthesize event
+    t =    20.71s     Wait for com.tmuo.Drairtunvur to idle
+    t =    21.05s Waiting 5.0s for "collection.restoration" SegmentedControl to exist
+    t =    22.09s     Checking `Expect predicate `existsNoRetry == 1` for object "collection.restoration" SegmentedControl`
+    t =    22.09s         Checking existence of `"collection.restoration" SegmentedControl`
+    t =    22.11s Tap "点亮之前" Button
+    t =    22.11s     Wait for com.tmuo.Drairtunvur to idle
+    t =    22.11s     Find the "点亮之前" Button
+    t =    22.13s     Check for interrupting elements affecting "点亮之前" Button
+    t =    22.14s     Synthesize event
+    t =    22.43s     Wait for com.tmuo.Drairtunvur to idle
+    t =    23.60s Find the "点亮之前" Button
+    t =    23.62s Tap "修复之后" Button
+    t =    23.62s     Wait for com.tmuo.Drairtunvur to idle
+    t =    23.63s     Find the "修复之后" Button
+    t =    23.64s     Check for interrupting elements affecting "修复之后" Button
+    t =    23.65s     Synthesize event
+    t =    23.94s     Wait for com.tmuo.Drairtunvur to idle
+    t =    25.30s Find the "修复之后" Button
+    t =    25.37s Added attachment named 'Drairtunvur-keepsake-3-5'
+    t =    25.37s Tap "返回" Button
+    t =    25.37s     Wait for com.tmuo.Drairtunvur to idle
+    t =    25.37s     Find the "返回" Button
+    t =    25.38s     Check for interrupting elements affecting "返回" Button
+    t =    25.39s     Synthesize event
+    t =    25.68s     Wait for com.tmuo.Drairtunvur to idle
+    t =    25.97s Find the "tab.collection" Button
+    t =    25.99s Find the "collection.1.10" Button
+    t =    26.00s Find the "collection.1.10" Button
+    t =    26.02s Find the "collection.1.10" Button
+    t =    26.03s Tap "collection.1.10" Button
+    t =    26.03s     Wait for com.tmuo.Drairtunvur to idle
+    t =    26.03s     Find the "collection.1.10" Button
+    t =    26.04s     Check for interrupting elements affecting "collection.1.10" Button
+    t =    26.05s     Synthesize event
+    t =    26.34s     Wait for com.tmuo.Drairtunvur to idle
+    t =    26.68s Waiting 5.0s for "collection.restoration" SegmentedControl to exist
+    t =    27.72s     Checking `Expect predicate `existsNoRetry == 1` for object "collection.restoration" SegmentedControl`
+    t =    27.72s         Checking existence of `"collection.restoration" SegmentedControl`
+    t =    27.74s Tap "点亮之前" Button
+    t =    27.74s     Wait for com.tmuo.Drairtunvur to idle
+    t =    27.74s     Find the "点亮之前" Button
+    t =    27.78s     Check for interrupting elements affecting "点亮之前" Button
+    t =    27.80s     Synthesize event
+    t =    28.10s     Wait for com.tmuo.Drairtunvur to idle
+    t =    29.38s Find the "点亮之前" Button
+    t =    29.40s Tap "修复之后" Button
+    t =    29.40s     Wait for com.tmuo.Drairtunvur to idle
+    t =    29.40s     Find the "修复之后" Button
+    t =    29.41s     Check for interrupting elements affecting "修复之后" Button
+    t =    29.42s     Synthesize event
+    t =    29.71s     Wait for com.tmuo.Drairtunvur to idle
+    t =    31.00s Find the "修复之后" Button
+    t =    31.07s Added attachment named 'Drairtunvur-keepsake-1-10'
+    t =    31.07s Tap "返回" Button
+    t =    31.07s     Wait for com.tmuo.Drairtunvur to idle
+    t =    31.07s     Find the "返回" Button
+    t =    31.08s     Check for interrupting elements affecting "返回" Button
+    t =    31.09s     Synthesize event
+    t =    31.38s     Wait for com.tmuo.Drairtunvur to idle
+    t =    31.66s Find the "tab.collection" Button
+    t =    31.68s Find the "collection.2.10" Button
+    t =    31.73s Find the "collection.2.10" Button
+    t =    31.75s Find the "collection.2.10" Button
+    t =    31.81s Tap "collection.2.10" Button
+    t =    31.81s     Wait for com.tmuo.Drairtunvur to idle
+    t =    31.82s     Find the "collection.2.10" Button
+    t =    31.83s     Check for interrupting elements affecting "collection.2.10" Button
+    t =    31.85s     Synthesize event
+    t =    32.13s     Wait for com.tmuo.Drairtunvur to idle
+    t =    32.46s Waiting 5.0s for "collection.restoration" SegmentedControl to exist
+    t =    33.50s     Checking `Expect predicate `existsNoRetry == 1` for object "collection.restoration" SegmentedControl`
+    t =    33.51s         Checking existence of `"collection.restoration" SegmentedControl`
+    t =    33.53s Tap "点亮之前" Button
+    t =    33.53s     Wait for com.tmuo.Drairtunvur to idle
+    t =    33.54s     Find the "点亮之前" Button
+    t =    33.55s     Check for interrupting elements affecting "点亮之前" Button
+    t =    33.58s     Synthesize event
+    t =    33.89s     Wait for com.tmuo.Drairtunvur to idle
+    t =    35.08s Find the "点亮之前" Button
+    t =    35.10s Tap "修复之后" Button
+    t =    35.10s     Wait for com.tmuo.Drairtunvur to idle
+    t =    35.10s     Find the "修复之后" Button
+    t =    35.11s     Check for interrupting elements affecting "修复之后" Button
+    t =    35.13s     Synthesize event
+    t =    35.42s     Wait for com.tmuo.Drairtunvur to idle
+    t =    36.52s Find the "修复之后" Button
+    t =    36.61s Added attachment named 'Drairtunvur-keepsake-2-10'
+    t =    36.61s Tap "返回" Button
+    t =    36.61s     Wait for com.tmuo.Drairtunvur to idle
+    t =    36.61s     Find the "返回" Button
+    t =    36.63s     Check for interrupting elements affecting "返回" Button
+    t =    36.65s     Synthesize event
+    t =    36.95s     Wait for com.tmuo.Drairtunvur to idle
+    t =    37.23s Find the "tab.collection" Button
+    t =    37.25s Find the "collection.3.10" Button
+    t =    37.28s Find the "collection.3.10" Button
+    t =    37.30s Find the "collection.3.10" Button
+    t =    37.33s Tap "collection.3.10" Button
+    t =    37.33s     Wait for com.tmuo.Drairtunvur to idle
+    t =    37.33s     Find the "collection.3.10" Button
+    t =    37.35s     Check for interrupting elements affecting "collection.3.10" Button
+    t =    37.36s     Synthesize event
+    t =    37.66s     Wait for com.tmuo.Drairtunvur to idle
+    t =    38.00s Waiting 5.0s for "collection.restoration" SegmentedControl to exist
+    t =    39.04s     Checking `Expect predicate `existsNoRetry == 1` for object "collection.restoration" SegmentedControl`
+    t =    39.04s         Checking existence of `"collection.restoration" SegmentedControl`
+    t =    39.05s Tap "点亮之前" Button
+    t =    39.05s     Wait for com.tmuo.Drairtunvur to idle
+    t =    39.05s     Find the "点亮之前" Button
+    t =    39.06s     Check for interrupting elements affecting "点亮之前" Button
+    t =    39.07s     Synthesize event
+    t =    39.36s     Wait for com.tmuo.Drairtunvur to idle
+    t =    40.54s Find the "点亮之前" Button
+    t =    40.55s Tap "修复之后" Button
+    t =    40.55s     Wait for com.tmuo.Drairtunvur to idle
+    t =    40.55s     Find the "修复之后" Button
+    t =    40.56s     Check for interrupting elements affecting "修复之后" Button
+    t =    40.58s     Synthesize event
+    t =    40.87s     Wait for com.tmuo.Drairtunvur to idle
+    t =    42.20s Find the "修复之后" Button
+    t =    42.27s Added attachment named 'Drairtunvur-keepsake-3-10'
+    t =    42.27s Tap "返回" Button
+    t =    42.27s     Wait for com.tmuo.Drairtunvur to idle
+    t =    42.27s     Find the "返回" Button
+    t =    42.28s     Check for interrupting elements affecting "返回" Button
+    t =    42.29s     Synthesize event
+    t =    42.58s     Wait for com.tmuo.Drairtunvur to idle
+    t =    42.87s Find the "tab.collection" Button
+    t =    42.89s Find the "collection.1.15" Button
+    t =    42.91s Find the "collection.1.15" Button
+    t =    42.92s Press Target Application 'com.tmuo.Drairtunvur'[0.50, 0.75] for 0.1 seconds, then drag to Target Application 'com.tmuo.Drairtunvur'[0.50, 0.45] with velocity of 500.00 pixels per second, and then hold for 0.0 seconds 
+    t =    42.92s     Wait for com.tmuo.Drairtunvur to idle
+    t =    42.92s     Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    42.93s     Check for interrupting elements affecting "Drairtunvur" Application
+    t =    42.94s     Synthesize event
+    t =    42.94s         Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    42.95s         Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    42.96s         Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    42.96s         Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    42.97s         Find the Target Application 'com.tmuo.Drairtunvur'
+    t =    43.68s     Wait for com.tmuo.Drairtunvur to idle
+    t =    44.75s Find the "tab.collection" Button
+    t =    44.78s Find the "collection.1.15" Button
+    t =    44.80s Find the "collection.1.15" Button
+    t =    44.81s Find the "collection.1.15" Button
+    t =    44.83s Tap "collection.1.15" Button
+    t =    44.83s     Wait for com.tmuo.Drairtunvur to idle
+    t =    44.83s     Find the "collection.1.15" Button
+    t =    44.84s     Check for interrupting elements affecting "collection.1.15" Button
+    t =    44.85s     Synthesize event
+    t =    45.14s     Wait for com.tmuo.Drairtunvur to idle
+    t =    45.48s Waiting 5.0s for "collection.restoration" SegmentedControl to exist
+    t =    46.51s     Checking `Expect predicate `existsNoRetry == 1` for object "collection.restoration" SegmentedControl`
+    t =    46.51s         Checking existence of `"collection.restoration" SegmentedControl`
+    t =    46.53s Tap "点亮之前" Button
+    t =    46.53s     Wait for com.tmuo.Drairtunvur to idle
+    t =    46.53s     Find the "点亮之前" Button
+    t =    46.55s     Check for interrupting elements affecting "点亮之前" Button
+    t =    46.56s     Synthesize event
+    t =    46.85s     Wait for com.tmuo.Drairtunvur to idle
+    t =    47.95s Find the "点亮之前" Button
+    t =    47.97s Tap "修复之后" Button
+    t =    47.97s     Wait for com.tmuo.Drairtunvur to idle
+    t =    47.97s     Find the "修复之后" Button
+    t =    47.99s     Check for interrupting elements affecting "修复之后" Button
+    t =    48.00s     Synthesize event
+    t =    48.29s     Wait for com.tmuo.Drairtunvur to idle
+    t =    49.65s Find the "修复之后" Button
+    t =    49.74s Added attachment named 'Drairtunvur-keepsake-1-15'
+    t =    49.74s Tap "返回" Button
+    t =    49.74s     Wait for com.tmuo.Drairtunvur to idle
+    t =    49.74s     Find the "返回" Button
+    t =    49.75s     Check for interrupting elements affecting "返回" Button
+    t =    49.76s     Synthesize event
+    t =    50.05s     Wait for com.tmuo.Drairtunvur to idle
+    t =    50.33s Find the "tab.collection" Button
+    t =    50.36s Find the "collection.2.15" Button
+    t =    50.38s Find the "collection.2.15" Button
+    t =    50.39s Find the "collection.2.15" Button
+    t =    50.41s Tap "collection.2.15" Button
+    t =    50.41s     Wait for com.tmuo.Drairtunvur to idle
+    t =    50.41s     Find the "collection.2.15" Button
+    t =    50.42s     Check for interrupting elements affecting "collection.2.15" Button
+    t =    50.43s     Synthesize event
+    t =    50.72s     Wait for com.tmuo.Drairtunvur to idle
+    t =    51.05s Waiting 5.0s for "collection.restoration" SegmentedControl to exist
+    t =    52.09s     Checking `Expect predicate `existsNoRetry == 1` for object "collection.restoration" SegmentedControl`
+    t =    52.09s         Checking existence of `"collection.restoration" SegmentedControl`
+    t =    52.11s Tap "点亮之前" Button
+    t =    52.12s     Wait for com.tmuo.Drairtunvur to idle
+    t =    52.12s     Find the "点亮之前" Button
+    t =    52.13s     Check for interrupting elements affecting "点亮之前" Button
+    t =    52.14s     Synthesize event
+    t =    52.43s     Wait for com.tmuo.Drairtunvur to idle
+    t =    53.54s Find the "点亮之前" Button
+    t =    53.56s Tap "修复之后" Button
+    t =    53.56s     Wait for com.tmuo.Drairtunvur to idle
+    t =    53.56s     Find the "修复之后" Button
+    t =    53.57s     Check for interrupting elements affecting "修复之后" Button
+    t =    53.58s     Synthesize event
+    t =    53.87s     Wait for com.tmuo.Drairtunvur to idle
+    t =    55.24s Find the "修复之后" Button
+    t =    55.33s Added attachment named 'Drairtunvur-keepsake-2-15'
+    t =    55.33s Tap "返回" Button
+    t =    55.33s     Wait for com.tmuo.Drairtunvur to idle
+    t =    55.33s     Find the "返回" Button
+    t =    55.34s     Check for interrupting elements affecting "返回" Button
+    t =    55.34s     Synthesize event
+    t =    55.63s     Wait for com.tmuo.Drairtunvur to idle
+    t =    55.92s Find the "tab.collection" Button
+    t =    55.94s Find the "collection.3.15" Button
+    t =    55.96s Find the "collection.3.15" Button
+    t =    55.97s Find the "collection.3.15" Button
+    t =    55.99s Tap "collection.3.15" Button
+    t =    55.99s     Wait for com.tmuo.Drairtunvur to idle
+    t =    55.99s     Find the "collection.3.15" Button
+    t =    56.00s     Check for interrupting elements affecting "collection.3.15" Button
+    t =    56.01s     Synthesize event
+    t =    56.30s     Wait for com.tmuo.Drairtunvur to idle
+    t =    56.61s Waiting 5.0s for "collection.restoration" SegmentedControl to exist
+    t =    57.65s     Checking `Expect predicate `existsNoRetry == 1` for object "collection.restoration" SegmentedControl`
+    t =    57.65s         Checking existence of `"collection.restoration" SegmentedControl`
+    t =    57.68s Tap "点亮之前" Button
+    t =    57.69s     Wait for com.tmuo.Drairtunvur to idle
+    t =    57.69s     Find the "点亮之前" Button
+    t =    57.70s     Check for interrupting elements affecting "点亮之前" Button
+    t =    57.71s     Synthesize event
+    t =    58.01s     Wait for com.tmuo.Drairtunvur to idle
+    t =    59.33s Find the "点亮之前" Button
+    t =    59.34s Tap "修复之后" Button
+    t =    59.34s     Wait for com.tmuo.Drairtunvur to idle
+    t =    59.34s     Find the "修复之后" Button
+    t =    59.35s     Check for interrupting elements affecting "修复之后" Button
+    t =    59.36s     Synthesize event
+    t =    59.65s     Wait for com.tmuo.Drairtunvur to idle
+    t =    60.73s Find the "修复之后" Button
+    t =    60.79s Added attachment named 'Drairtunvur-keepsake-3-15'
+    t =    60.79s Tap "返回" Button
+    t =    60.79s     Wait for com.tmuo.Drairtunvur to idle
+    t =    60.79s     Find the "返回" Button
+    t =    60.80s     Check for interrupting elements affecting "返回" Button
+    t =    60.81s     Synthesize event
+    t =    61.10s     Wait for com.tmuo.Drairtunvur to idle
+    t =    61.39s Tear Down
+Test Case '-[LightworksUITests.DrairtunvurReleaseUITests testCompletedCityAndEveryRestoredKeepsake]' passed (61.778 seconds).
+Test Suite 'DrairtunvurReleaseUITests' passed at 2026-10-12 17:05:04.087.
+	 Executed 1 test, with 0 failures (0 unexpected) in 61.778 (61.780) seconds
+Test Suite 'LightworksUITests' started at 2026-10-12 17:05:04.088.
+Test Case '-[LightworksUITests.LightworksUITests testTutorialWinReplayAndMap]' started.
+    t =     0.00s Start Test at 2026-10-12 17:05:04.090
+    t =     0.05s Set Up
+    t =     0.05s Open com.tmuo.Drairtunvur
+    t =     0.05s     Launch com.tmuo.Drairtunvur
+    t =     0.05s         Terminate com.tmuo.Drairtunvur:32051
+2026-10-12 17:05:05.247 xcodebuild[31635:569313] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-12 17:05:05.247 xcodebuild[31635:569313] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.37s         Setting up automation session
+    t =     2.23s         Wait for com.tmuo.Drairtunvur to idle
+    t =     4.04s Waiting 15.0s for "game.pause" Button to exist
+    t =     5.09s     Checking `Expect predicate `existsNoRetry == 1` for object "game.pause" Button`
+    t =     5.09s         Checking existence of `"game.pause" Button`
+    t =     5.19s Added attachment named '01-tutorial'
+    t =     5.19s Tap "piece.0" Button
+    t =     5.19s     Wait for com.tmuo.Drairtunvur to idle
+    t =     5.19s     Find the "piece.0" Button
+    t =     5.21s     Check for interrupting elements affecting "piece.0" Button
+    t =     5.22s     Synthesize event
+    t =     5.51s     Wait for com.tmuo.Drairtunvur to idle
+    t =     5.53s Tap "cell.3.6" Button
+    t =     5.53s     Wait for com.tmuo.Drairtunvur to idle
+    t =     5.53s     Find the "cell.3.6" Button
+    t =     5.56s     Check for interrupting elements affecting "cell.3.6" Button
+    t =     5.57s     Synthesize event
+    t =     5.86s     Wait for com.tmuo.Drairtunvur to idle
+    t =     5.87s Waiting 5.0s for "result.title" StaticText to exist
+    t =     6.90s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =     6.90s         Checking existence of `"result.title" StaticText`
+    t =     7.00s Added attachment named '02-victory'
+    t =     7.00s Tap "result.replay" Button
+    t =     7.00s     Wait for com.tmuo.Drairtunvur to idle
+    t =     7.10s     Find the "result.replay" Button
+    t =     7.11s     Check for interrupting elements affecting "result.replay" Button
+    t =     7.12s     Synthesize event
+    t =     7.41s     Wait for com.tmuo.Drairtunvur to idle
+    t =     7.71s Waiting 4.0s for "game.pause" Button to exist
+    t =     8.74s     Checking `Expect predicate `existsNoRetry == 1` for object "game.pause" Button`
+    t =     8.74s         Checking existence of `"game.pause" Button`
+    t =     8.78s Tap "cell.3.6" Button
+    t =     8.78s     Wait for com.tmuo.Drairtunvur to idle
+    t =     8.78s     Find the "cell.3.6" Button
+    t =     8.81s     Check for interrupting elements affecting "cell.3.6" Button
+    t =     8.83s     Synthesize event
+    t =     9.11s     Wait for com.tmuo.Drairtunvur to idle
+    t =     9.12s Waiting 5.0s for "result.title" StaticText to exist
+    t =    10.15s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =    10.15s         Checking existence of `"result.title" StaticText`
+    t =    10.20s Tap "result.city" Button
+    t =    10.20s     Wait for com.tmuo.Drairtunvur to idle
+    t =    10.21s     Find the "result.city" Button
+    t =    10.22s     Check for interrupting elements affecting "result.city" Button
+    t =    10.23s     Synthesize event
+    t =    10.51s     Wait for com.tmuo.Drairtunvur to idle
+    t =    10.87s Waiting 4.0s for "city.continue" Button to exist
+    t =    11.88s     Checking `Expect predicate `existsNoRetry == 1` for object "city.continue" Button`
+    t =    11.88s         Checking existence of `"city.continue" Button`
+    t =    11.99s Added attachment named '03-city'
+    t =    11.99s Checking existence of `"已点亮 1 / 15" StaticText`
+    t =    12.00s Tap "tab.collection" Any
+    t =    12.00s     Wait for com.tmuo.Drairtunvur to idle
+    t =    12.00s     Find the "tab.collection" Any
+    t =    12.01s     Check for interrupting elements affecting "tab.collection" Button
+    t =    12.02s     Synthesize event
+    t =    12.31s     Wait for com.tmuo.Drairtunvur to idle
+    t =    12.36s Added attachment named '04-collection'
+    t =    12.36s Tap "collection.1.5" Button
+    t =    12.36s     Wait for com.tmuo.Drairtunvur to idle
+    t =    12.36s     Find the "collection.1.5" Button
+    t =    12.37s     Check for interrupting elements affecting "collection.1.5" Button
+    t =    12.38s     Synthesize event
+    t =    12.67s     Wait for com.tmuo.Drairtunvur to idle
+    t =    13.04s Waiting 3.0s for Alert (First Match) to exist
+    t =    14.06s     Checking `Expect predicate `existsNoRetry == 1` for object Alert (First Match)`
+    t =    14.06s         Checking existence of `Alert (First Match)`
+    t =    14.08s Tear Down
+Test Case '-[LightworksUITests.LightworksUITests testTutorialWinReplayAndMap]' passed (14.347 seconds).
+Test Suite 'LightworksUITests' passed at 2026-10-12 17:05:18.437.
+	 Executed 1 test, with 0 failures (0 unexpected) in 14.347 (14.348) seconds
+Test Suite 'LightworksUITests.xctest' passed at 2026-10-12 17:05:18.437.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 76.125 (76.130) seconds
+Test Suite 'Selected tests' passed at 2026-10-12 17:05:18.438.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 76.125 (76.131) seconds
+2026-10-12 17:05:18.791 xcodebuild[31635:569313] [MT] IDETestOperationsObserverDebug: 95.269 elapsed -- Testing started completed.
+2026-10-12 17:05:18.791 xcodebuild[31635:569313] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-12 17:05:18.791 xcodebuild[31635:569313] [MT] IDETestOperationsObserverDebug: 95.269 sec, +95.269 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/lightworks-art-final.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

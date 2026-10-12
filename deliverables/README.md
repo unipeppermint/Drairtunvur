@@ -1,5 +1,7 @@
 # 光路工坊交付资料版本
 
+最新应用为 [统一夜景美术版模拟器包](Lightworks-simulator-art.zip)，九个收藏均已使用与首页一致的精细夜景插画。见 [美术验证记录](../verification/Drairtunvur-art.md)。
+
 最新应用构建为 [内容打磨版模拟器包](Lightworks-simulator-polished.zip)，包含当前 45 关、365 个每日题和九种建筑收藏。仅可在 iOS 模拟器运行；完成情况见 [验证记录](../verification/Drairtunvur-content-polish.md)。下文资料压缩包属于早期规划留档，当前实现以源码和最新验证记录为准。
 
 当前版本为 [1.1 无内购资料包](lightworks-planning-v1.1.zip)，三章 45 关随应用提供，按通关进度开放，无需额外付费。
