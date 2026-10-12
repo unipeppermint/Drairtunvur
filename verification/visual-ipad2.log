@@ -1,0 +1,123 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project Drairtunvur.xcodeproj -scheme Drairtunvur -destination "platform=iOS Simulator,id=9F04AC00-799B-4C50-81A4-A2055DC4A39F" -derivedDataPath /tmp/lightworks-visual CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO "-only-testing:LightworksUITests/LightworksUITests/testTutorialWinReplayAndMap" -resultBundlePath /tmp/lightworks-visual-ipad2.xcresult test-without-building
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  LightworksCore: /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore @ local
+
+Writing result bundle at path:
+	/tmp/lightworks-visual-ipad2.xcresult
+
+2026-10-12 14:37:01.633674+0800 LightworksUITests-Runner[17083:355575] [Default] Running tests...
+2026-10-12 14:37:01.666686+0800 LightworksUITests-Runner[17083:355575] [UIKit App Config] Update the Info.plist: Launch screens will soon be required.
+2026-10-12 14:37:01.669933+0800 LightworksUITests-Runner[17083:355653] [General] Failed to send CA Event for app launch measurements for ca_event_type: 0 event_name: com.apple.app_launch_measurement.FirstFramePresentationMetric
+2026-10-12 14:37:01.711068+0800 LightworksUITests-Runner[17083:355659] [General] Failed to send CA Event for app launch measurements for ca_event_type: 1 event_name: com.apple.app_launch_measurement.ExtendedLaunchMetrics
+objc[17083]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x109378310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x107bd0398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-12 14:37:05.254.
+Test Suite 'LightworksUITests.xctest' started at 2026-10-12 14:37:05.254.
+Test Suite 'LightworksUITests' started at 2026-10-12 14:37:05.254.
+Test Case '-[LightworksUITests.LightworksUITests testTutorialWinReplayAndMap]' started.
+    t =     0.00s Start Test at 2026-10-12 14:37:05.255
+    t =     0.10s Set Up
+    t =     0.11s Open com.tmuo.Drairtunvur
+    t =     0.11s     Launch com.tmuo.Drairtunvur
+2026-10-12 14:37:05.411 xcodebuild[16884:353195] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-12 14:37:05.411 xcodebuild[16884:353195] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     0.77s         Setting up automation session
+    t =     1.39s         Wait for com.tmuo.Drairtunvur to idle
+    t =     2.67s Waiting 15.0s for "game.pause" Button to exist
+    t =     3.72s     Checking `Expect predicate `existsNoRetry == 1` for object "game.pause" Button`
+    t =     3.72s         Checking existence of `"game.pause" Button`
+    t =     3.93s Added attachment named '01-tutorial'
+    t =     3.93s Tap "piece.0" Button
+    t =     3.93s     Wait for com.tmuo.Drairtunvur to idle
+    t =     3.94s     Find the "piece.0" Button
+    t =     3.96s     Check for interrupting elements affecting "piece.0" Button
+    t =     3.98s         Wait for com.apple.springboard to idle
+    t =     4.03s     Synthesize event
+    t =     4.42s     Wait for com.tmuo.Drairtunvur to idle
+    t =     4.42s Tap "cell.3.6" Button
+    t =     4.42s     Wait for com.tmuo.Drairtunvur to idle
+    t =     4.43s     Find the "cell.3.6" Button
+    t =     4.45s     Check for interrupting elements affecting "cell.3.6" Button
+    t =     4.47s         Wait for com.apple.springboard to idle
+    t =     4.48s     Synthesize event
+    t =     4.77s     Wait for com.tmuo.Drairtunvur to idle
+    t =     4.77s Waiting 5.0s for "result.title" StaticText to exist
+    t =     5.82s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =     5.82s         Checking existence of `"result.title" StaticText`
+    t =     6.02s Added attachment named '02-victory'
+    t =     6.02s Tap "result.replay" Button
+    t =     6.02s     Wait for com.tmuo.Drairtunvur to idle
+    t =     6.02s     Find the "result.replay" Button
+    t =     6.03s     Check for interrupting elements affecting "result.replay" Button
+    t =     6.04s         Wait for com.apple.springboard to idle
+    t =     6.06s     Synthesize event
+    t =     6.34s     Wait for com.tmuo.Drairtunvur to idle
+    t =     6.63s Waiting 4.0s for "game.pause" Button to exist
+    t =     7.67s     Checking `Expect predicate `existsNoRetry == 1` for object "game.pause" Button`
+    t =     7.67s         Checking existence of `"game.pause" Button`
+    t =     7.69s Tap "cell.3.6" Button
+    t =     7.69s     Wait for com.tmuo.Drairtunvur to idle
+    t =     7.70s     Find the "cell.3.6" Button
+    t =     7.72s     Check for interrupting elements affecting "cell.3.6" Button
+    t =     7.74s         Wait for com.apple.springboard to idle
+    t =     7.76s     Synthesize event
+    t =     8.06s     Wait for com.tmuo.Drairtunvur to idle
+    t =     8.07s Waiting 5.0s for "result.title" StaticText to exist
+    t =     9.11s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =     9.11s         Checking existence of `"result.title" StaticText`
+    t =     9.14s Tap "result.city" Button
+    t =     9.14s     Wait for com.tmuo.Drairtunvur to idle
+    t =     9.15s     Find the "result.city" Button
+    t =     9.16s     Check for interrupting elements affecting "result.city" Button
+    t =     9.17s         Wait for com.apple.springboard to idle
+    t =     9.19s     Synthesize event
+    t =     9.48s     Wait for com.tmuo.Drairtunvur to idle
+    t =     9.78s Waiting 4.0s for "city.continue" Button to exist
+    t =    10.82s     Checking `Expect predicate `existsNoRetry == 1` for object "city.continue" Button`
+    t =    10.82s         Checking existence of `"city.continue" Button`
+    t =    11.02s Added attachment named '03-city'
+    t =    11.03s Checking existence of `"已点亮 1 / 15" StaticText`
+    t =    11.04s Tap "tab.collection" Any
+    t =    11.04s     Wait for com.tmuo.Drairtunvur to idle
+    t =    11.04s     Find the "tab.collection" Any
+    t =    11.06s     Check for interrupting elements affecting "tab.collection" Button
+    t =    11.07s         Wait for com.apple.springboard to idle
+    t =    11.09s     Synthesize event
+    t =    11.38s     Wait for com.tmuo.Drairtunvur to idle
+    t =    11.55s Added attachment named '04-collection'
+    t =    11.55s Tap "collection.1.5" Button
+    t =    11.55s     Wait for com.tmuo.Drairtunvur to idle
+    t =    11.55s     Find the "collection.1.5" Button
+    t =    11.56s     Check for interrupting elements affecting "collection.1.5" Button
+    t =    11.57s         Wait for com.apple.springboard to idle
+    t =    11.59s     Synthesize event
+    t =    11.88s     Wait for com.tmuo.Drairtunvur to idle
+    t =    12.13s Waiting 3.0s for Alert (First Match) to exist
+    t =    13.18s     Checking `Expect predicate `existsNoRetry == 1` for object Alert (First Match)`
+    t =    13.18s         Checking existence of `Alert (First Match)`
+    t =    13.18s Tear Down
+Test Case '-[LightworksUITests.LightworksUITests testTutorialWinReplayAndMap]' passed (13.504 seconds).
+Test Suite 'LightworksUITests' passed at 2026-10-12 14:37:18.760.
+	 Executed 1 test, with 0 failures (0 unexpected) in 13.504 (13.506) seconds
+Test Suite 'LightworksUITests.xctest' passed at 2026-10-12 14:37:18.761.
+	 Executed 1 test, with 0 failures (0 unexpected) in 13.504 (13.507) seconds
+Test Suite 'Selected tests' passed at 2026-10-12 14:37:18.761.
+	 Executed 1 test, with 0 failures (0 unexpected) in 13.504 (13.508) seconds
+2026-10-12 14:37:19.149 xcodebuild[16884:353195] [MT] IDETestOperationsObserverDebug: 31.419 elapsed -- Testing started completed.
+2026-10-12 14:37:19.149 xcodebuild[16884:353195] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-12 14:37:19.149 xcodebuild[16884:353195] [MT] IDETestOperationsObserverDebug: 31.419 sec, +31.419 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/lightworks-visual-ipad2.xcresult
+
+** TEST EXECUTE SUCCEEDED **
+
+Testing started

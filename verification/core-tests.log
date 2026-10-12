@@ -1,0 +1,54 @@
+Building for debugging...
+[0/4] Write sources
+[2/4] Write swift-version--58304C5D6DBC2206.txt
+[4/9] Compiling LightworksCore Rules.swift
+[5/9] Compiling LightworksCore Persistence.swift
+[6/9] Emitting module LightworksCore
+[7/9] Compiling LightworksCore HintSolver.swift
+[8/9] Compiling LightworksCore Models.swift
+[9/12] Emitting module LightworksCoreTests
+[10/12] Compiling LightworksCoreTests CoreTests.swift
+[10/12] Write Objects.LinkFileList
+[11/12] Linking LightworksCorePackageTests
+Build complete! (2.21s)
+Test Suite 'All tests' started at 2026-10-12 12:36:52.875.
+Test Suite 'LightworksCorePackageTests.xctest' started at 2026-10-12 12:36:52.877.
+Test Suite 'CoreTests' started at 2026-10-12 12:36:52.877.
+Test Case '-[LightworksCoreTests.CoreTests testAll45ReferenceSolutionsAndEveryPreviewUndo]' started.
+Test Case '-[LightworksCoreTests.CoreTests testAll45ReferenceSolutionsAndEveryPreviewUndo]' passed (4.159 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testBatchRefillExhaustionFailureUndoAndCodable]' started.
+Test Case '-[LightworksCoreTests.CoreTests testBatchRefillExhaustionFailureUndoAndCodable]' passed (0.001 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testContentVersionResetProtectsProgressAndUnknownSchema]' started.
+Test Case '-[LightworksCoreTests.CoreTests testContentVersionResetProtectsProgressAndUnknownSchema]' passed (0.028 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testCrossClearChargesOnceBeforeClearingAndWinsOnLastMove]' started.
+Test Case '-[LightworksCoreTests.CoreTests testCrossClearChargesOnceBeforeClearingAndWinsOnLastMove]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testDisconnectedTargetAndUncoveredSourceDontCharge]' started.
+Test Case '-[LightworksCoreTests.CoreTests testDisconnectedTargetAndUncoveredSourceDontCharge]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testHintsDistinguishBudgetExhaustionAndVerifiedSolution]' started.
+Test Case '-[LightworksCoreTests.CoreTests testHintsDistinguishBudgetExhaustionAndVerifiedSolution]' passed (0.030 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testIllegalMoveAndDiagonalAndNoPulse]' started.
+Test Case '-[LightworksCoreTests.CoreTests testIllegalMoveAndDiagonalAndNoPulse]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testMultipleLinesOnePulseCapacityAndNoGravity]' started.
+Test Case '-[LightworksCoreTests.CoreTests testMultipleLinesOnePulseCapacityAndNoGravity]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testNoSpaceAndValidation]' started.
+Test Case '-[LightworksCoreTests.CoreTests testNoSpaceAndValidation]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testPreviewPerformanceAndOffReferenceHintCoverage]' started.
+Test Case '-[LightworksCoreTests.CoreTests testPreviewPerformanceAndOffReferenceHintCoverage]' passed (0.816 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testProgressIdempotencyAndCollectibleMilestones]' started.
+Test Case '-[LightworksCoreTests.CoreTests testProgressIdempotencyAndCollectibleMilestones]' passed (0.024 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testRefillBeforeNoSpaceAndSourceEdgeValidation]' started.
+Test Case '-[LightworksCoreTests.CoreTests testRefillBeforeNoSpaceAndSourceEdgeValidation]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testSaveAtomicFailureBackupRecoveryAndStaleWrite]' started.
+Test Case '-[LightworksCoreTests.CoreTests testSaveAtomicFailureBackupRecoveryAndStaleWrite]' passed (0.025 seconds).
+Test Suite 'CoreTests' passed at 2026-10-12 12:36:57.963.
+	 Executed 13 tests, with 0 failures (0 unexpected) in 5.085 (5.086) seconds
+Test Suite 'LightworksCorePackageTests.xctest' passed at 2026-10-12 12:36:57.963.
+	 Executed 13 tests, with 0 failures (0 unexpected) in 5.085 (5.086) seconds
+Test Suite 'All tests' passed at 2026-10-12 12:36:57.963.
+	 Executed 13 tests, with 0 failures (0 unexpected) in 5.085 (5.088) seconds
+PREVIEW_AVERAGE_MS=0.052280708332546055
+HINT_DEVIATIONS solved=1, timeout=7, exhausted=1, budget=100ms
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

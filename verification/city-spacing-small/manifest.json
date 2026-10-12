@@ -1,0 +1,44 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "4FA4A138-783D-4EAD-9727-6D2EB4144AE3.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "04-collection_0_1053E001-183D-438E-9B74-11F56C035EC9.png",
+        "timestamp" : 1791789668.714
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "4EE3F3AF-7480-499B-8428-E638DC54CD72.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "03-city_0_459655D6-2D89-41D6-9DC3-03CC575AA1BC.png",
+        "timestamp" : 1791789668.329
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "63612D1D-C177-4AFB-A1CB-6149D4E4062B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "02-victory_0_C1D4B680-0268-4ED9-AF6C-F1C7CA9E8824.png",
+        "timestamp" : 1791789663.256
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "43C7F2B4-7AA7-4F20-8C2D-F049547CF1FA.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "01-tutorial_0_6725301E-2BBA-4E13-8EDA-7341F6BC551B.png",
+        "timestamp" : 1791789661.329
+      }
+    ],
+    "testIdentifier" : "LightworksUITests/testTutorialWinReplayAndMap()",
+    "testIdentifierURL" : "test://com.apple.xcode/Drairtunvur/LightworksUITests/LightworksUITests/testTutorialWinReplayAndMap"
+  }
+]

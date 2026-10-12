@@ -1,0 +1,45 @@
+[0/1] Planning build
+Building for debugging...
+[0/2] Write swift-version--58304C5D6DBC2206.txt
+Build complete! (0.11s)
+Test Suite 'All tests' started at 2026-10-12 14:30:24.763.
+Test Suite 'LightworksCorePackageTests.xctest' started at 2026-10-12 14:30:24.764.
+Test Suite 'CoreTests' started at 2026-10-12 14:30:24.764.
+Test Case '-[LightworksCoreTests.CoreTests testAll45ReferenceSolutionsAndEveryPreviewUndo]' started.
+Test Case '-[LightworksCoreTests.CoreTests testAll45ReferenceSolutionsAndEveryPreviewUndo]' passed (2.956 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testBatchRefillExhaustionFailureUndoAndCodable]' started.
+Test Case '-[LightworksCoreTests.CoreTests testBatchRefillExhaustionFailureUndoAndCodable]' passed (0.001 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testContentVersionResetProtectsProgressAndUnknownSchema]' started.
+Test Case '-[LightworksCoreTests.CoreTests testContentVersionResetProtectsProgressAndUnknownSchema]' passed (0.037 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testCrossClearChargesOnceBeforeClearingAndWinsOnLastMove]' started.
+Test Case '-[LightworksCoreTests.CoreTests testCrossClearChargesOnceBeforeClearingAndWinsOnLastMove]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testDisconnectedTargetAndUncoveredSourceDontCharge]' started.
+Test Case '-[LightworksCoreTests.CoreTests testDisconnectedTargetAndUncoveredSourceDontCharge]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testHintsDistinguishBudgetExhaustionAndVerifiedSolution]' started.
+Test Case '-[LightworksCoreTests.CoreTests testHintsDistinguishBudgetExhaustionAndVerifiedSolution]' passed (0.026 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testIllegalMoveAndDiagonalAndNoPulse]' started.
+Test Case '-[LightworksCoreTests.CoreTests testIllegalMoveAndDiagonalAndNoPulse]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testMultipleLinesOnePulseCapacityAndNoGravity]' started.
+Test Case '-[LightworksCoreTests.CoreTests testMultipleLinesOnePulseCapacityAndNoGravity]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testNoSpaceAndValidation]' started.
+Test Case '-[LightworksCoreTests.CoreTests testNoSpaceAndValidation]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testPreviewPerformanceAndOffReferenceHintCoverage]' started.
+Test Case '-[LightworksCoreTests.CoreTests testPreviewPerformanceAndOffReferenceHintCoverage]' passed (0.819 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testProgressIdempotencyAndCollectibleMilestones]' started.
+Test Case '-[LightworksCoreTests.CoreTests testProgressIdempotencyAndCollectibleMilestones]' passed (0.026 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testRefillBeforeNoSpaceAndSourceEdgeValidation]' started.
+Test Case '-[LightworksCoreTests.CoreTests testRefillBeforeNoSpaceAndSourceEdgeValidation]' passed (0.000 seconds).
+Test Case '-[LightworksCoreTests.CoreTests testSaveAtomicFailureBackupRecoveryAndStaleWrite]' started.
+Test Case '-[LightworksCoreTests.CoreTests testSaveAtomicFailureBackupRecoveryAndStaleWrite]' passed (0.027 seconds).
+Test Suite 'CoreTests' passed at 2026-10-12 14:30:28.659.
+	 Executed 13 tests, with 0 failures (0 unexpected) in 3.893 (3.894) seconds
+Test Suite 'LightworksCorePackageTests.xctest' passed at 2026-10-12 14:30:28.659.
+	 Executed 13 tests, with 0 failures (0 unexpected) in 3.893 (3.894) seconds
+Test Suite 'All tests' passed at 2026-10-12 14:30:28.659.
+	 Executed 13 tests, with 0 failures (0 unexpected) in 3.893 (3.896) seconds
+PREVIEW_AVERAGE_MS=0.051309750000655185
+HINT_DEVIATIONS solved=1, timeout=7, exhausted=1, budget=100ms
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

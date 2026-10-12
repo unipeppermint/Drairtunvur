@@ -1,0 +1,48 @@
+Application, 0x102683340, pid: 16206, label: 'Drairtunvur' <App element pid: 16206>
+  Window (Main), 0x1026835c0, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 16206, elementOrHash.elementID: 4402187264.3>
+    Other, 0x102683700, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 16206, elementOrHash.elementID: 4459951616.4>
+      Other, 0x102683840, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 16206, elementOrHash.elementID: 4460946816.5>
+        Other, 0x102683980, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 16206, elementOrHash.elementID: 4404014912.6>
+          Other, 0x102683ac0, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 16206, elementOrHash.elementID: 4459642176.480>
+            Other, 0x102683c00, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 16206, elementOrHash.elementID: 4404009984.481>
+              Other, 0x102683d40, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 16206, elementOrHash.elementID: 4459084672.483>
+                Other, 0x102683e80, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 16206, elementOrHash.elementID: 4459125312.487>
+                  ScrollView, 0x105c7c000, {{0.0, 20.0}, {375.0, 585.0}} <AX element pid: 16206, elementOrHash.elementID: 4402055680.490>
+                    Other, 0x105c7c140, {{20.0, 32.0}, {335.0, 1272.5}} <AX element pid: 16206, elementOrHash.elementID: 4459641728.495>
+                      Other, 0x105c7c280, {{20.0, 32.0}, {335.0, 38.5}} <AX element pid: 16206, elementOrHash.elementID: 4459084224.497>
+                        StaticText, 0x105c7c3c0, {{20.0, 32.0}, {253.0, 38.5}}, label: '城市图鉴' <AX element pid: 16206, elementOrHash.elementID: 4896004224.505>
+                        StaticText, 0x105c7c500, {{285.0, 32.0}, {70.0, 38.5}}, label: '已收藏 0 / 9' <AX element pid: 16206, elementOrHash.elementID: 4896005120.506>
+                      Button, 0x105c7c640, {{20.0, 84.5}, {335.0, 250.0}}, identifier: 'collection.currentChapter', label: '✦  静谧港湾, 已收藏 · 查看风景' <AX element pid: 16206, elementOrHash.elementID: 4459953664.498>
+                        Other, 0x105c7c780, {{20.0, 84.5}, {335.0, 250.0}} <AX element pid: 16206, elementOrHash.elementID: 4459079744.507>
+                          Image, 0x105c7c8c0, {{20.0, -25.0}, {335.0, 670.0}}, identifier: 'harbor-v2' <AX element pid: 16206, elementOrHash.elementID: 4459952128.519>
+                        Other, 0x105c7ca00, {{20.0, 270.5}, {335.0, 64.0}} <AX element pid: 16206, elementOrHash.elementID: 4459081984.508>
+                          Other, 0x105c7cb40, {{33.0, 283.5}, {309.0, 38.0}} <AX element pid: 16206, elementOrHash.elementID: 4459078400.520>
+                            StaticText, 0x105c7cc80, {{33.0, 283.5}, {309.0, 19.5}}, label: '✦  静谧港湾' <AX element pid: 16206, elementOrHash.elementID: 4896006016.521>
+                            StaticText, 0x105c7cdc0, {{33.0, 307.0}, {309.0, 14.5}}, label: '修复进行中 · 已点亮 1 / 15' <AX element pid: 16206, elementOrHash.elementID: 4896006912.522>
+                      Other, 0x105c7cf00, {{20.0, 348.5}, {335.0, 180.0}} <AX element pid: 16206, elementOrHash.elementID: 4459091648.499>
+                        Button, 0x105c7d040, {{20.0, 348.5}, {162.5, 180.0}}, identifier: 'collection.1.5', label: '◇  归航的灯, 完成本章 5 关解锁' <AX element pid: 16206, elementOrHash.elementID: 4459952640.509>
+                        Button, 0x105c7d180, {{192.5, 348.5}, {162.5, 180.0}}, identifier: 'collection.1.10', label: '◇  港湾小径, 完成本章 10 关解锁' <AX element pid: 16206, elementOrHash.elementID: 4459937792.510>
+                      Other, 0x105c7d2c0, {{20.0, 542.5}, {335.0, 180.0}} <AX element pid: 16206, elementOrHash.elementID: 4459098368.500>
+                        Button, 0x105c7d400, {{20.0, 542.5}, {162.5, 180.0}}, identifier: 'collection.1.15', label: '◇  静谧港湾, 完成本章 15 关解锁' <AX element pid: 16206, elementOrHash.elementID: 4543251456.511>
+                        Button, 0x105c7d540, {{192.5, 542.5}, {162.5, 180.0}}, identifier: 'collection.2.5', label: '◇  叶间星光, 完成本章 5 关解锁' <AX element pid: 16206, elementOrHash.elementID: 4543259136.512>
+                      Other, 0x105c7d680, {{20.0, 736.5}, {335.0, 180.0}} <AX element pid: 16206, elementOrHash.elementID: 4459097920.501>
+                        Button, 0x105c7d7c0, {{20.0, 736.5}, {162.5, 180.0}}, identifier: 'collection.2.10', label: '◇  池畔微光, 完成本章 10 关解锁' <AX element pid: 16206, elementOrHash.elementID: 4543264768.513>
+                        Button, 0x105c7d900, {{192.5, 736.5}, {162.5, 180.0}}, identifier: 'collection.2.15', label: '◇  温室微光, 完成本章 15 关解锁' <AX element pid: 16206, elementOrHash.elementID: 4543260160.514>
+                      Other, 0x105c7da40, {{20.0, 930.5}, {335.0, 180.0}} <AX element pid: 16206, elementOrHash.elementID: 4459087168.502>
+                        Button, 0x105c7db80, {{20.0, 930.5}, {162.5, 180.0}}, identifier: 'collection.3.5', label: '◇  站台灯影, 完成本章 5 关解锁' <AX element pid: 16206, elementOrHash.elementID: 4543263744.515>
+                        Button, 0x105c7dcc0, {{192.5, 930.5}, {162.5, 180.0}}, identifier: 'collection.3.10', label: '◇  午夜钟声, 完成本章 10 关解锁' <AX element pid: 16206, elementOrHash.elementID: 4543262720.516>
+                      Other, 0x105c7de00, {{20.0, 1124.5}, {335.0, 180.0}} <AX element pid: 16206, elementOrHash.elementID: 4459086720.503>
+                        Button, 0x105c7df40, {{20.0, 1124.5}, {162.5, 180.0}}, identifier: 'collection.3.15', label: '◇  候车之夜, 完成本章 15 关解锁' <AX element pid: 16206, elementOrHash.elementID: 4543252992.517>
+                        Other, 0x105c7e080, {{192.5, 1124.5}, {162.5, 180.0}} <AX element pid: 16206, elementOrHash.elementID: 4459091200.518>
+                    Other, 0x105c7e1c0, {{0.0, 572.0}, {375.0, 30.0}}, label: '水平滚动条, 1页', value: 0% <AX element pid: 16206, elementOrHash.elementID: 4543256064.496>
+                      Other, 0x105c7e300, {{3.0, 599.0}, {366.0, 3.0}} <AX element pid: 16206, elementOrHash.elementID: 4459101504.504>
+                    Other, 0x105c7e440, {{0.0, 572.0}, {375.0, 30.0}}, label: '水平滚动条, 1页', value: 0% <AX element pid: 16206, elementOrHash.elementID: 4543256064.496>
+                      Other, 0x105c7e580, {{3.0, 599.0}, {366.0, 3.0}} <AX element pid: 16206, elementOrHash.elementID: 4459101504.504>
+            Other, 0x105c7e6c0, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 16206, elementOrHash.elementID: 4459946496.482>
+              Other, 0x105c7e800, {{0.0, 0.0}, {375.0, 667.0}} <AX element pid: 16206, elementOrHash.elementID: 4459948544.484>
+          Other, 0x105c7e940, {{0.0, 605.0}, {375.0, 62.0}} <AX element pid: 16206, elementOrHash.elementID: 4459630528.431>
+            Other, 0x105c7ea80, {{0.0, 608.0}, {375.0, 56.0}} <AX element pid: 16206, elementOrHash.elementID: 4459630976.432>
+              Button, 0x105c7ebc0, {{0.0, 608.0}, {187.5, 56.0}}, identifier: 'tab.city', label: '城市' <AX element pid: 16206, elementOrHash.elementID: 4896334848.485>
+                StaticText, 0x105c7ed00, {{81.5, 643.5}, {24.0, 14.5}}, label: '城市' <AX element pid: 16206, elementOrHash.elementID: 4402657280.488>
+              Button, 0x105c7ee40, {{187.5, 608.0}, {187.5, 56.0}}, identifier: 'tab.collection', label: '图鉴', Selected <AX element pid: 16206, elementOrHash.elementID: 4896325632.486>
+                StaticText, 0x105c7ef80, {{269.0, 643.5}, {24.0, 14.5}}, label: '图鉴' <AX element pid: 16206, elementOrHash.elementID: 4402642944.489>

@@ -1,0 +1,41 @@
+{
+  "day": "2026-10-12",
+  "moveLimit": 8,
+  "moves": [
+    {
+      "slot": 0,
+      "anchor": {
+        "row": 3,
+        "col": 6
+      }
+    },
+    {
+      "slot": 1,
+      "anchor": {
+        "row": 5,
+        "col": 2
+      }
+    },
+    {
+      "slot": 2,
+      "anchor": {
+        "row": 4,
+        "col": 0
+      }
+    },
+    {
+      "slot": 0,
+      "anchor": {
+        "row": 4,
+        "col": 6
+      }
+    },
+    {
+      "slot": 2,
+      "anchor": {
+        "row": 4,
+        "col": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "9F04AC00-799B-4C50-81A4-A2055DC4A39F",
+        "deviceName" : "Lightworks iPad QA",
+        "exportedFileName" : "32716E32-B137-4D8C-A44E-77A74339A573.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "09-landscape_0_208199EB-31A0-4325-9C2E-8941E1514487.png",
+        "timestamp" : 1791779728.648
+      }
+    ],
+    "testIdentifier" : "LightworksUITests/testLandscapeLayout()",
+    "testIdentifierURL" : "test://com.apple.xcode/Drairtunvur/LightworksUITests/LightworksUITests/testLandscapeLayout"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "9F04AC00-799B-4C50-81A4-A2055DC4A39F",
+        "deviceName" : "Lightworks iPad QA",
+        "exportedFileName" : "38948679-FE19-4B2F-BDE2-939DCF9CCB5B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "04-collection_0_D2FFC66A-E241-4124-BA58-E5CC9595A66A.png",
+        "timestamp" : 1791779743.722
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "9F04AC00-799B-4C50-81A4-A2055DC4A39F",
+        "deviceName" : "Lightworks iPad QA",
+        "exportedFileName" : "651A173A-931A-4824-B709-43DECE378070.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "03-city_0_49A52728-D545-4347-A96B-DAC68889A83C.png",
+        "timestamp" : 1791779741.683
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "9F04AC00-799B-4C50-81A4-A2055DC4A39F",
+        "deviceName" : "Lightworks iPad QA",
+        "exportedFileName" : "1C96E5E3-854C-4EF3-8376-B95453D37DDF.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "02-victory_0_58D7D71E-CAE5-4F16-BF8C-CC0EFC84A0C8.png",
+        "timestamp" : 1791779736.135
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "9F04AC00-799B-4C50-81A4-A2055DC4A39F",
+        "deviceName" : "Lightworks iPad QA",
+        "exportedFileName" : "2C768CEC-511E-46A6-972A-C4F35C5A51C8.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "01-tutorial_0_44EE149B-AD5D-4C04-83F3-EBA8C40E2C32.png",
+        "timestamp" : 1791779734.119
+      }
+    ],
+    "testIdentifier" : "LightworksUITests/testTutorialWinReplayAndMap()",
+    "testIdentifierURL" : "test://com.apple.xcode/Drairtunvur/LightworksUITests/LightworksUITests/testTutorialWinReplayAndMap"
+  }
+]

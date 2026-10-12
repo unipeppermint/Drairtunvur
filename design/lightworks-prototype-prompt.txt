@@ -1,0 +1,43 @@
+Use case: ui-mockup.
+Asset type: a single high-fidelity four-screen iOS product prototype presentation for an original block puzzle game named “光路工坊” (Lightworks).
+Primary request: Create a beautiful, implementation-ready UI concept sheet with FOUR complete portrait mobile screens arranged in a straight horizontal row. The four screens show the same coherent app, in order: city chapter map, active puzzle gameplay, level completion, city collection. Landscape artboard, high resolution, approximately 3200×1800. Four equal-size tall screens with subtle rounded corners and generous equal gutters on a quiet warm ivory presentation background. Screen content stays large and legible; no tilted phones, no hands, no perspective on the interfaces, no hardware bezels, no explanatory text walls. Small neat section labels below each screen: “城市地图”, “光路解谜”, “修复完成”, “城市图鉴”. A small understated artboard title at upper left: “光路工坊” with subtitle “拼出光的道路，点亮一座城市”.
+
+Art direction: premium cozy indie puzzle game; night-blue and muted petrol teal with soft buttery amber light, porcelain white typography, sea-glass green and warm pale glass blocks. Painterly miniature harbor architecture rendered with refined 2.5D illustrated depth, finely detailed lighthouse, greenhouse roofs, glowing windows, quiet water, tiny piers. Tactile frosted glass puzzle tiles, restrained bloom, elegant deliberate negative space, polished hierarchy and native iOS-like touch controls. Sophisticated, inviting, calm. Scenery is detailed, but the puzzle grid is orthographic and exceptionally clear. No candy-game rainbow, no casino-style coins, no stock vector cartoon look, no neon cyberpunk, no giant logos, no excessive panels or ornamental HUD.
+
+Global UI: all four screens use the same modern clean Simplified Chinese sans serif typography, coherent icon line weight, large touchable controls. A minimal iOS status bar at top and home indicator at bottom. Native safe areas. Dark ink-blue backgrounds on screen, softly luminous amber primary action buttons, readable high-contrast labels. Interface copy must be concise and spelled exactly.
+
+SCREEN 1 — CITY CHAPTER MAP:
+Top title “光路工坊”, small subtitle “让城市重新亮起来”, small settings icon.
+Large central lovingly illustrated miniature harbor district at night: an illuminated lighthouse near the shore, tiny dark houses gradually glowing, a curved promenade with a small sequence of subtle numbered level nodes 01–06. Nodes 01 and 02 completed, 03 clearly selected, later nodes subdued. The city illustration feels integrated with UI, not a generic picture behind unrelated cards.
+Below map a quiet current chapter summary: “第一章 · 静谧港湾” and “已点亮 2 / 15”.
+A wide primary bottom action “继续修复” with small secondary “第 03 关”.
+Bottom navigation with three clear icon labels “城市”, “每日”, “图鉴”; 城市 selected.
+
+SCREEN 2 — CORE GAMEPLAY, the most important screen:
+Top back chevron, centered “静谧港湾 · 03”, small pause button.
+Compact mission strip showing “剩余 12 步” and “点亮 2 座灯塔”.
+Small lamp target indicators with progress “1/2” and “0/2”.
+The dominant central element MUST be a clean EXACTLY 8-column by 8-row square puzzle board, orthographic, visible cell boundaries, equal-sized tiles, no perspective and no overlay obscuring its cells. About 40–45% of cells occupied by translucent rounded square sea-glass tiles in recognizable L, T and straight polyomino arrangements. Empty cells visibly dark and recessed. An amber light source is just outside the left edge at the fourth row. Show a thin luminous orthogonal connected path INSIDE adjacent occupied cells leading from this source into the board. Two small lamp symbols printed UNDER tiles mark targets, one connected amber, one unconnected pale outline. Path is built only along orthogonally adjacent occupied cells; never jump across empty cells or run diagonally.
+One almost-complete horizontal row has a ghost placement of an L-shaped piece completing its missing spaces, demonstrating preview. In this row show five occupied cells in columns 1–5 and a ghost L occupying columns 6–8 plus one cell above column 6; that above cell is empty beneath the preview. Ghost cells have delicate amber outline. Avoid drawing a ninth row or column. Preserve exact geometry.
+Immediately below board a concise preview line “落下后可为 2 盏灯充能”.
+Below this, exactly THREE separated draggable candidate polyomino pieces, the first L, the second T, the third a three-cell bar, rendered using the same glass material at a slightly smaller scale.
+Bottom small accessible actions “撤销” and “提示” with minimal line icons. No bottom tab navigation inside gameplay. Ambient harbor details faintly visible around board edges only.
+The key visual concept is visibly connected luminous tiles and a strategic light path, not just generic block placement.
+
+SCREEN 3 — LEVEL COMPLETION:
+Top small “静谧港湾 · 03”.
+Large elegant title “灯塔亮了”.
+Central breathtaking but restrained miniature harbor illustration: two restored illuminated lighthouse fixtures, warm windows, a long warm beam over still deep teal water, soft paper-like clouds. Match the architecture of screen 1.
+A subtle progress summary “港湾修复 3 / 15”.
+A quiet two-column results row “使用步数 14” and “点亮目标 2/2”.
+Main bottom button “继续修复”, secondary text button “回到城市”.
+Avoid confetti explosion and casino reward tropes. This is an emotional restoration reward screen.
+
+SCREEN 4 — CITY COLLECTION:
+Top title “城市图鉴” with compact completion “已收藏 3 / 9”.
+One featured wide illustrated collectible card showing the same glowing harbor scene, label “静谧港湾” and small “修复进行中”.
+Below a clean two-column grid of smaller landscape scene cards. The first an unlocked warmly lit harbor corner labeled “归航的灯”; the second an unlocked small glass greenhouse labeled “温室微光”; the third a subdued locked old railway station labeled “候车之夜”; fourth a faint locked silhouette labeled “待点亮”. Scene cards are art-forward and well spaced, not spreadsheet-like.
+Bottom navigation identical to screen 1, 图鉴 selected.
+Keep all card text crisp, few words, large enough to read.
+
+Constraints: this is a STATIC HIGH-FIDELITY CONCEPT IMAGE, not a screenshot of existing IP. All artwork original. Consistent product identity across screens. Correct readable Chinese, avoid invented glyphs, no extra filler English, no watermarks. Prioritize UI clarity, correct 8×8 gameplay geometry and the light-connection mechanic. Make the result polished enough for a product design review.

@@ -1,0 +1,789 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project Drairtunvur.xcodeproj -scheme Drairtunvur -destination "platform=iOS Simulator,id=2B91A38B-87E1-46C5-B39D-60A964028A04" -derivedDataPath /tmp/lightworks-visual CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO "-only-testing:LightworksUITests/LightworksUITests/testTutorialWinReplayAndMap" "-only-testing:LightworksUITests/LightworksUITests/testFirstTenLevelsAndEarnedCollection" -resultBundlePath /tmp/lightworks-visual-verified.xcresult test
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  LightworksCore: /Users/mac/Desktop/Projects/Drairtunvur/Packages/LightworksCore @ local
+
+Writing result bundle at path:
+	/tmp/lightworks-visual-verified.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (4 targets)
+    Target 'LightworksUITests' in project 'Drairtunvur'
+        ➜ Explicit dependency on target 'Drairtunvur' in project 'Drairtunvur'
+    Target 'Drairtunvur' in project 'Drairtunvur'
+        ➜ Explicit dependency on target 'LightworksCore' in project 'LightworksCore'
+    Target 'LightworksCore' in project 'LightworksCore'
+        ➜ Explicit dependency on target 'LightworksCore' in project 'LightworksCore'
+    Target 'LightworksCore' in project 'LightworksCore' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/xcstringstool compile --dry-run --output-directory /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Resources/Localizable.xcstrings
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 1d78d0ab55360c7ad88beaf13d9ee805
+Build description path: /tmp/lightworks-visual/Build/Intermediates.noindex/XCBuildData/1d78d0ab55360c7ad88beaf13d9ee805.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk /tmp/lightworks-visual/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+    cd /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -o /tmp/lightworks-visual/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache
+
+SwiftDriver Drairtunvur normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Drairtunvur -Onone @/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.6-simulator -g -module-cache-path /tmp/lightworks-visual/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/lightworks-visual/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator -F /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-visual/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-visual/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-visual/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-visual/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-visual/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-generated-files.hmap -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-own-target-headers.hmap -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur-bb566299361be7b4d32cd764737f5ea5-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-project-headers.hmap -Xcc -I/tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ Drairtunvur (in target 'Drairtunvur' from project 'Drairtunvur')
+
+EmitSwiftModule normal arm64 (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftCompile normal arm64 Compiling\ SurfaceDrawing.swift /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/SurfaceDrawing.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+SwiftCompile normal arm64 /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Rendering/SurfaceDrawing.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for Drairtunvur (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftDriver\ Compilation\ Requirements Drairtunvur normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Drairtunvur -Onone @/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.6-simulator -g -module-cache-path /tmp/lightworks-visual/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/lightworks-visual/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator -F /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-visual/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-visual/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-visual/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-visual/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-visual/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-generated-files.hmap -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-own-target-headers.hmap -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur-bb566299361be7b4d32cd764737f5ea5-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-project-headers.hmap -Xcc -I/tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur -experimental-emit-module-separately -disable-cmo
+
+Copy /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/arm64-apple-ios-simulator.abi.json /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.abi.json (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.abi.json /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftsourceinfo (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftsourceinfo /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftDriverJobDiscovery normal arm64 Compiling SurfaceDrawing.swift (in target 'Drairtunvur' from project 'Drairtunvur')
+
+SwiftDriver\ Compilation Drairtunvur normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name Drairtunvur -Onone @/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftFileList -DDEBUG -default-isolation\=MainActor -enable-bare-slash-regex -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -target arm64-apple-ios15.6-simulator -g -module-cache-path /tmp/lightworks-visual/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /tmp/lightworks-visual/Index.noindex/DataStore -Xcc -D_LIBCPP_HARDENING_MODE\=_LIBCPP_HARDENING_MODE_DEBUG -swift-version 5 -I /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator -F /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/PackageFrameworks -F /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator -emit-localized-strings -emit-localized-strings-path /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64 -c -j10 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /tmp/lightworks-visual/SDKStatCaches.noindex/iphonesimulator26.5-23F81a-6cfe768891a92b912361537c460fe42b.sdkstatcache -output-file-map /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-OutputFileMap.json -use-frontend-parseable-output -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /tmp/lightworks-visual/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /tmp/lightworks-visual/ModuleCache.noindex -sdk-module-cache-path /tmp/lightworks-visual/ModuleCache.noindex -serialize-diagnostics -emit-dependencies -emit-module -emit-module-path /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftmodule -validate-clang-modules-once -clang-build-session-file /tmp/lightworks-visual/ModuleCache.noindex/Session.modulevalidation -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/swift-overrides.hmap -emit-const-values -Xfrontend -const-gather-protocols-file -Xfrontend /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_const_extract_protocols.json -Xcc -iquote -Xcc /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-generated-files.hmap -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-own-target-headers.hmap -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-all-non-framework-target-headers.hmap -Xcc -ivfsoverlay -Xcc /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur-bb566299361be7b4d32cd764737f5ea5-VFS-iphonesimulator/all-product-headers.yaml -Xcc -iquote -Xcc /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-project-headers.hmap -Xcc -I/tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/include -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources-normal/arm64 -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources/arm64 -Xcc -I/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/DerivedSources -Xcc -DDEBUG\=1 -emit-objc-header -emit-objc-header-path /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-Swift.h -working-directory /Users/mac/Desktop/Projects/Drairtunvur -experimental-emit-module-separately -disable-cmo
+
+Ld /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur.debug.dylib normal (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios15.6-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/lightworks-visual/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/tmp/lightworks-visual/Build/Products/Debug-iphonesimulator -F/tmp/lightworks-visual/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/lightworks-visual/Build/Products/Debug-iphonesimulator -filelist /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.LinkFileList -install_name @rpath/Drairtunvur.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_lto.o -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.swiftmodule @/tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur-linker-args.resp -Wl,-no_warn_duplicate_libraries -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur.debug.dylib -Xlinker -add_ast_path -Xlinker /tmp/lightworks-visual/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore.swiftmodule @/tmp/lightworks-visual/Build/Intermediates.noindex/LightworksCore.build/Debug-iphonesimulator/LightworksCore.build/Objects-normal/arm64/LightworksCore-linker-args.resp
+
+ConstructStubExecutorLinkFileList /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-ExecutorLinkFileList-normal-arm64.txt (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    construct-stub-executor-link-file-list /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'Drairtunvur' from project 'Drairtunvur')
+
+Ld /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur normal (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios15.6-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk -O0 -L/tmp/lightworks-visual/Build/Products/Debug-iphonesimulator -F/tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/PackageFrameworks -F/tmp/lightworks-visual/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -Xlinker -rpath -Xlinker /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/PackageFrameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -rdynamic -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur-ExecutorLinkFileList-normal-arm64.txt /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur.debug.dylib -o /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur
+
+ExtractAppIntentsMetadata (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name Drairtunvur --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk --xcode-version 17F113 --platform-family iOS --deployment-target 15.6 --bundle-identifier com.tmuo.Drairtunvur --output /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app --target-triple arm64-apple-ios15.6-simulator --binary-file /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur --dependency-file /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur_dependency_info.dat --stringsdata-file /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftFileList --metadata-file-list /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur.DependencyMetadataFileList --static-metadata-file-list /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Drairtunvur.DependencyStaticMetadataFileList --swift-const-vals-list /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Objects-normal/arm64/Drairtunvur.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-10-12 14:33:53.828 appintentsmetadataprocessor[16418:345502] Starting appintentsmetadataprocessor export
+2026-10-12 14:33:53.832 appintentsmetadataprocessor[16418:345502] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+
+CopySwiftLibs /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Drairtunvur.debug.dylib --scan-folder /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Frameworks --scan-folder /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/PlugIns --scan-folder /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/SystemExtensions --scan-folder /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ProcessInfoPlistFile /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Info.plist /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Info.plist (in target 'Drairtunvur' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-infoPlistUtility /Users/mac/Desktop/Projects/Drairtunvur/Drairtunvur/Info.plist -producttype com.apple.product-type.application -genpkginfo /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Base.lproj/LaunchScreen-SBPartialInfo.plist -additionalcontentfile /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/Base.lproj/Main-SBPartialInfo.plist -additionalcontentfile /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/Drairtunvur.build/assetcatalog_generated_info.plist -o /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/Drairtunvur.app/Info.plist
+
+ProcessInfoPlistFile /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Info.plist /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/empty-LightworksUITests.plist (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-infoPlistUtility /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/empty-LightworksUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Info.plist
+
+CopySwiftLibs /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest (in target 'LightworksUITests' from project 'Drairtunvur')
+    cd /Users/mac/Desktop/Projects/Drairtunvur
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/LightworksUITests --scan-folder /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Frameworks --scan-folder /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/PlugIns --scan-folder /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/SystemExtensions --scan-folder /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/lightworks-visual/Build/Products/Debug-iphonesimulator/LightworksUITests-Runner.app/PlugIns/LightworksUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/lightworks-visual/Build/Intermediates.noindex/Drairtunvur.build/Debug-iphonesimulator/LightworksUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+2026-10-12 14:33:54.974213+0800 LightworksUITests-Runner[16419:345699] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-10-12 14:33:55.479.
+Test Suite 'LightworksUITests.xctest' started at 2026-10-12 14:33:55.479.
+Test Suite 'LightworksUITests' started at 2026-10-12 14:33:55.479.
+Test Case '-[LightworksUITests.LightworksUITests testFirstTenLevelsAndEarnedCollection]' started.
+    t =     0.00s Start Test at 2026-10-12 14:33:55.480
+    t =     0.04s Set Up
+    t =     0.04s Open com.tmuo.Drairtunvur
+    t =     0.04s     Launch com.tmuo.Drairtunvur
+2026-10-12 14:33:55.652 xcodebuild[16398:345324] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-12 14:33:55.652 xcodebuild[16398:345324] [MT] IDELaunchParametersSnapshot: no debugger version
+objc[16419]: Class UIAccessibilityLoaderWebShared is implemented in both /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x10a58c310) and /Library/Developer/CoreSimulator/Volumes/iOS_23F77/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 26.5.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x109e2c398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     0.78s         Setting up automation session
+    t =     1.32s         Wait for com.tmuo.Drairtunvur to idle
+    t =     2.68s Waiting 15.0s for "game.pause" Button to exist
+    t =     3.73s     Checking `Expect predicate `existsNoRetry == 1` for object "game.pause" Button`
+    t =     3.73s         Checking existence of `"game.pause" Button`
+    t =     3.76s Waiting 4.0s for "piece.0" Button to exist
+    t =     4.80s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.0" Button`
+    t =     4.80s         Checking existence of `"piece.0" Button`
+    t =     4.83s Tap "piece.0" Button
+    t =     4.83s     Wait for com.tmuo.Drairtunvur to idle
+    t =     4.83s     Find the "piece.0" Button
+    t =     4.85s     Check for interrupting elements affecting "piece.0" Button
+    t =     4.87s     Synthesize event
+    t =     5.16s     Wait for com.tmuo.Drairtunvur to idle
+    t =     5.18s Tap "cell.3.6" Button
+    t =     5.18s     Wait for com.tmuo.Drairtunvur to idle
+    t =     5.19s     Find the "cell.3.6" Button
+    t =     5.21s     Check for interrupting elements affecting "cell.3.6" Button
+    t =     5.23s     Synthesize event
+    t =     5.52s     Wait for com.tmuo.Drairtunvur to idle
+    t =     5.52s Waiting 5.0s for "result.title" StaticText to exist
+    t =     6.57s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =     6.57s         Checking existence of `"result.title" StaticText`
+    t =     6.62s Tap "result.continue" Button
+    t =     6.62s     Wait for com.tmuo.Drairtunvur to idle
+    t =     6.74s     Find the "result.continue" Button
+    t =     6.76s     Check for interrupting elements affecting "result.continue" Button
+    t =     6.77s     Synthesize event
+    t =     7.05s     Wait for com.tmuo.Drairtunvur to idle
+    t =     7.44s Waiting 4.0s for "piece.0" Button to exist
+    t =     8.48s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.0" Button`
+    t =     8.48s         Checking existence of `"piece.0" Button`
+    t =     8.52s Tap "piece.0" Button
+    t =     8.52s     Wait for com.tmuo.Drairtunvur to idle
+    t =     8.53s     Find the "piece.0" Button
+    t =     8.55s     Check for interrupting elements affecting "piece.0" Button
+    t =     8.57s     Synthesize event
+    t =     8.86s     Wait for com.tmuo.Drairtunvur to idle
+    t =     8.86s Tap "cell.4.0" Button
+    t =     8.86s     Wait for com.tmuo.Drairtunvur to idle
+    t =     8.87s     Find the "cell.4.0" Button
+    t =     8.90s     Check for interrupting elements affecting "cell.4.0" Button
+    t =     8.92s     Synthesize event
+    t =     9.21s     Wait for com.tmuo.Drairtunvur to idle
+    t =     9.22s Waiting 5.0s for "result.title" StaticText to exist
+    t =    10.26s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =    10.26s         Checking existence of `"result.title" StaticText`
+    t =    10.31s Tap "result.continue" Button
+    t =    10.31s     Wait for com.tmuo.Drairtunvur to idle
+    t =    10.31s     Find the "result.continue" Button
+    t =    10.32s     Check for interrupting elements affecting "result.continue" Button
+    t =    10.33s     Synthesize event
+    t =    10.62s     Wait for com.tmuo.Drairtunvur to idle
+    t =    10.94s Waiting 4.0s for "piece.0" Button to exist
+    t =    11.98s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.0" Button`
+    t =    11.98s         Checking existence of `"piece.0" Button`
+    t =    12.02s Tap "piece.0" Button
+    t =    12.02s     Wait for com.tmuo.Drairtunvur to idle
+    t =    12.02s     Find the "piece.0" Button
+    t =    12.05s     Check for interrupting elements affecting "piece.0" Button
+    t =    12.06s     Synthesize event
+    t =    12.35s     Wait for com.tmuo.Drairtunvur to idle
+    t =    12.35s Tap "cell.2.4" Button
+    t =    12.35s     Wait for com.tmuo.Drairtunvur to idle
+    t =    12.36s     Find the "cell.2.4" Button
+    t =    12.39s     Check for interrupting elements affecting "cell.2.4" Button
+    t =    12.41s     Synthesize event
+    t =    12.70s     Wait for com.tmuo.Drairtunvur to idle
+    t =    12.71s Waiting 5.0s for "result.title" StaticText to exist
+    t =    13.75s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =    13.75s         Checking existence of `"result.title" StaticText`
+    t =    13.77s Tap "result.continue" Button
+    t =    13.77s     Wait for com.tmuo.Drairtunvur to idle
+    t =    13.81s     Find the "result.continue" Button
+    t =    13.82s     Check for interrupting elements affecting "result.continue" Button
+    t =    13.83s     Synthesize event
+    t =    14.12s     Wait for com.tmuo.Drairtunvur to idle
+    t =    14.42s Waiting 4.0s for "piece.2" Button to exist
+    t =    15.46s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.2" Button`
+    t =    15.46s         Checking existence of `"piece.2" Button`
+    t =    15.49s Tap "piece.2" Button
+    t =    15.49s     Wait for com.tmuo.Drairtunvur to idle
+    t =    15.49s     Find the "piece.2" Button
+    t =    15.51s     Check for interrupting elements affecting "piece.2" Button
+    t =    15.53s     Synthesize event
+    t =    15.82s     Wait for com.tmuo.Drairtunvur to idle
+    t =    15.82s Tap "cell.3.0" Button
+    t =    15.82s     Wait for com.tmuo.Drairtunvur to idle
+    t =    15.83s     Find the "cell.3.0" Button
+    t =    15.86s     Check for interrupting elements affecting "cell.3.0" Button
+    t =    15.88s     Synthesize event
+    t =    16.17s     Wait for com.tmuo.Drairtunvur to idle
+    t =    16.17s Waiting 4.0s for "piece.1" Button to exist
+    t =    17.21s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.1" Button`
+    t =    17.21s         Checking existence of `"piece.1" Button`
+    t =    17.25s Tap "piece.1" Button
+    t =    17.25s     Wait for com.tmuo.Drairtunvur to idle
+    t =    17.26s     Find the "piece.1" Button
+    t =    17.28s     Check for interrupting elements affecting "piece.1" Button
+    t =    17.29s     Synthesize event
+    t =    17.58s     Wait for com.tmuo.Drairtunvur to idle
+    t =    17.59s Tap "cell.3.3" Button
+    t =    17.59s     Wait for com.tmuo.Drairtunvur to idle
+    t =    17.59s     Find the "cell.3.3" Button
+    t =    17.63s     Check for interrupting elements affecting "cell.3.3" Button
+    t =    17.64s     Synthesize event
+    t =    17.93s     Wait for com.tmuo.Drairtunvur to idle
+    t =    17.94s Waiting 5.0s for "result.title" StaticText to exist
+    t =    18.97s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =    18.97s         Checking existence of `"result.title" StaticText`
+    t =    19.02s Tap "result.continue" Button
+    t =    19.02s     Wait for com.tmuo.Drairtunvur to idle
+    t =    19.07s     Find the "result.continue" Button
+    t =    19.09s     Check for interrupting elements affecting "result.continue" Button
+    t =    19.10s     Synthesize event
+    t =    19.38s     Wait for com.tmuo.Drairtunvur to idle
+    t =    19.71s Waiting 4.0s for "piece.0" Button to exist
+    t =    20.75s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.0" Button`
+    t =    20.75s         Checking existence of `"piece.0" Button`
+    t =    20.79s Tap "piece.0" Button
+    t =    20.80s     Wait for com.tmuo.Drairtunvur to idle
+    t =    20.80s     Find the "piece.0" Button
+    t =    20.82s     Check for interrupting elements affecting "piece.0" Button
+    t =    20.83s     Synthesize event
+    t =    21.12s     Wait for com.tmuo.Drairtunvur to idle
+    t =    21.13s Tap "cell.3.3" Button
+    t =    21.13s     Wait for com.tmuo.Drairtunvur to idle
+    t =    21.13s     Find the "cell.3.3" Button
+    t =    21.17s     Check for interrupting elements affecting "cell.3.3" Button
+    t =    21.19s     Synthesize event
+    t =    21.47s     Wait for com.tmuo.Drairtunvur to idle
+    t =    21.48s Waiting 4.0s for "piece.2" Button to exist
+    t =    22.52s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.2" Button`
+    t =    22.52s         Checking existence of `"piece.2" Button`
+    t =    22.57s Tap "piece.2" Button
+    t =    22.57s     Wait for com.tmuo.Drairtunvur to idle
+    t =    22.57s     Find the "piece.2" Button
+    t =    22.59s     Check for interrupting elements affecting "piece.2" Button
+    t =    22.61s     Synthesize event
+    t =    22.89s     Wait for com.tmuo.Drairtunvur to idle
+    t =    22.90s Tap "cell.4.3" Button
+    t =    22.90s     Wait for com.tmuo.Drairtunvur to idle
+    t =    22.91s     Find the "cell.4.3" Button
+    t =    22.94s     Check for interrupting elements affecting "cell.4.3" Button
+    t =    22.96s     Synthesize event
+    t =    23.24s     Wait for com.tmuo.Drairtunvur to idle
+    t =    23.26s Waiting 4.0s for "piece.1" Button to exist
+    t =    24.29s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.1" Button`
+    t =    24.29s         Checking existence of `"piece.1" Button`
+    t =    24.34s Tap "piece.1" Button
+    t =    24.34s     Wait for com.tmuo.Drairtunvur to idle
+    t =    24.34s     Find the "piece.1" Button
+    t =    24.36s     Check for interrupting elements affecting "piece.1" Button
+    t =    24.38s     Synthesize event
+    t =    24.67s     Wait for com.tmuo.Drairtunvur to idle
+    t =    24.67s Tap "cell.4.5" Button
+    t =    24.67s     Wait for com.tmuo.Drairtunvur to idle
+    t =    24.68s     Find the "cell.4.5" Button
+    t =    24.71s     Check for interrupting elements affecting "cell.4.5" Button
+    t =    24.73s     Synthesize event
+    t =    25.02s     Wait for com.tmuo.Drairtunvur to idle
+    t =    25.03s Waiting 5.0s for "result.title" StaticText to exist
+    t =    26.06s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =    26.06s         Checking existence of `"result.title" StaticText`
+    t =    26.11s Tap "result.continue" Button
+    t =    26.11s     Wait for com.tmuo.Drairtunvur to idle
+    t =    26.16s     Find the "result.continue" Button
+    t =    26.17s     Check for interrupting elements affecting "result.continue" Button
+    t =    26.18s     Synthesize event
+    t =    26.47s     Wait for com.tmuo.Drairtunvur to idle
+    t =    26.81s Waiting 4.0s for "piece.0" Button to exist
+    t =    27.85s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.0" Button`
+    t =    27.85s         Checking existence of `"piece.0" Button`
+    t =    27.89s Tap "piece.0" Button
+    t =    27.89s     Wait for com.tmuo.Drairtunvur to idle
+    t =    27.89s     Find the "piece.0" Button
+    t =    27.92s     Check for interrupting elements affecting "piece.0" Button
+    t =    27.93s     Synthesize event
+    t =    28.22s     Wait for com.tmuo.Drairtunvur to idle
+    t =    28.23s Tap "cell.1.6" Button
+    t =    28.23s     Wait for com.tmuo.Drairtunvur to idle
+    t =    28.23s     Find the "cell.1.6" Button
+    t =    28.27s     Check for interrupting elements affecting "cell.1.6" Button
+    t =    28.28s     Synthesize event
+    t =    28.57s     Wait for com.tmuo.Drairtunvur to idle
+    t =    28.58s Waiting 4.0s for "piece.1" Button to exist
+    t =    29.62s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.1" Button`
+    t =    29.62s         Checking existence of `"piece.1" Button`
+    t =    29.67s Tap "piece.1" Button
+    t =    29.67s     Wait for com.tmuo.Drairtunvur to idle
+    t =    29.67s     Find the "piece.1" Button
+    t =    29.69s     Check for interrupting elements affecting "piece.1" Button
+    t =    29.71s     Synthesize event
+    t =    29.99s     Wait for com.tmuo.Drairtunvur to idle
+    t =    30.00s Tap "cell.3.2" Button
+    t =    30.00s     Wait for com.tmuo.Drairtunvur to idle
+    t =    30.01s     Find the "cell.3.2" Button
+    t =    30.04s     Check for interrupting elements affecting "cell.3.2" Button
+    t =    30.06s     Synthesize event
+    t =    30.35s     Wait for com.tmuo.Drairtunvur to idle
+    t =    30.35s Waiting 4.0s for "piece.2" Button to exist
+    t =    31.39s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.2" Button`
+    t =    31.39s         Checking existence of `"piece.2" Button`
+    t =    31.44s Tap "piece.2" Button
+    t =    31.44s     Wait for com.tmuo.Drairtunvur to idle
+    t =    31.44s     Find the "piece.2" Button
+    t =    31.46s     Check for interrupting elements affecting "piece.2" Button
+    t =    31.48s     Synthesize event
+    t =    31.76s     Wait for com.tmuo.Drairtunvur to idle
+    t =    31.77s Tap "cell.2.2" Button
+    t =    31.77s     Wait for com.tmuo.Drairtunvur to idle
+    t =    31.77s     Find the "cell.2.2" Button
+    t =    31.81s     Check for interrupting elements affecting "cell.2.2" Button
+    t =    31.83s     Synthesize event
+    t =    32.12s     Wait for com.tmuo.Drairtunvur to idle
+    t =    32.13s Waiting 4.0s for "piece.2" Button to exist
+    t =    33.16s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.2" Button`
+    t =    33.16s         Checking existence of `"piece.2" Button`
+    t =    33.20s Tap "piece.2" Button
+    t =    33.20s     Wait for com.tmuo.Drairtunvur to idle
+    t =    33.20s     Find the "piece.2" Button
+    t =    33.22s     Check for interrupting elements affecting "piece.2" Button
+    t =    33.24s     Synthesize event
+    t =    33.53s     Wait for com.tmuo.Drairtunvur to idle
+    t =    33.53s Tap "cell.2.0" Button
+    t =    33.53s     Wait for com.tmuo.Drairtunvur to idle
+    t =    33.54s     Find the "cell.2.0" Button
+    t =    33.57s     Check for interrupting elements affecting "cell.2.0" Button
+    t =    33.59s     Synthesize event
+    t =    33.88s     Wait for com.tmuo.Drairtunvur to idle
+    t =    33.89s Waiting 5.0s for "result.title" StaticText to exist
+    t =    34.92s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =    34.92s         Checking existence of `"result.title" StaticText`
+    t =    34.97s Tap "result.continue" Button
+    t =    34.97s     Wait for com.tmuo.Drairtunvur to idle
+    t =    35.02s     Find the "result.continue" Button
+    t =    35.04s     Check for interrupting elements affecting "result.continue" Button
+    t =    35.05s     Synthesize event
+    t =    35.33s     Wait for com.tmuo.Drairtunvur to idle
+    t =    35.66s Waiting 4.0s for "piece.2" Button to exist
+    t =    36.69s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.2" Button`
+    t =    36.69s         Checking existence of `"piece.2" Button`
+    t =    36.74s Tap "piece.2" Button
+    t =    36.74s     Wait for com.tmuo.Drairtunvur to idle
+    t =    36.74s     Find the "piece.2" Button
+    t =    36.76s     Check for interrupting elements affecting "piece.2" Button
+    t =    36.78s     Synthesize event
+    t =    37.06s     Wait for com.tmuo.Drairtunvur to idle
+    t =    37.07s Tap "cell.2.2" Button
+    t =    37.07s     Wait for com.tmuo.Drairtunvur to idle
+    t =    37.08s     Find the "cell.2.2" Button
+    t =    37.11s     Check for interrupting elements affecting "cell.2.2" Button
+    t =    37.13s     Synthesize event
+    t =    37.42s     Wait for com.tmuo.Drairtunvur to idle
+    t =    37.42s Waiting 4.0s for "piece.0" Button to exist
+    t =    38.47s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.0" Button`
+    t =    38.47s         Checking existence of `"piece.0" Button`
+    t =    38.51s Tap "piece.0" Button
+    t =    38.51s     Wait for com.tmuo.Drairtunvur to idle
+    t =    38.51s     Find the "piece.0" Button
+    t =    38.54s     Check for interrupting elements affecting "piece.0" Button
+    t =    38.55s     Synthesize event
+    t =    38.84s     Wait for com.tmuo.Drairtunvur to idle
+    t =    38.85s Tap "cell.4.6" Button
+    t =    38.85s     Wait for com.tmuo.Drairtunvur to idle
+    t =    38.85s     Find the "cell.4.6" Button
+    t =    38.89s     Check for interrupting elements affecting "cell.4.6" Button
+    t =    38.90s     Synthesize event
+    t =    39.19s     Wait for com.tmuo.Drairtunvur to idle
+    t =    39.20s Waiting 4.0s for "piece.1" Button to exist
+    t =    40.23s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.1" Button`
+    t =    40.23s         Checking existence of `"piece.1" Button`
+    t =    40.28s Tap "piece.1" Button
+    t =    40.28s     Wait for com.tmuo.Drairtunvur to idle
+    t =    40.28s     Find the "piece.1" Button
+    t =    40.30s     Check for interrupting elements affecting "piece.1" Button
+    t =    40.32s     Synthesize event
+    t =    40.60s     Wait for com.tmuo.Drairtunvur to idle
+    t =    40.61s Tap "cell.3.4" Button
+    t =    40.61s     Wait for com.tmuo.Drairtunvur to idle
+    t =    40.62s     Find the "cell.3.4" Button
+    t =    40.65s     Check for interrupting elements affecting "cell.3.4" Button
+    t =    40.67s     Synthesize event
+    t =    40.96s     Wait for com.tmuo.Drairtunvur to idle
+    t =    40.96s Waiting 4.0s for "piece.2" Button to exist
+    t =    42.00s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.2" Button`
+    t =    42.00s         Checking existence of `"piece.2" Button`
+    t =    42.04s Tap "piece.2" Button
+    t =    42.04s     Wait for com.tmuo.Drairtunvur to idle
+    t =    42.05s     Find the "piece.2" Button
+    t =    42.07s     Check for interrupting elements affecting "piece.2" Button
+    t =    42.08s     Synthesize event
+    t =    42.37s     Wait for com.tmuo.Drairtunvur to idle
+    t =    42.38s Tap "cell.3.2" Button
+    t =    42.38s     Wait for com.tmuo.Drairtunvur to idle
+    t =    42.38s     Find the "cell.3.2" Button
+    t =    42.42s     Check for interrupting elements affecting "cell.3.2" Button
+    t =    42.44s     Synthesize event
+    t =    42.72s     Wait for com.tmuo.Drairtunvur to idle
+    t =    42.73s Waiting 5.0s for "result.title" StaticText to exist
+    t =    43.77s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =    43.77s         Checking existence of `"result.title" StaticText`
+    t =    43.82s Tap "result.continue" Button
+    t =    43.82s     Wait for com.tmuo.Drairtunvur to idle
+    t =    43.82s     Find the "result.continue" Button
+    t =    43.83s     Check for interrupting elements affecting "result.continue" Button
+    t =    43.84s     Synthesize event
+    t =    44.13s     Wait for com.tmuo.Drairtunvur to idle
+    t =    44.44s Waiting 4.0s for "piece.0" Button to exist
+    t =    45.48s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.0" Button`
+    t =    45.48s         Checking existence of `"piece.0" Button`
+    t =    45.52s Tap "piece.0" Button
+    t =    45.52s     Wait for com.tmuo.Drairtunvur to idle
+    t =    45.52s     Find the "piece.0" Button
+    t =    45.55s     Check for interrupting elements affecting "piece.0" Button
+    t =    45.56s     Synthesize event
+    t =    45.85s     Wait for com.tmuo.Drairtunvur to idle
+    t =    45.85s Tap "cell.3.6" Button
+    t =    45.85s     Wait for com.tmuo.Drairtunvur to idle
+    t =    45.86s     Find the "cell.3.6" Button
+    t =    45.89s     Check for interrupting elements affecting "cell.3.6" Button
+    t =    45.91s     Synthesize event
+    t =    46.20s     Wait for com.tmuo.Drairtunvur to idle
+    t =    46.21s Waiting 4.0s for "piece.2" Button to exist
+    t =    47.25s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.2" Button`
+    t =    47.25s         Checking existence of `"piece.2" Button`
+    t =    47.29s Tap "piece.2" Button
+    t =    47.29s     Wait for com.tmuo.Drairtunvur to idle
+    t =    47.29s     Find the "piece.2" Button
+    t =    47.32s     Check for interrupting elements affecting "piece.2" Button
+    t =    47.33s     Synthesize event
+    t =    47.62s     Wait for com.tmuo.Drairtunvur to idle
+    t =    47.62s Tap "cell.5.2" Button
+    t =    47.63s     Wait for com.tmuo.Drairtunvur to idle
+    t =    47.63s     Find the "cell.5.2" Button
+    t =    47.67s     Check for interrupting elements affecting "cell.5.2" Button
+    t =    47.68s     Synthesize event
+    t =    47.97s     Wait for com.tmuo.Drairtunvur to idle
+    t =    47.98s Waiting 4.0s for "piece.1" Button to exist
+    t =    49.01s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.1" Button`
+    t =    49.01s         Checking existence of `"piece.1" Button`
+    t =    49.05s Tap "piece.1" Button
+    t =    49.05s     Wait for com.tmuo.Drairtunvur to idle
+    t =    49.05s     Find the "piece.1" Button
+    t =    49.08s     Check for interrupting elements affecting "piece.1" Button
+    t =    49.09s     Synthesize event
+    t =    49.38s     Wait for com.tmuo.Drairtunvur to idle
+    t =    49.39s Tap "cell.4.0" Button
+    t =    49.39s     Wait for com.tmuo.Drairtunvur to idle
+    t =    49.39s     Find the "cell.4.0" Button
+    t =    49.43s     Check for interrupting elements affecting "cell.4.0" Button
+    t =    49.44s     Synthesize event
+    t =    49.73s     Wait for com.tmuo.Drairtunvur to idle
+    t =    49.77s Waiting 4.0s for "piece.1" Button to exist
+    t =    50.81s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.1" Button`
+    t =    50.81s         Checking existence of `"piece.1" Button`
+    t =    50.85s Tap "piece.1" Button
+    t =    50.85s     Wait for com.tmuo.Drairtunvur to idle
+    t =    50.85s     Find the "piece.1" Button
+    t =    50.88s     Check for interrupting elements affecting "piece.1" Button
+    t =    50.89s     Synthesize event
+    t =    51.18s     Wait for com.tmuo.Drairtunvur to idle
+    t =    51.18s Tap "cell.4.3" Button
+    t =    51.19s     Wait for com.tmuo.Drairtunvur to idle
+    t =    51.19s     Find the "cell.4.3" Button
+    t =    51.23s     Check for interrupting elements affecting "cell.4.3" Button
+    t =    51.24s     Synthesize event
+    t =    51.53s     Wait for com.tmuo.Drairtunvur to idle
+    t =    51.54s Waiting 5.0s for "result.title" StaticText to exist
+    t =    52.57s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =    52.57s         Checking existence of `"result.title" StaticText`
+    t =    52.62s Tap "result.continue" Button
+    t =    52.62s     Wait for com.tmuo.Drairtunvur to idle
+    t =    52.67s     Find the "result.continue" Button
+    t =    52.69s     Check for interrupting elements affecting "result.continue" Button
+    t =    52.70s     Synthesize event
+    t =    52.98s     Wait for com.tmuo.Drairtunvur to idle
+    t =    53.31s Waiting 4.0s for "piece.1" Button to exist
+    t =    54.34s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.1" Button`
+    t =    54.34s         Checking existence of `"piece.1" Button`
+    t =    54.39s Tap "piece.1" Button
+    t =    54.39s     Wait for com.tmuo.Drairtunvur to idle
+    t =    54.39s     Find the "piece.1" Button
+    t =    54.41s     Check for interrupting elements affecting "piece.1" Button
+    t =    54.43s     Synthesize event
+    t =    54.71s     Wait for com.tmuo.Drairtunvur to idle
+    t =    54.72s Tap "cell.1.2" Button
+    t =    54.72s     Wait for com.tmuo.Drairtunvur to idle
+    t =    54.72s     Find the "cell.1.2" Button
+    t =    54.75s     Check for interrupting elements affecting "cell.1.2" Button
+    t =    54.77s     Synthesize event
+    t =    55.06s     Wait for com.tmuo.Drairtunvur to idle
+    t =    55.07s Waiting 4.0s for "piece.2" Button to exist
+    t =    56.11s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.2" Button`
+    t =    56.11s         Checking existence of `"piece.2" Button`
+    t =    56.16s Tap "piece.2" Button
+    t =    56.16s     Wait for com.tmuo.Drairtunvur to idle
+    t =    56.16s     Find the "piece.2" Button
+    t =    56.18s     Check for interrupting elements affecting "piece.2" Button
+    t =    56.20s     Synthesize event
+    t =    56.48s     Wait for com.tmuo.Drairtunvur to idle
+    t =    56.49s Tap "cell.3.6" Button
+    t =    56.49s     Wait for com.tmuo.Drairtunvur to idle
+    t =    56.49s     Find the "cell.3.6" Button
+    t =    56.53s     Check for interrupting elements affecting "cell.3.6" Button
+    t =    56.55s     Synthesize event
+    t =    56.84s     Wait for com.tmuo.Drairtunvur to idle
+    t =    56.84s Waiting 4.0s for "piece.0" Button to exist
+    t =    57.88s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.0" Button`
+    t =    57.88s         Checking existence of `"piece.0" Button`
+    t =    57.92s Tap "piece.0" Button
+    t =    57.92s     Wait for com.tmuo.Drairtunvur to idle
+    t =    57.93s     Find the "piece.0" Button
+    t =    57.95s     Check for interrupting elements affecting "piece.0" Button
+    t =    57.96s     Synthesize event
+    t =    58.25s     Wait for com.tmuo.Drairtunvur to idle
+    t =    58.26s Tap "cell.2.3" Button
+    t =    58.26s     Wait for com.tmuo.Drairtunvur to idle
+    t =    58.26s     Find the "cell.2.3" Button
+    t =    58.30s     Check for interrupting elements affecting "cell.2.3" Button
+    t =    58.32s     Synthesize event
+    t =    58.61s     Wait for com.tmuo.Drairtunvur to idle
+    t =    58.61s Waiting 4.0s for "piece.2" Button to exist
+    t =    59.65s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.2" Button`
+    t =    59.65s         Checking existence of `"piece.2" Button`
+    t =    59.69s Tap "piece.2" Button
+    t =    59.69s     Wait for com.tmuo.Drairtunvur to idle
+    t =    59.69s     Find the "piece.2" Button
+    t =    59.72s     Check for interrupting elements affecting "piece.2" Button
+    t =    59.73s     Synthesize event
+    t =    60.02s     Wait for com.tmuo.Drairtunvur to idle
+    t =    60.03s Tap "cell.2.5" Button
+    t =    60.03s     Wait for com.tmuo.Drairtunvur to idle
+    t =    60.03s     Find the "cell.2.5" Button
+    t =    60.07s     Check for interrupting elements affecting "cell.2.5" Button
+    t =    60.09s     Synthesize event
+    t =    60.37s     Wait for com.tmuo.Drairtunvur to idle
+    t =    60.38s Waiting 5.0s for "result.title" StaticText to exist
+    t =    61.40s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =    61.40s         Checking existence of `"result.title" StaticText`
+    t =    61.45s Tap "result.continue" Button
+    t =    61.45s     Wait for com.tmuo.Drairtunvur to idle
+    t =    61.51s     Find the "result.continue" Button
+    t =    61.52s     Check for interrupting elements affecting "result.continue" Button
+    t =    61.53s     Synthesize event
+    t =    61.82s     Wait for com.tmuo.Drairtunvur to idle
+    t =    62.14s Waiting 4.0s for "piece.1" Button to exist
+    t =    63.18s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.1" Button`
+    t =    63.18s         Checking existence of `"piece.1" Button`
+    t =    63.22s Tap "piece.1" Button
+    t =    63.22s     Wait for com.tmuo.Drairtunvur to idle
+    t =    63.22s     Find the "piece.1" Button
+    t =    63.25s     Check for interrupting elements affecting "piece.1" Button
+    t =    63.26s     Synthesize event
+    t =    63.55s     Wait for com.tmuo.Drairtunvur to idle
+    t =    63.56s Tap "cell.2.6" Button
+    t =    63.56s     Wait for com.tmuo.Drairtunvur to idle
+    t =    63.56s     Find the "cell.2.6" Button
+    t =    63.60s     Check for interrupting elements affecting "cell.2.6" Button
+    t =    63.61s     Synthesize event
+    t =    63.90s     Wait for com.tmuo.Drairtunvur to idle
+    t =    63.91s Waiting 4.0s for "piece.0" Button to exist
+    t =    64.94s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.0" Button`
+    t =    64.94s         Checking existence of `"piece.0" Button`
+    t =    64.99s Tap "piece.0" Button
+    t =    64.99s     Wait for com.tmuo.Drairtunvur to idle
+    t =    64.99s     Find the "piece.0" Button
+    t =    65.01s     Check for interrupting elements affecting "piece.0" Button
+    t =    65.03s     Synthesize event
+    t =    65.31s     Wait for com.tmuo.Drairtunvur to idle
+    t =    65.32s Tap "cell.4.2" Button
+    t =    65.32s     Wait for com.tmuo.Drairtunvur to idle
+    t =    65.32s     Find the "cell.4.2" Button
+    t =    65.36s     Check for interrupting elements affecting "cell.4.2" Button
+    t =    65.38s     Synthesize event
+    t =    65.67s     Wait for com.tmuo.Drairtunvur to idle
+    t =    65.70s Waiting 4.0s for "piece.2" Button to exist
+    t =    66.73s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.2" Button`
+    t =    66.73s         Checking existence of `"piece.2" Button`
+    t =    66.77s Tap "piece.2" Button
+    t =    66.77s     Wait for com.tmuo.Drairtunvur to idle
+    t =    66.78s     Find the "piece.2" Button
+    t =    66.80s     Check for interrupting elements affecting "piece.2" Button
+    t =    66.81s     Synthesize event
+    t =    67.10s     Wait for com.tmuo.Drairtunvur to idle
+    t =    67.11s Tap "cell.3.0" Button
+    t =    67.11s     Wait for com.tmuo.Drairtunvur to idle
+    t =    67.12s     Find the "cell.3.0" Button
+    t =    67.15s     Check for interrupting elements affecting "cell.3.0" Button
+    t =    67.17s     Synthesize event
+    t =    67.46s     Wait for com.tmuo.Drairtunvur to idle
+    t =    67.46s Waiting 4.0s for "piece.0" Button to exist
+    t =    68.50s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.0" Button`
+    t =    68.50s         Checking existence of `"piece.0" Button`
+    t =    68.54s Tap "piece.0" Button
+    t =    68.54s     Wait for com.tmuo.Drairtunvur to idle
+    t =    68.54s     Find the "piece.0" Button
+    t =    68.57s     Check for interrupting elements affecting "piece.0" Button
+    t =    68.58s     Synthesize event
+    t =    68.87s     Wait for com.tmuo.Drairtunvur to idle
+    t =    68.88s Tap "cell.3.5" Button
+    t =    68.88s     Wait for com.tmuo.Drairtunvur to idle
+    t =    68.88s     Find the "cell.3.5" Button
+    t =    68.92s     Check for interrupting elements affecting "cell.3.5" Button
+    t =    68.93s     Synthesize event
+    t =    69.22s     Wait for com.tmuo.Drairtunvur to idle
+    t =    69.23s Waiting 4.0s for "piece.1" Button to exist
+    t =    70.25s     Checking `Expect predicate `existsNoRetry == 1` for object "piece.1" Button`
+    t =    70.25s         Checking existence of `"piece.1" Button`
+    t =    70.30s Tap "piece.1" Button
+    t =    70.30s     Wait for com.tmuo.Drairtunvur to idle
+    t =    70.30s     Find the "piece.1" Button
+    t =    70.32s     Check for interrupting elements affecting "piece.1" Button
+    t =    70.34s     Synthesize event
+    t =    70.63s     Wait for com.tmuo.Drairtunvur to idle
+    t =    70.63s Tap "cell.3.2" Button
+    t =    70.63s     Wait for com.tmuo.Drairtunvur to idle
+    t =    70.64s     Find the "cell.3.2" Button
+    t =    70.67s     Check for interrupting elements affecting "cell.3.2" Button
+    t =    70.69s     Synthesize event
+    t =    70.98s     Wait for com.tmuo.Drairtunvur to idle
+    t =    70.99s Waiting 5.0s for "result.title" StaticText to exist
+    t =    72.02s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =    72.02s         Checking existence of `"result.title" StaticText`
+    t =    72.07s Tap "result.city" Button
+    t =    72.07s     Wait for com.tmuo.Drairtunvur to idle
+    t =    72.07s     Find the "result.city" Button
+    t =    72.08s     Check for interrupting elements affecting "result.city" Button
+    t =    72.09s     Synthesize event
+    t =    72.38s     Wait for com.tmuo.Drairtunvur to idle
+    t =    72.68s Tap "tab.collection" Any
+    t =    72.68s     Wait for com.tmuo.Drairtunvur to idle
+    t =    72.68s     Find the "tab.collection" Any
+    t =    72.70s     Check for interrupting elements affecting "tab.collection" Button
+    t =    72.72s     Synthesize event
+    t =    73.01s     Wait for com.tmuo.Drairtunvur to idle
+    t =    73.02s Waiting 4.0s for "collection.1.5" Button to exist
+    t =    74.05s     Checking `Expect predicate `existsNoRetry == 1` for object "collection.1.5" Button`
+    t =    74.05s         Checking existence of `"collection.1.5" Button`
+    t =    74.07s Tap "collection.1.5" Button
+    t =    74.07s     Wait for com.tmuo.Drairtunvur to idle
+    t =    74.07s     Find the "collection.1.5" Button
+    t =    74.08s     Check for interrupting elements affecting "collection.1.5" Button
+    t =    74.09s     Synthesize event
+    t =    74.38s     Wait for com.tmuo.Drairtunvur to idle
+    t =    74.71s Waiting 3.0s for "归航的灯" StaticText to exist
+    t =    75.75s     Checking `Expect predicate `existsNoRetry == 1` for object "归航的灯" StaticText`
+    t =    75.75s         Checking existence of `"归航的灯" StaticText`
+    t =    75.95s Added attachment named '08-earned-collection'
+    t =    75.95s Tear Down
+Test Case '-[LightworksUITests.LightworksUITests testFirstTenLevelsAndEarnedCollection]' passed (76.600 seconds).
+Test Case '-[LightworksUITests.LightworksUITests testTutorialWinReplayAndMap]' started.
+    t =     0.00s Start Test at 2026-10-12 14:35:12.080
+    t =     0.02s Set Up
+    t =     0.03s Open com.tmuo.Drairtunvur
+    t =     0.03s     Launch com.tmuo.Drairtunvur
+    t =     0.03s         Terminate com.tmuo.Drairtunvur:16424
+2026-10-12 14:35:13.184 xcodebuild[16398:345324] [MT] IDELaunchParametersSnapshot: The operation couldn’t be completed. (DebuggerLLDB.DebuggerVersionStore.StoreError error 0.)
+2026-10-12 14:35:13.184 xcodebuild[16398:345324] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.31s         Setting up automation session
+    t =     1.87s         Wait for com.tmuo.Drairtunvur to idle
+    t =     3.08s Waiting 15.0s for "game.pause" Button to exist
+    t =     4.11s     Checking `Expect predicate `existsNoRetry == 1` for object "game.pause" Button`
+    t =     4.11s         Checking existence of `"game.pause" Button`
+    t =     4.29s Added attachment named '01-tutorial'
+    t =     4.29s Tap "piece.0" Button
+    t =     4.29s     Wait for com.tmuo.Drairtunvur to idle
+    t =     4.29s     Find the "piece.0" Button
+    t =     4.31s     Check for interrupting elements affecting "piece.0" Button
+    t =     4.32s     Synthesize event
+    t =     4.61s     Wait for com.tmuo.Drairtunvur to idle
+    t =     4.61s Tap "cell.3.6" Button
+    t =     4.61s     Wait for com.tmuo.Drairtunvur to idle
+    t =     4.61s     Find the "cell.3.6" Button
+    t =     4.64s     Check for interrupting elements affecting "cell.3.6" Button
+    t =     4.65s     Synthesize event
+    t =     4.94s     Wait for com.tmuo.Drairtunvur to idle
+    t =     4.95s Waiting 5.0s for "result.title" StaticText to exist
+    t =     5.99s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =     5.99s         Checking existence of `"result.title" StaticText`
+    t =     6.18s Added attachment named '02-victory'
+    t =     6.19s Tap "result.replay" Button
+    t =     6.19s     Wait for com.tmuo.Drairtunvur to idle
+    t =     6.19s     Find the "result.replay" Button
+    t =     6.20s     Check for interrupting elements affecting "result.replay" Button
+    t =     6.21s     Synthesize event
+    t =     6.49s     Wait for com.tmuo.Drairtunvur to idle
+    t =     6.79s Waiting 4.0s for "game.pause" Button to exist
+    t =     7.84s     Checking `Expect predicate `existsNoRetry == 1` for object "game.pause" Button`
+    t =     7.84s         Checking existence of `"game.pause" Button`
+    t =     7.88s Tap "cell.3.6" Button
+    t =     7.88s     Wait for com.tmuo.Drairtunvur to idle
+    t =     7.89s     Find the "cell.3.6" Button
+    t =     7.91s     Check for interrupting elements affecting "cell.3.6" Button
+    t =     7.92s     Synthesize event
+    t =     8.21s     Wait for com.tmuo.Drairtunvur to idle
+    t =     8.22s Waiting 5.0s for "result.title" StaticText to exist
+    t =     9.25s     Checking `Expect predicate `existsNoRetry == 1` for object "result.title" StaticText`
+    t =     9.25s         Checking existence of `"result.title" StaticText`
+    t =     9.29s Tap "result.city" Button
+    t =     9.29s     Wait for com.tmuo.Drairtunvur to idle
+    t =     9.32s     Find the "result.city" Button
+    t =     9.33s     Check for interrupting elements affecting "result.city" Button
+    t =     9.34s     Synthesize event
+    t =     9.63s     Wait for com.tmuo.Drairtunvur to idle
+    t =     9.96s Waiting 4.0s for "city.continue" Button to exist
+    t =    10.99s     Checking `Expect predicate `existsNoRetry == 1` for object "city.continue" Button`
+    t =    10.99s         Checking existence of `"city.continue" Button`
+    t =    11.17s Added attachment named '03-city'
+    t =    11.17s Checking existence of `"已点亮 1 / 15" StaticText`
+    t =    11.18s Tap "tab.collection" Any
+    t =    11.18s     Wait for com.tmuo.Drairtunvur to idle
+    t =    11.18s     Find the "tab.collection" Any
+    t =    11.19s     Check for interrupting elements affecting "tab.collection" Button
+    t =    11.21s     Synthesize event
+    t =    11.49s     Wait for com.tmuo.Drairtunvur to idle
+    t =    11.66s Added attachment named '04-collection'
+    t =    11.66s Tap "collection.1.5" Button
+    t =    11.66s     Wait for com.tmuo.Drairtunvur to idle
+    t =    11.66s     Find the "collection.1.5" Button
+    t =    11.67s     Check for interrupting elements affecting "collection.1.5" Button
+    t =    11.68s     Synthesize event
+    t =    11.97s     Wait for com.tmuo.Drairtunvur to idle
+    t =    12.30s Waiting 3.0s for Alert (First Match) to exist
+    t =    13.33s     Checking `Expect predicate `existsNoRetry == 1` for object Alert (First Match)`
+    t =    13.33s         Checking existence of `Alert (First Match)`
+    t =    13.35s Tear Down
+Test Case '-[LightworksUITests.LightworksUITests testTutorialWinReplayAndMap]' passed (13.628 seconds).
+Test Suite 'LightworksUITests' passed at 2026-10-12 14:35:25.709.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 90.227 (90.230) seconds
+Test Suite 'LightworksUITests.xctest' passed at 2026-10-12 14:35:25.710.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 90.227 (90.231) seconds
+Test Suite 'Selected tests' passed at 2026-10-12 14:35:25.711.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 90.227 (90.232) seconds
+2026-10-12 14:35:26.048 xcodebuild[16398:345324] [MT] IDETestOperationsObserverDebug: 92.173 elapsed -- Testing started completed.
+2026-10-12 14:35:26.048 xcodebuild[16398:345324] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-10-12 14:35:26.048 xcodebuild[16398:345324] [MT] IDETestOperationsObserverDebug: 92.173 sec, +92.173 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/lightworks-visual-verified.xcresult
+
+** TEST SUCCEEDED **
+
+Testing started

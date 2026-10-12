@@ -1,0 +1,16 @@
+Use case: precise-object-edit / ui-mockup.
+Edit the supplied four-screen Chinese iOS concept sheet for 光路工坊. Keep the entire presentation, art direction, all city artwork, all typography, all text, all screen sizes and positions, UI controls, screen 1, screen 3 and screen 4 EXACTLY the same. Change ONLY the square 8×8 puzzle board and first candidate block in SCREEN 2 to make its depicted puzzle mathematically coherent.
+Board MUST have exactly eight columns and eight rows of equal cells. Rows count top to bottom 1–8, columns left to right 1–8. Use this precise occupancy map; periods = dark empty cell, X = existing frosted sea-glass tile, G = transparent amber-outline ghost tile, A = existing tile with a small lighthouse symbol showing first target, B = existing tile with a small lighthouse symbol showing second target:
+row1 . X . . . X . .
+row2 . X X . . X . .
+row3 . . A . . G . .
+row4 X X X X X G G G
+row5 . X . . . B . .
+row6 X X . . . . . .
+row7 . . X . . . . .
+row8 X X X . X X . .
+Do not print letters, dots or coordinates. Render the grid as the actual game's board with existing glass tile treatment and two target lighthouse icons UNDER translucent tiles. Remove the old target markers from all other cells.
+The amber light source remains just outside the left edge at row 4. A fine luminous orthogonal path travels from that light source across row 4 toward column 6. Branch upward at column 3 to A at row3 column3; branch downward at column6 to B at row5 column6. Existing path glows softly; portions traveling through a G ghost cell are finely dashed amber to clearly indicate a prediction. This makes BOTH targets reachable when the ghost is placed.
+The four ghost cells form one connected L tetromino: row3 column6 plus row4 columns6,7,8. This completes row4, and there are no other ghost cells. EXACTLY EIGHT equal cell rows and columns.
+Change the FIRST draggable candidate below the board to the same FOUR-CELL L tetromino, orientation upper-left one cell and lower row three cells. Keep the second T candidate and the third horizontal three-cell candidate unchanged. Keep labels “落下后可为 2 盏灯充能”, “1/2”, “0/2” unchanged.
+Preserve every other pixel and the polished coherent UI presentation as closely as possible. Do not add annotations or change scenery.

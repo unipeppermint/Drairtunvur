@@ -1,0 +1,44 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2B91A38B-87E1-46C5-B39D-60A964028A04",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "61C40996-973E-4284-9E16-177B874A23D9.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "04-collection_0_9F1442DD-F7C0-4C3A-9A85-259542924F20.png",
+        "timestamp" : 1791787016.221
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2B91A38B-87E1-46C5-B39D-60A964028A04",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "795CA069-7DA9-42FF-8657-2B4A41D8F7A3.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "03-city_0_27BEA8FC-2DBA-4FF4-8EB6-D789B61CD5CD.png",
+        "timestamp" : 1791787015.677
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2B91A38B-87E1-46C5-B39D-60A964028A04",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "F0723D76-841C-46C8-ABD8-E4159642F6DB.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "02-victory_0_A39CBB80-4322-4433-A3AD-6CC547B38F09.png",
+        "timestamp" : 1791787010.625
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2B91A38B-87E1-46C5-B39D-60A964028A04",
+        "deviceName" : "iPhone 17 Pro",
+        "exportedFileName" : "BB732547-45EA-4583-B5F8-7C1AC1160F76.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "01-tutorial_0_F5112116-32CE-48AD-A3A9-3A0CE98C3D6F.png",
+        "timestamp" : 1791787008.669
+      }
+    ],
+    "testIdentifier" : "LightworksUITests/testTutorialWinReplayAndMap()",
+    "testIdentifierURL" : "test://com.apple.xcode/Drairtunvur/LightworksUITests/LightworksUITests/testTutorialWinReplayAndMap"
+  }
+]
