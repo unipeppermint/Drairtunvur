@@ -137,6 +137,7 @@ final class LightworksUITests: XCTestCase {
     }
     app.buttons["result.city"].tap()
     app.descendants(matching: .any)["tab.collection"].firstMatch.tap()
+    screenshot("Drairtunvur-collection-mixed")
     let earned = app.buttons["collection.1.5"]
     XCTAssertTrue(earned.waitForExistence(timeout: 4))
     earned.tap()

@@ -42,8 +42,8 @@ final class CollectionViewController: ScreenController {
     for milestone in [5, 10, 15] {
       for chapter in 1...3 {
         let unlocked = collected.contains("\(chapter)-\(milestone)")
-        let card = CollectionCard(chapter: chapter, milestone: milestone, unlocked: unlocked)
-        card.heightAnchor.constraint(equalToConstant: 180).isActive = true
+        let card = CollectionCard(chapter: chapter, milestone: milestone, unlocked: unlocked, completed: model.completed(chapter))
+        card.heightAnchor.constraint(equalToConstant: 210).isActive = true
         card.addAction(
           UIAction { [weak self] _ in
             guard let self else { return }
@@ -72,43 +72,98 @@ final class CollectionViewController: ScreenController {
   }
 }
 final class CollectionCard: UIControl {
-  init(chapter: Int, milestone: Int, unlocked: Bool, scenePreview: Bool = false) {
+  init(chapter: Int, milestone: Int, unlocked: Bool, scenePreview: Bool = false, completed: Int = 0) {
     super.init(frame: .zero)
     layer.cornerRadius = 18
     clipsToBounds = true
-    layer.borderColor = Theme.muted.withAlphaComponent(0.3).cgColor
-    layer.borderWidth = 1
+    layer.borderColor = (unlocked && !scenePreview ? Theme.gold.withAlphaComponent(0.85) : Theme.muted.withAlphaComponent(0.3)).cgColor
+    layer.borderWidth = unlocked && !scenePreview ? 2 : 1
     let image: UIView = scenePreview
       ? SceneCropView(name: ["harbor-v2", "greenhouse", "station"][chapter - 1], focus: 0.5)
       : DrairtunvurLandmarkView(chapter: chapter, milestone: milestone, illuminated: unlocked)
     addSubview(image)
     image.translatesAutoresizingMaskIntoConstraints = false
-    NSLayoutConstraint.activate([
-      image.leadingAnchor.constraint(equalTo: leadingAnchor),
-      image.trailingAnchor.constraint(equalTo: trailingAnchor),
-      image.topAnchor.constraint(equalTo: topAnchor),
-      image.bottomAnchor.constraint(equalTo: bottomAnchor, constant: scenePreview ? 0 : -60),
-    ])
-    let title = Theme.label(
-      "\(unlocked ? "✦" : "◇")  \(Self.name(chapter,milestone))", size: 16, weight: .semibold)
+    let title = Theme.label(Self.name(chapter,milestone), size: 16, weight: .semibold)
+    title.setContentCompressionResistancePriority(.required, for: .vertical)
+    let progress = min(completed, milestone)
     let subtitle = Theme.label(
-      unlocked
-        ? L.text("已收藏 · 查看风景", "Collected · View scene")
-        : L.text("完成本章 \(milestone) 关解锁", "Complete \(milestone) chapter levels"), size: 12,
-      color: unlocked ? Theme.gold : Theme.muted)
+      scenePreview ? L.text("章节预览", "Chapter preview")
+        : unlocked ? L.text("查看风景 ›", "View scene ›")
+        : L.text("\(L.chapter(chapter)) · \(progress)/\(milestone) 关", "\(L.chapter(chapter)) · \(progress)/\(milestone) levels"),
+      size: 12, color: unlocked ? Theme.gold : Theme.muted)
     subtitle.tag = 101
-    let text = Theme.inset(Theme.stack([title, subtitle], spacing: 4), by: 13)
-    text.backgroundColor = Theme.navy.withAlphaComponent(0.86)
+    subtitle.setContentCompressionResistancePriority(.required, for: .vertical)
+    let labels = Theme.stack([title, subtitle], spacing: 5)
+    if !scenePreview && !unlocked {
+      let bar = UIProgressView(progressViewStyle: .default)
+      bar.progress = Float(progress) / Float(milestone)
+      bar.progressTintColor = Theme.teal
+      bar.trackTintColor = Theme.muted.withAlphaComponent(0.18)
+      bar.heightAnchor.constraint(equalToConstant: 3).isActive = true
+      bar.isAccessibilityElement = false
+      labels.addArrangedSubview(bar)
+    }
+    let text = Theme.inset(labels, by: 12)
+    text.backgroundColor = Theme.navy.withAlphaComponent(scenePreview ? 0.86 : 1)
     text.isUserInteractionEnabled = false
     addSubview(text)
     text.translatesAutoresizingMaskIntoConstraints = false
     NSLayoutConstraint.activate([
+      image.leadingAnchor.constraint(equalTo: leadingAnchor),
+      image.trailingAnchor.constraint(equalTo: trailingAnchor),
+      image.topAnchor.constraint(equalTo: topAnchor),
+      image.bottomAnchor.constraint(equalTo: scenePreview ? bottomAnchor : text.topAnchor),
       text.leadingAnchor.constraint(equalTo: leadingAnchor),
       text.trailingAnchor.constraint(equalTo: trailingAnchor),
       text.bottomAnchor.constraint(equalTo: bottomAnchor),
     ])
+    if !unlocked && !scenePreview {
+      let shade = UIView()
+      shade.backgroundColor = Theme.navy.withAlphaComponent(0.30)
+      shade.isUserInteractionEnabled = false
+      shade.translatesAutoresizingMaskIntoConstraints = false
+      addSubview(shade)
+      NSLayoutConstraint.activate([
+        shade.leadingAnchor.constraint(equalTo: image.leadingAnchor),
+        shade.trailingAnchor.constraint(equalTo: image.trailingAnchor),
+        shade.topAnchor.constraint(equalTo: image.topAnchor),
+        shade.bottomAnchor.constraint(equalTo: image.bottomAnchor),
+      ])
+    }
+    let badgeTitle = scenePreview ? L.text("章节预览", "Chapter preview")
+      : unlocked ? L.text("已收藏", "Collected") : L.text("未解锁", "Locked")
+    let icon = UIImageView(image: UIImage(systemName: scenePreview ? "eye" : unlocked ? "checkmark.seal.fill" : "lock.fill"))
+    icon.contentMode = .scaleAspectFit
+    icon.tintColor = unlocked && !scenePreview ? Theme.navy : Theme.cream
+    icon.widthAnchor.constraint(equalToConstant: 15).isActive = true
+    let badgeLabel = Theme.label(badgeTitle, size: 12, weight: .semibold,
+      color: unlocked && !scenePreview ? Theme.navy : Theme.cream)
+    let badge = Theme.inset(Theme.stack([icon, badgeLabel], axis: .horizontal, spacing: 5), by: 7)
+    badge.backgroundColor = unlocked && !scenePreview ? Theme.gold : Theme.navy.withAlphaComponent(0.94)
+    badge.layer.cornerRadius = 12
+    badge.layer.borderWidth = 1
+    badge.layer.borderColor = (unlocked && !scenePreview ? Theme.gold : Theme.muted.withAlphaComponent(0.6)).cgColor
+    badge.isUserInteractionEnabled = false
+    badge.translatesAutoresizingMaskIntoConstraints = false
+    addSubview(badge)
+    if !unlocked && !scenePreview {
+      NSLayoutConstraint.activate([
+        badge.centerXAnchor.constraint(equalTo: image.centerXAnchor),
+        badge.centerYAnchor.constraint(equalTo: image.centerYAnchor),
+        badge.widthAnchor.constraint(lessThanOrEqualTo: widthAnchor, constant: -16),
+      ])
+    } else {
+      NSLayoutConstraint.activate([
+        badge.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+        badge.topAnchor.constraint(equalTo: topAnchor, constant: 10),
+        badge.trailingAnchor.constraint(lessThanOrEqualTo: trailingAnchor, constant: -10),
+      ])
+    }
     isAccessibilityElement = true
-    accessibilityLabel = "\(title.text ?? ""), \(subtitle.text ?? "")"
+    accessibilityLabel = "\(Self.name(chapter,milestone)), \(badgeTitle), \(subtitle.text ?? "")"
+    accessibilityHint = unlocked
+      ? L.text("查看收藏插画和修复日志。", "View the illustration and restoration journal.")
+      : L.text("查看解锁条件。", "View the unlock requirements.")
     accessibilityTraits = .button
     accessibilityIdentifier = "collection.\(chapter).\(milestone)"
   }

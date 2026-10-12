@@ -17,6 +17,7 @@ final class DrairtunvurLandmarkView: UIView {
     accessibilityElementsHidden = true
     clipsToBounds = true
     picture.contentMode = .scaleAspectFill
+    picture.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
     picture.clipsToBounds = true
     picture.translatesAutoresizingMaskIntoConstraints = false
     addSubview(picture)
