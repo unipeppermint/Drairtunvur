@@ -109,8 +109,8 @@ final class DailyViewController: ScreenController {
     content.addArrangedSubview(
       Theme.label(
         L.text(
-          "每日从章节关卡轮换一题，本地日期零点更新。完成后可反复挑战最佳步数；跨日进行的对局仍记在开始当天。",
-          "One chapter puzzle rotates daily at local midnight. Replay to improve your best. A game started before midnight counts toward its original day."
+          "独立的 365 道光路题目，每天本地零点轮换，365 天后循环。完成后可挑战最佳步数；跨日对局仍记在开始当天。",
+          "365 dedicated puzzles rotate at local midnight, repeating after 365 days. Replay to improve your best. Games started before midnight count toward their original day."
         ), size: 12, color: Theme.muted))
     if let error = model.saveError {
       content.addArrangedSubview(Theme.label(error, size: 12, color: Theme.gold))

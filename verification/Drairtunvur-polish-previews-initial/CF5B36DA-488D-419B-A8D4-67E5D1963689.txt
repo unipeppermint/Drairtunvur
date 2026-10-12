@@ -1,0 +1,4 @@
+Query chain:
+ →Find: Target Application 'com.tmuo.Drairtunvur'
+  ↪︎Find: Descendants matching type StaticText
+    ↪︎Find: Elements matching predicate '"daily.result.title" IN identifiers'

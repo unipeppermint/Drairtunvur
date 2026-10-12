@@ -18,6 +18,10 @@ final class LightworksUITests: XCTestCase {
     attachment.lifetime = .keepAlways
     add(attachment)
   }
+  func waitForPiece(_ piece: XCUIElement) {
+    let ready = NSPredicate(format: "exists == true AND enabled == true")
+    XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: piece)], timeout: 4), .completed)
+  }
   func testTutorialWinReplayAndMap() {
     let app = launch()
     screenshot("01-tutorial")
@@ -124,6 +128,7 @@ final class LightworksUITests: XCTestCase {
       for move in solution.moves {
         let piece = app.buttons["piece.\(move.slot)"]
         XCTAssertTrue(piece.waitForExistence(timeout: 4))
+        waitForPiece(piece)
         piece.tap()
         app.buttons["cell.\(move.anchor.row).\(move.anchor.col)"].tap()
       }
@@ -187,6 +192,7 @@ final class LightworksUITests: XCTestCase {
     app.buttons["daily.play"].tap()
     XCTAssertEqual(app.staticTexts["game.remaining"].label, "\(fixture.moveLimit - 1)")
     for move in fixture.moves.dropFirst() {
+      waitForPiece(app.buttons["piece.\(move.slot)"])
       app.buttons["piece.\(move.slot)"].tap()
       app.buttons["cell.\(move.anchor.row).\(move.anchor.col)"].tap()
     }

@@ -68,8 +68,8 @@ final class DrairtunvurHelpViewController: ScreenController {
       (
         L.text("主线与每日", "City and daily challenges"),
         L.text(
-          "主线按顺序开放，共三章 45 关。每日从章节题目中轮换，独立保存进度，不改变主线解锁。进度保存在本机，不进行云端同步。",
-          "The city has 45 levels across three chapters, unlocked in sequence. A chapter puzzle rotates daily with separate progress and does not unlock city levels. Progress is stored on this device without cloud sync."
+          "主线按顺序开放，共三章 45 关。每日使用独立的 365 题轮换题库，独立保存进度，不改变主线解锁。进度保存在本机，不进行云端同步。",
+          "The city has 45 sequential levels across three chapters. Daily challenges rotate through 365 dedicated puzzles with separate progress and do not unlock city levels. Progress is stored on this device without cloud sync."
         )
       ),
     ]

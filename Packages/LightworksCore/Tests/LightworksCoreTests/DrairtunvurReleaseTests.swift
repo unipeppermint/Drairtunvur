@@ -85,7 +85,11 @@ final class DrairtunvurReleaseTests: XCTestCase {
     XCTAssertEqual(restored.save, fresh)
   }
   func testHintsHandleReorderedValidMovesAndRespectCancellation() throws {
-    let levels = try catalog()
+    // Preserve the original regression boards even when campaign content changes.
+    let root = URL(fileURLWithPath: #filePath).deletingLastPathComponent()
+      .deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
+      .deletingLastPathComponent()
+    let levels = try LevelCatalog.decode(Data(contentsOf: root.appendingPathComponent("verification/Drairtunvur-levels-v1.json")))
     for id in ["1-10", "2-08", "3-10"] {
       let level = try XCTUnwrap(levels.first { $0.id == id })
       let initial = GameState(level: level)

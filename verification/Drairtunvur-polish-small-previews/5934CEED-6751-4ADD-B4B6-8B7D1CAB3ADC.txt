@@ -1,0 +1,4 @@
+Query chain:
+ →Find: Target Application 'com.tmuo.Drairtunvur'
+  ↪︎Find: Descendants matching type SegmentedControl
+    ↪︎Find: Elements matching predicate '"collection.restoration" IN identifiers'

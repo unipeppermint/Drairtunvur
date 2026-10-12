@@ -1,6 +1,39 @@
 import XCTest
 
 final class DrairtunvurReleaseUITests: XCTestCase {
+  func testCompletedCityAndEveryRestoredKeepsake() {
+    let app = XCUIApplication()
+    app.launchArguments = ["-ui-testing", "-reset-test-save", "-ui-test-completed", "-ui-language", "zh-Hans"]
+    app.launch()
+    XCTAssertTrue(app.buttons["city.continue"].waitForExistence(timeout: 15))
+    XCTAssertTrue(app.buttons["city.continue"].label.contains("回顾光路"))
+    app.buttons["tab.collection"].tap()
+    XCTAssertTrue(app.staticTexts["已收藏 9 / 9"].waitForExistence(timeout:5))
+    for milestone in [5,10,15] {
+      for chapter in 1...3 {
+        let card=app.buttons["collection.\(chapter).\(milestone)"]
+        for _ in 0..<6 {
+          let tabTop = app.buttons["tab.collection"].frame.minY
+          if card.isHittable && card.frame.maxY < tabTop { break }
+          app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.75))
+            .press(forDuration: 0.05, thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.45)))
+        }
+        XCTAssertTrue(card.isHittable)
+        card.tap()
+        let restoration=app.segmentedControls["collection.restoration"]
+        XCTAssertTrue(restoration.waitForExistence(timeout:5))
+        restoration.buttons["点亮之前"].tap()
+        XCTAssertTrue(restoration.buttons["点亮之前"].isSelected)
+        restoration.buttons["修复之后"].tap()
+        XCTAssertTrue(restoration.buttons["修复之后"].isSelected)
+        let attachment=XCTAttachment(screenshot:XCUIScreen.main.screenshot())
+        attachment.name="Drairtunvur-keepsake-\(chapter)-\(milestone)"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+        app.buttons["返回"].tap()
+      }
+    }
+  }
   func testCorruptSaveRecoveryAndHelp() {
     let app = XCUIApplication()
     app.launchArguments = [

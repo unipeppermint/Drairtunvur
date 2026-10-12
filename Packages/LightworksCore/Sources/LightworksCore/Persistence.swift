@@ -49,10 +49,15 @@ public struct SaveEnvelope: Codable, Equatable, Sendable {
   public var active: GameSession?
   public var daily: DailyProgress?
   public var bestMoves: [String: Int] = [:]
+  public var bestContentVersions: [String: Int]?
   public var tutorialCompleted: Bool = false
   public init() {}
   public mutating func recordWin(level: LevelDefinition, moves: Int) {
-    bestMoves[level.id] = min(bestMoves[level.id] ?? Int.max, moves)
+    let previous = (bestContentVersions?[level.id] ?? 1) == level.contentVersion
+      ? bestMoves[level.id] : nil
+    bestMoves[level.id] = min(previous ?? Int.max, moves)
+    if bestContentVersions == nil { bestContentVersions = [:] }
+    bestContentVersions?[level.id] = level.contentVersion
     tutorialCompleted = true
   }
   public func completed(in chapter: Int, levels: [LevelDefinition]) -> Int {

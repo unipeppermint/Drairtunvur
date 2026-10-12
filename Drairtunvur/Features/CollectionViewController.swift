@@ -24,7 +24,7 @@ final class CollectionViewController: ScreenController {
       color: Theme.cream)
     count.setContentHuggingPriority(.required, for: .horizontal)
     content.addArrangedSubview(Theme.stack([heading, count], axis: .horizontal))
-    let hero = CollectionCard(chapter: model.nextLevel.chapter, milestone: 15, unlocked: true)
+    let hero = CollectionCard(chapter: model.nextLevel.chapter, milestone: 15, unlocked: true, scenePreview: true)
     hero.accessibilityIdentifier = "collection.currentChapter"
     hero.heightAnchor.constraint(equalToConstant: 250).isActive = true
     hero.isAccessibilityElement = false
@@ -72,23 +72,22 @@ final class CollectionViewController: ScreenController {
   }
 }
 final class CollectionCard: UIControl {
-  init(chapter: Int, milestone: Int, unlocked: Bool) {
+  init(chapter: Int, milestone: Int, unlocked: Bool, scenePreview: Bool = false) {
     super.init(frame: .zero)
     layer.cornerRadius = 18
     clipsToBounds = true
     layer.borderColor = Theme.muted.withAlphaComponent(0.3).cgColor
     layer.borderWidth = 1
-    let image = SceneCropView(
-      name: ["harbor-v2", "greenhouse", "station"][chapter - 1],
-      focus: chapter == 1 ? (milestone == 15 ? 0.30 : milestone == 5 ? 0.50 : 0.62) : 0.53)
-    image.alpha = unlocked ? 1 : 0.25
+    let image: UIView = scenePreview
+      ? SceneCropView(name: ["harbor-v2", "greenhouse", "station"][chapter - 1], focus: 0.5)
+      : DrairtunvurLandmarkView(chapter: chapter, milestone: milestone, illuminated: unlocked)
     addSubview(image)
     image.translatesAutoresizingMaskIntoConstraints = false
     NSLayoutConstraint.activate([
       image.leadingAnchor.constraint(equalTo: leadingAnchor),
       image.trailingAnchor.constraint(equalTo: trailingAnchor),
       image.topAnchor.constraint(equalTo: topAnchor),
-      image.bottomAnchor.constraint(equalTo: bottomAnchor),
+      image.bottomAnchor.constraint(equalTo: bottomAnchor, constant: scenePreview ? 0 : -60),
     ])
     let title = Theme.label(
       "\(unlocked ? "✦" : "◇")  \(Self.name(chapter,milestone))", size: 16, weight: .semibold)
@@ -140,20 +139,36 @@ final class CollectionDetailController: ScreenController {
     self.milestone = milestone
     super.init(nibName: nil, bundle: nil)
     sceneChapter = chapter
-    dimScene = false
+    dimScene = true
     hidesBottomBarWhenPushed = true
   }
   required init?(coder: NSCoder) { fatalError() }
   override func viewDidLoad() {
     super.viewDidLoad()
     header(CollectionCard.name(chapter, milestone))
-    let space = UIView()
-    space.heightAnchor.constraint(equalToConstant: 420).isActive = true
-    content.addArrangedSubview(space)
-    content.addArrangedSubview(
-      Theme.label(
-        L.text("光沿着你铺设的路，成为城市的一部分。", "The paths you built are now part of the city."), size: 24,
-        weight: .semibold))
+    let artwork = DrairtunvurLandmarkView(chapter: chapter, milestone: milestone, illuminated: true)
+    artwork.layer.cornerRadius = 20
+    artwork.clipsToBounds = true
+    artwork.heightAnchor.constraint(equalTo: artwork.widthAnchor, multiplier: 0.80).isActive = true
+    content.addArrangedSubview(artwork)
+    let state = UISegmentedControl(items: [L.text("点亮之前", "Before"), L.text("修复之后", "Restored")])
+    state.selectedSegmentIndex = 1
+    state.selectedSegmentTintColor = Theme.gold
+    state.backgroundColor = Theme.panel
+    state.setTitleTextAttributes([.foregroundColor: Theme.cream], for: .normal)
+    state.setTitleTextAttributes([.foregroundColor: Theme.navy], for: .selected)
+    state.heightAnchor.constraint(equalToConstant: 44).isActive = true
+    state.accessibilityIdentifier = "collection.restoration"
+    state.addAction(UIAction { [weak artwork, weak state] _ in
+      artwork?.illuminated = state?.selectedSegmentIndex == 1
+    }, for: .valueChanged)
+    content.addArrangedSubview(state)
+    let journal = Theme.inset(Theme.stack([
+      Theme.label(L.text("城市修复日志", "Restoration journal"), size: 21, weight: .semibold, color: Theme.gold),
+      Theme.label(DrairtunvurCollectionStories.story(chapter: chapter, milestone: milestone), size: 17),
+    ]))
+    Theme.panel(journal)
+    content.addArrangedSubview(journal)
     content.addArrangedSubview(
       Theme.label(
         L.text(

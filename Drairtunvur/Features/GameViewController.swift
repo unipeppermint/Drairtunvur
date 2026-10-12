@@ -193,6 +193,7 @@ final class GameViewController: ScreenController {
       hud.addArrangedSubview(stack)
     }
     updatePieces()
+    board.isUserInteractionEnabled = !locked && session.state.outcome == .playing
     undoButton.isEnabled = !session.history.isEmpty && session.state.outcome != .won && !locked
     hintButton.isEnabled = session.state.outcome == .playing && !locked
     status.text = L.lesson(level.lesson)
@@ -200,6 +201,8 @@ final class GameViewController: ScreenController {
   private func updatePieces() {
     for i in 0..<3 {
       pieces[i].piece = session.state.candidates[i]
+      pieces[i].isEnabled = !locked && session.state.outcome == .playing && pieces[i].piece != nil
+      pieces[i].alpha = locked ? 0.55 : 1
       pieces[i].highlightedPiece = selected == i
       if let p = pieces[i].piece {
         let coordinates = p.cells.map { "\($0.row+1),\($0.col+1)" }.joined(separator: "; ")

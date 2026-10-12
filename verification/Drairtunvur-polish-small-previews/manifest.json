@@ -1,0 +1,206 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "C1522FB0-8DA7-4FFD-89BD-631D1408B32F.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "App UI hierarchy for com.tmuo_0_76FB5536-6B8C-4500-9366-A7BD01531683.Drairtunvur",
+        "timestamp" : 1791794298.869
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "74640F10-44BE-49C3-A741-23BEA93F7877",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-12 at 04.38.18 下午",
+        "timestamp" : 1791794298.869
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "5934CEED-6751-4ADD-B4B6-8B7D1CAB3ADC.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Debug description for `\"collection.restoration\" SegmentedControl`_0_B25E7407-8719-44D2-BE25-04B45AE02B2F.txt",
+        "timestamp" : 1791794298.841
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "942C83DF-9C47-4FB4-9482-2D26ED2EBDAC.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Debug description for `\"collection.restoration\" SegmentedControl`_0_8BB1FD9D-8B7D-494C-83EB-43E13BEA74AF.txt",
+        "timestamp" : 1791794297.885
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "3DC7E8CF-DA46-412E-A1EE-632DA653FBB4.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Debug description for `\"collection.restoration\" SegmentedControl`_0_CD60AF5B-77F1-40E4-A9F6-C0FA3C304E15.txt",
+        "timestamp" : 1791794296.926
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "9C2481A9-BD6A-4208-8414-D75F7E1FF380.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Debug description for `\"collection.restoration\" SegmentedControl`_0_6DCF6D6F-3415-401C-8096-3F8E9A6E29A9.txt",
+        "timestamp" : 1791794295.859
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "BB6F5093-962A-4424-96DF-CB5D61896F8D.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Debug description for `\"collection.restoration\" SegmentedControl`_0_BF51C716-151D-4405-9097-676988A099E7.txt",
+        "timestamp" : 1791794294.896
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "2D43C43F-909F-488F-8279-97991D418CE5",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-12 at 04.38.13 下午",
+        "timestamp" : 1791794293.822
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "92C0EDED-C5DC-4AEA-A8F5-A9AD8EDEE23B",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-12 at 04.38.13 下午",
+        "timestamp" : 1791794293.154
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "7EF63703-7CA9-4FA7-93C2-1F092D35BF6D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Drairtunvur-keepsake-2-5_0_B588229B-94A5-4F0D-A9F6-0012AFC94C53.png",
+        "timestamp" : 1791794292.847
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "9A32C79D-35E7-4C0C-AB38-ABC059C0523D",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-12 at 04.38.11 下午",
+        "timestamp" : 1791794291.54
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "365684EE-E0AD-4F05-AA65-11EB36CCA1C3",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-12 at 04.38.09 下午",
+        "timestamp" : 1791794289.87
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "63B0001A-F836-4C76-902A-905EAFD43EE9",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-12 at 04.38.08 下午",
+        "timestamp" : 1791794288.169
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "72373658-200C-4544-8EEE-26F65F20F009",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-12 at 04.38.07 下午",
+        "timestamp" : 1791794287.523
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "77A270FD-9A14-4ED1-8E07-E6DA2A0F267B.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Drairtunvur-keepsake-1-5_0_6062CBF1-96D3-4C15-A4E3-D1BA75F892D7.png",
+        "timestamp" : 1791794287.216
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "E509CE20-B27B-4476-BFA9-162CD2D63C17",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-12 at 04.38.05 下午",
+        "timestamp" : 1791794285.83
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "80A8AAFB-870E-443F-A57A-8112698A3329",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-12 at 04.38.04 下午",
+        "timestamp" : 1791794284.153
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "2FC40BCB-0CCE-4D5B-8D8C-52759B72D53E",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-12 at 04.38.02 下午",
+        "timestamp" : 1791794282.398
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "CE9F9D46-B30A-47D6-8A68-D0410187121B",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Synthesized Event 2026-10-12 at 04.38.00 下午",
+        "timestamp" : 1791794280.829
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "F00A4632-1A99-40E7-BF95-7DEC4BC40397.mp4",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "Screen Recording 2026-10-12 at 04.37.56 下午.mp4",
+        "timestamp" : 1791794276.032
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "179BED17-0610-4877-8139-14FEE5CF44A7.txt",
+        "isAssociatedWithFailure" : true,
+        "suggestedHumanReadableName" : "App UI hierarchy for com.tmuo_0_D332DFB8-14B3-442D-846A-8B5A4480D838.Drairtunvur",
+        "timestamp" : 1791794301.154
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "2FB40C4D-C9B6-4CF0-859D-C57A86602FA1",
+        "deviceName" : "Lightworks Small Screen QA",
+        "exportedFileName" : "6BC7377A-89C0-45BC-A5B5-17977E6CE0E5",
+        "isAssociatedWithFailure" : true,
+        "suggestedHumanReadableName" : "UI Snapshot 2026-10-12 at 04.38.21 下午",
+        "timestamp" : 1791794301.154
+      }
+    ],
+    "testIdentifier" : "DrairtunvurReleaseUITests/testCompletedCityAndEveryRestoredKeepsake()",
+    "testIdentifierURL" : "test://com.apple.xcode/Drairtunvur/LightworksUITests/DrairtunvurReleaseUITests/testCompletedCityAndEveryRestoredKeepsake"
+  }
+]

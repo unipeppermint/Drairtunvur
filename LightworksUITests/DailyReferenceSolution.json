@@ -3,17 +3,24 @@
   "moveLimit": 8,
   "moves": [
     {
+      "slot": 2,
+      "anchor": {
+        "row": 5,
+        "col": 4
+      }
+    },
+    {
       "slot": 0,
       "anchor": {
-        "row": 3,
-        "col": 6
+        "row": 5,
+        "col": 0
       }
     },
     {
       "slot": 1,
       "anchor": {
-        "row": 5,
-        "col": 2
+        "row": 4,
+        "col": 3
       }
     },
     {
@@ -26,15 +33,15 @@
     {
       "slot": 0,
       "anchor": {
-        "row": 4,
-        "col": 6
+        "row": 3,
+        "col": 4
       }
     },
     {
-      "slot": 2,
+      "slot": 1,
       "anchor": {
-        "row": 4,
-        "col": 3
+        "row": 3,
+        "col": 0
       }
     }
   ]

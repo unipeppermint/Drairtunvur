@@ -1,5 +1,7 @@
 # 首版验证记录
 
+当前内容版本与最终结果见 [Drairtunvur-content-polish.md](Drairtunvur-content-polish.md)：40 关重做、365 个独立每日布局、九种建筑收藏；核心 24 项、完整 UI 10 项通过，并完成小屏补测与 Release 实际启动。
+
 最新上线前功能与内容审查见 [Drairtunvur-release-audit.md](Drairtunvur-release-audit.md)。本轮核心 21 项、UI 9 项通过，Release 模拟器构建成功；下文保留各历史版本的测试记录，不代表当前仍只有早期数量的测试。
 
 2026-10-12 · Xcode 26.6 (17F113) · iOS Simulator 26.5

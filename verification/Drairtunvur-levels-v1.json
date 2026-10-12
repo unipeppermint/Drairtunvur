@@ -1,0 +1,10754 @@
+[
+  {
+    "id": "1-01",
+    "chapter": 1,
+    "number": 1,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 3,
+        "col": 0
+      },
+      {
+        "row": 3,
+        "col": 1
+      },
+      {
+        "row": 3,
+        "col": 2
+      },
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 4
+      },
+      {
+        "row": 3,
+        "col": 5
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 3,
+          "col": 3
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 1,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 6
+        }
+      }
+    ],
+    "lesson": "first"
+  },
+  {
+    "id": "1-02",
+    "chapter": 1,
+    "number": 2,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 2,
+        "col": 3
+      },
+      {
+        "row": 3,
+        "col": 3
+      },
+      {
+        "row": 4,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 3
+      },
+      {
+        "row": 4,
+        "col": 4
+      },
+      {
+        "row": 4,
+        "col": 5
+      },
+      {
+        "row": 4,
+        "col": 6
+      },
+      {
+        "row": 4,
+        "col": 7
+      }
+    ],
+    "sourceEntry": {
+      "row": 4,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 3
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 4,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 0
+        }
+      }
+    ],
+    "lesson": "connect"
+  },
+  {
+    "id": "1-03",
+    "chapter": 1,
+    "number": 3,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 5
+      },
+      {
+        "row": 1,
+        "col": 5
+      },
+      {
+        "row": 2,
+        "col": 0
+      },
+      {
+        "row": 2,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 2,
+        "col": 3
+      }
+    ],
+    "sourceEntry": {
+      "row": 2,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 0,
+          "col": 5
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;0,1;0,2;0,3",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            },
+            {
+              "row": 0,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 4,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      }
+    ],
+    "lesson": "connect"
+  },
+  {
+    "id": "1-04",
+    "chapter": 1,
+    "number": 4,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 1
+      },
+      {
+        "row": 1,
+        "col": 5
+      },
+      {
+        "row": 2,
+        "col": 5
+      },
+      {
+        "row": 3,
+        "col": 6
+      },
+      {
+        "row": 3,
+        "col": 7
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 5
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 5,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      }
+    ],
+    "lesson": "connect"
+  },
+  {
+    "id": "1-05",
+    "chapter": 1,
+    "number": 5,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 3
+      },
+      {
+        "row": 4,
+        "col": 0
+      },
+      {
+        "row": 4,
+        "col": 1
+      },
+      {
+        "row": 4,
+        "col": 2
+      }
+    ],
+    "sourceEntry": {
+      "row": 4,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 3
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 6,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 5
+        }
+      }
+    ],
+    "lesson": "connect"
+  },
+  {
+    "id": "1-06",
+    "chapter": 1,
+    "number": 6,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 2
+      },
+      {
+        "row": 0,
+        "col": 6
+      },
+      {
+        "row": 2,
+        "col": 5
+      },
+      {
+        "row": 2,
+        "col": 6
+      },
+      {
+        "row": 2,
+        "col": 7
+      },
+      {
+        "row": 4,
+        "col": 2
+      }
+    ],
+    "sourceEntry": {
+      "row": 2,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 0,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 4,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 7,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 1,
+          "col": 6
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 0
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "1-07",
+    "chapter": 1,
+    "number": 7,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 3,
+        "col": 0
+      },
+      {
+        "row": 3,
+        "col": 1
+      },
+      {
+        "row": 5,
+        "col": 6
+      },
+      {
+        "row": 7,
+        "col": 4
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 5,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2;0,3",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            },
+            {
+              "row": 0,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 7,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 6
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 4
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "1-08",
+    "chapter": 1,
+    "number": 8,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 6
+      },
+      {
+        "row": 4,
+        "col": 6
+      },
+      {
+        "row": 4,
+        "col": 7
+      },
+      {
+        "row": 6,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 1
+      }
+    ],
+    "sourceEntry": {
+      "row": 4,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 7,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 6
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 5,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 3
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "1-09",
+    "chapter": 1,
+    "number": 9,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 2
+      },
+      {
+        "row": 0,
+        "col": 4
+      },
+      {
+        "row": 2,
+        "col": 0
+      },
+      {
+        "row": 2,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 6
+      },
+      {
+        "row": 7,
+        "col": 5
+      }
+    ],
+    "sourceEntry": {
+      "row": 2,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 0,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 4,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 7,
+    "referenceSolution": [
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 6
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 3
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 5
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "1-10",
+    "chapter": 1,
+    "number": 10,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 1
+      },
+      {
+        "row": 7,
+        "col": 3
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 5,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 6
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "1-11",
+    "chapter": 1,
+    "number": 11,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 2,
+        "col": 7
+      },
+      {
+        "row": 4,
+        "col": 7
+      },
+      {
+        "row": 6,
+        "col": 6
+      }
+    ],
+    "sourceEntry": {
+      "row": 0,
+      "col": 4
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0;3,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            },
+            {
+              "row": 3,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 3
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 6,
+          "col": 5
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 4
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 0,
+          "col": 4
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "1-12",
+    "chapter": 1,
+    "number": 12,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 2,
+        "col": 0
+      },
+      {
+        "row": 2,
+        "col": 4
+      },
+      {
+        "row": 3,
+        "col": 7
+      },
+      {
+        "row": 4,
+        "col": 0
+      },
+      {
+        "row": 6,
+        "col": 0
+      }
+    ],
+    "sourceEntry": {
+      "row": 7,
+      "col": 2
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 6,
+          "col": 0
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 2,
+          "col": 4
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 6,
+          "col": 1
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 6,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "1-13",
+    "chapter": 1,
+    "number": 13,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 7
+      },
+      {
+        "row": 2,
+        "col": 1
+      },
+      {
+        "row": 2,
+        "col": 7
+      },
+      {
+        "row": 4,
+        "col": 0
+      },
+      {
+        "row": 6,
+        "col": 5
+      }
+    ],
+    "sourceEntry": {
+      "row": 0,
+      "col": 3
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 1
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 5
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 6,
+          "col": 4
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 5,
+          "col": 3
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 0,
+          "col": 3
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "1-14",
+    "chapter": 1,
+    "number": 14,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 0
+      },
+      {
+        "row": 1,
+        "col": 7
+      },
+      {
+        "row": 2,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 0
+      },
+      {
+        "row": 6,
+        "col": 2
+      }
+    ],
+    "sourceEntry": {
+      "row": 7,
+      "col": 4
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 6,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 2,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 6,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 5
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 0,
+          "col": 4
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 5,
+          "col": 4
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "1-15",
+    "chapter": 1,
+    "number": 15,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 2,
+        "col": 0
+      },
+      {
+        "row": 3,
+        "col": 0
+      },
+      {
+        "row": 5,
+        "col": 0
+      },
+      {
+        "row": 6,
+        "col": 4
+      },
+      {
+        "row": 6,
+        "col": 7
+      }
+    ],
+    "sourceEntry": {
+      "row": 0,
+      "col": 2
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 0
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 4
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0;3,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            },
+            {
+              "row": 3,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 6,
+          "col": 3
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-01",
+    "chapter": 2,
+    "number": 1,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 5,
+        "col": 6
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 5,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 5,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 6
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-02",
+    "chapter": 2,
+    "number": 2,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 2,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 2
+      }
+    ],
+    "sourceEntry": {
+      "row": 4,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 6
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 5,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 5
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-03",
+    "chapter": 2,
+    "number": 3,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 6
+      }
+    ],
+    "sourceEntry": {
+      "row": 2,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 0,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 4,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2;0,3",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            },
+            {
+              "row": 0,
+              "col": 3
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 0
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-04",
+    "chapter": 2,
+    "number": 4,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 5
+      },
+      {
+        "row": 1,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 2
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 5,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 6
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 6
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-05",
+    "chapter": 2,
+    "number": 5,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 5
+      },
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 6
+      }
+    ],
+    "sourceEntry": {
+      "row": 4,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 5,
+          "col": 6
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 5
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 3
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-06",
+    "chapter": 2,
+    "number": 6,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 6
+      },
+      {
+        "row": 4,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 1
+      }
+    ],
+    "sourceEntry": {
+      "row": 2,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 0,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 4,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 1,
+          "col": 6
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 5
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-07",
+    "chapter": 2,
+    "number": 7,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 1
+      },
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 5,
+        "col": 6
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 5,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2;0,3",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            },
+            {
+              "row": 0,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 6
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 4
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-08",
+    "chapter": 2,
+    "number": 8,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 2
+      },
+      {
+        "row": 2,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 2
+      }
+    ],
+    "sourceEntry": {
+      "row": 4,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 6
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 5,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 0
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 6
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 3
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-09",
+    "chapter": 2,
+    "number": 9,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 2
+      },
+      {
+        "row": 0,
+        "col": 5
+      },
+      {
+        "row": 4,
+        "col": 6
+      },
+      {
+        "row": 7,
+        "col": 1
+      }
+    ],
+    "sourceEntry": {
+      "row": 2,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 0,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 4,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 3
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 5
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-10",
+    "chapter": 2,
+    "number": 10,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 1
+      },
+      {
+        "row": 1,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 5
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 5,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 6
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-11",
+    "chapter": 2,
+    "number": 11,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 0
+      },
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 7
+      }
+    ],
+    "sourceEntry": {
+      "row": 0,
+      "col": 4
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0;3,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            },
+            {
+              "row": 3,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 6,
+          "col": 5
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 0,
+          "col": 4
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 4
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-12",
+    "chapter": 2,
+    "number": 12,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 2,
+        "col": 4
+      },
+      {
+        "row": 4,
+        "col": 0
+      },
+      {
+        "row": 5,
+        "col": 0
+      },
+      {
+        "row": 6,
+        "col": 0
+      }
+    ],
+    "sourceEntry": {
+      "row": 7,
+      "col": 2
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 6,
+          "col": 0
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 2,
+          "col": 4
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 6,
+          "col": 1
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 3
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 6,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-13",
+    "chapter": 2,
+    "number": 13,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 2,
+        "col": 0
+      },
+      {
+        "row": 2,
+        "col": 1
+      },
+      {
+        "row": 3,
+        "col": 0
+      },
+      {
+        "row": 5,
+        "col": 7
+      },
+      {
+        "row": 6,
+        "col": 5
+      }
+    ],
+    "sourceEntry": {
+      "row": 0,
+      "col": 3
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 1
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 5
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 6,
+          "col": 4
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 5,
+          "col": 3
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 0,
+          "col": 3
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-14",
+    "chapter": 2,
+    "number": 14,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 2,
+        "col": 6
+      },
+      {
+        "row": 4,
+        "col": 7
+      },
+      {
+        "row": 5,
+        "col": 7
+      },
+      {
+        "row": 6,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 7
+      }
+    ],
+    "sourceEntry": {
+      "row": 7,
+      "col": 4
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 6,
+          "col": 2
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 2,
+          "col": 6
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 6,
+          "col": 3
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 5
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 5,
+          "col": 4
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 0,
+          "col": 4
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "2-15",
+    "chapter": 2,
+    "number": 15,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 0
+      },
+      {
+        "row": 2,
+        "col": 0
+      },
+      {
+        "row": 3,
+        "col": 0
+      },
+      {
+        "row": 5,
+        "col": 0
+      },
+      {
+        "row": 6,
+        "col": 4
+      }
+    ],
+    "sourceEntry": {
+      "row": 0,
+      "col": 2
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 0
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 4
+        },
+        "capacity": 1,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0;3,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            },
+            {
+              "row": 3,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 5,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 0,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "branches"
+  },
+  {
+    "id": "3-01",
+    "chapter": 3,
+    "number": 1,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 5,
+        "col": 6
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 5,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 8,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 6
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-02",
+    "chapter": 3,
+    "number": 2,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 2,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 2
+      }
+    ],
+    "sourceEntry": {
+      "row": 4,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 10,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 6
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 5,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 5
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 0
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 0
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 5
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-03",
+    "chapter": 3,
+    "number": 3,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 6
+      }
+    ],
+    "sourceEntry": {
+      "row": 2,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 0,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 4,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2;0,3",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            },
+            {
+              "row": 0,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2;0,3",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            },
+            {
+              "row": 0,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 10,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-04",
+    "chapter": 3,
+    "number": 4,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 5
+      },
+      {
+        "row": 1,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 2
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 5,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 10,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 6
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 6
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 6
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-05",
+    "chapter": 3,
+    "number": 5,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 6
+      },
+      {
+        "row": 2,
+        "col": 2
+      },
+      {
+        "row": 6,
+        "col": 6
+      }
+    ],
+    "sourceEntry": {
+      "row": 4,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 10,
+    "referenceSolution": [
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 5,
+          "col": 6
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 5
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 0
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 0
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 5
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-06",
+    "chapter": 3,
+    "number": 6,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 6
+      },
+      {
+        "row": 4,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 1
+      }
+    ],
+    "sourceEntry": {
+      "row": 2,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 0,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 4,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 10,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 1,
+          "col": 6
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 5
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 5
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-07",
+    "chapter": 3,
+    "number": 7,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 5,
+        "col": 6
+      },
+      {
+        "row": 7,
+        "col": 4
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 5,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2;0,3",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            },
+            {
+              "row": 0,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2;0,3",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            },
+            {
+              "row": 0,
+              "col": 3
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 10,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 6
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 4
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 4
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-08",
+    "chapter": 3,
+    "number": 8,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 2,
+        "col": 6
+      },
+      {
+        "row": 6,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 2
+      },
+      {
+        "row": 7,
+        "col": 5
+      }
+    ],
+    "sourceEntry": {
+      "row": 4,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 2,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 6,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 10,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 6
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 5,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 3
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 6
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 6
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 3
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-09",
+    "chapter": 3,
+    "number": 9,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 2
+      },
+      {
+        "row": 4,
+        "col": 6
+      }
+    ],
+    "sourceEntry": {
+      "row": 2,
+      "col": 0
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 0,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 4,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 10,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 5
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 3
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 0
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 3
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 5
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 0
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-10",
+    "chapter": 3,
+    "number": 10,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 0,
+        "col": 4
+      },
+      {
+        "row": 1,
+        "col": 1
+      },
+      {
+        "row": 1,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 3
+      },
+      {
+        "row": 7,
+        "col": 4
+      }
+    ],
+    "sourceEntry": {
+      "row": 3,
+      "col": 7
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 5,
+          "col": 3
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "C",
+        "cell": {
+          "row": 1,
+          "col": 1
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1;0,2",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            },
+            {
+              "row": 0,
+              "col": 2
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 11,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 6
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 4,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 1
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 0
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-11",
+    "chapter": 3,
+    "number": 11,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 3,
+        "col": 0
+      },
+      {
+        "row": 4,
+        "col": 6
+      },
+      {
+        "row": 4,
+        "col": 7
+      },
+      {
+        "row": 6,
+        "col": 2
+      }
+    ],
+    "sourceEntry": {
+      "row": 0,
+      "col": 4
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 4,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "C",
+        "cell": {
+          "row": 6,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0;3,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            },
+            {
+              "row": 3,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0;3,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            },
+            {
+              "row": 3,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 11,
+    "referenceSolution": [
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 1,
+          "col": 3
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 5
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 6,
+          "col": 3
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 0,
+          "col": 4
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 4
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 0,
+          "col": 4
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 4
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-12",
+    "chapter": 3,
+    "number": 12,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 0
+      },
+      {
+        "row": 3,
+        "col": 4
+      },
+      {
+        "row": 4,
+        "col": 0
+      },
+      {
+        "row": 5,
+        "col": 0
+      },
+      {
+        "row": 6,
+        "col": 0
+      }
+    ],
+    "sourceEntry": {
+      "row": 7,
+      "col": 2
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 6,
+          "col": 0
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 3,
+          "col": 4
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "C",
+        "cell": {
+          "row": 1,
+          "col": 0
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 11,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 6,
+          "col": 1
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 1,
+          "col": 1
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 6,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 6,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 3,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 0,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-13",
+    "chapter": 3,
+    "number": 13,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 1
+      },
+      {
+        "row": 1,
+        "col": 7
+      },
+      {
+        "row": 2,
+        "col": 0
+      },
+      {
+        "row": 3,
+        "col": 0
+      },
+      {
+        "row": 4,
+        "col": 5
+      },
+      {
+        "row": 6,
+        "col": 1
+      }
+    ],
+    "sourceEntry": {
+      "row": 0,
+      "col": 3
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 1
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 4,
+          "col": 5
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "C",
+        "cell": {
+          "row": 6,
+          "col": 1
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 11,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 1,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 4,
+          "col": 4
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 6,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 0,
+          "col": 3
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 5,
+          "col": 3
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 0,
+          "col": 3
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 5,
+          "col": 3
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-14",
+    "chapter": 3,
+    "number": 14,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 0
+      },
+      {
+        "row": 1,
+        "col": 2
+      },
+      {
+        "row": 3,
+        "col": 6
+      },
+      {
+        "row": 5,
+        "col": 7
+      },
+      {
+        "row": 6,
+        "col": 2
+      }
+    ],
+    "sourceEntry": {
+      "row": 7,
+      "col": 4
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 6,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 3,
+          "col": 6
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "C",
+        "cell": {
+          "row": 1,
+          "col": 2
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 11,
+    "referenceSolution": [
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 6,
+          "col": 3
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 3,
+          "col": 5
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 1,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 0,
+          "col": 4
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 5,
+          "col": 4
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 2,
+          "col": 4
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 0,
+          "col": 4
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 5,
+          "col": 4
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  },
+  {
+    "id": "3-15",
+    "chapter": 3,
+    "number": 15,
+    "schemaVersion": 1,
+    "contentVersion": 1,
+    "rulesVersion": 1,
+    "boardSize": 8,
+    "initialOccupiedCells": [
+      {
+        "row": 1,
+        "col": 0
+      },
+      {
+        "row": 4,
+        "col": 4
+      },
+      {
+        "row": 5,
+        "col": 7
+      },
+      {
+        "row": 6,
+        "col": 0
+      }
+    ],
+    "sourceEntry": {
+      "row": 0,
+      "col": 2
+    },
+    "targets": [
+      {
+        "id": "A",
+        "cell": {
+          "row": 1,
+          "col": 0
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "B",
+        "cell": {
+          "row": 4,
+          "col": 4
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      },
+      {
+        "id": "C",
+        "cell": {
+          "row": 6,
+          "col": 0
+        },
+        "capacity": 2,
+        "initialEnergy": 0
+      }
+    ],
+    "pieceBatches": [
+      [
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0;3,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            },
+            {
+              "row": 3,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;2,0;3,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 2,
+              "col": 0
+            },
+            {
+              "row": 3,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            }
+          ]
+        }
+      ],
+      [
+        {
+          "id": "0,0",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            }
+          ]
+        },
+        {
+          "id": "0,0;0,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 0,
+              "col": 1
+            }
+          ]
+        },
+        {
+          "id": "0,0;1,0;1,1",
+          "cells": [
+            {
+              "row": 0,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 0
+            },
+            {
+              "row": 1,
+              "col": 1
+            }
+          ]
+        }
+      ]
+    ],
+    "moveLimit": 11,
+    "referenceSolution": [
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 0,
+          "col": 1
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 3,
+          "col": 3
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 5,
+          "col": 1
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      },
+      {
+        "slot": 1,
+        "anchor": {
+          "row": 4,
+          "col": 2
+        }
+      },
+      {
+        "slot": 2,
+        "anchor": {
+          "row": 0,
+          "col": 2
+        }
+      },
+      {
+        "slot": 0,
+        "anchor": {
+          "row": 2,
+          "col": 2
+        }
+      }
+    ],
+    "lesson": "rebuild"
+  }
+]

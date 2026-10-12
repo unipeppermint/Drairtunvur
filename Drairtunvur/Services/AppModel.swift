@@ -4,6 +4,7 @@ import UIKit
 @MainActor final class AppModel {
   static let shared = AppModel()
   let levels: [LevelDefinition]
+  let dailyLevels: [LevelDefinition]
   let repository: SaveRepository
   var save = SaveEnvelope()
   var loadMessage: String?
@@ -19,6 +20,10 @@ import UIKit
         throw RuleError.invalidLevel("Missing levels")
       }
       levels = try LevelCatalog.decode(Data(contentsOf: url))
+      guard let dailyURL = Bundle.main.url(forResource: "Drairtunvur-daily-levels", withExtension: "json") else {
+        throw RuleError.invalidLevel("Missing daily catalogue")
+      }
+      dailyLevels = try LevelCatalog.decode(Data(contentsOf: dailyURL))
     } catch { fatalError("Bundled level validation failed: \(error)") }
     var root = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
       .appendingPathComponent("Lightworks", isDirectory: true)
@@ -65,6 +70,13 @@ import UIKit
       )
     }
     loaded = true
+    #if DEBUG
+      let args = ProcessInfo.processInfo.arguments
+      if args.contains("-ui-testing"), args.contains("-ui-test-completed"), !storageNeedsRecovery {
+        for level in levels { save.recordWin(level: level, moves: level.referenceSolution.count) }
+        persist()
+      }
+    #endif
     onChange?()
   }
   func level(_ id: String) -> LevelDefinition? { levels.first { $0.id == id } }
@@ -111,7 +123,7 @@ import UIKit
     return DailyChallenge.key(for: Date())
   }
   func dailyLevel(_ day: String) -> LevelDefinition {
-    daily.runs[day]?.level ?? DailyChallenge.level(for: day, levels: levels)!
+    daily.runs[day]?.level ?? DailyChallenge.level(for: day, levels: dailyLevels)!
   }
   func startDaily(day: String, level: LevelDefinition, restart: Bool = false) -> GameSession {
     var progress = daily
@@ -213,6 +225,16 @@ extension Notification.Name {
   }
   static func lesson(_ key: String) -> String {
     switch key {
+    case "cascade":
+      return text("先观察入口与各条线路的连接。消除上游可能切断下游，安排好点亮顺序。", "Trace the source to each line. Clearing upstream can disconnect lights downstream; plan the order.")
+    case "relay":
+      return text("消除会留下断口。点亮一段后补回连接，再把光送到下一盏灯。", "Clearing leaves a gap. Repair the connection before carrying light to the next target.")
+    case "cross":
+      return text("准备好分支，再补齐交汇处。一次同时消除多条线，仍只产生一次充能。", "Prepare the branches, then finish the crossing. Clearing several lines together still gives just one charge.")
+    case "switchback":
+      return text("不同的灯需要不同次数的充能。先接通第一条线路，再补回交汇处，改变送光方向。", "Lights need different charge counts. Send light along one axis, then rebuild the crossing to use the other route.")
+    case "double-rebuild":
+      return text("双线消除只充能一次。留意下一批方块，重建两条线路完成第二次脉冲。", "A double clear charges once. Use the next batch to rebuild both lines for a second pulse.")
     case "first":
       return text(
         "点选横向方块，再点亮起的空格。补满一行，让光抵达 A。",

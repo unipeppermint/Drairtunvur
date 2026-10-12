@@ -1,0 +1,108 @@
+Application, 0x109fc8dc0, pid: 27415, label: 'Drairtunvur' <App element pid: 27415>
+  Window (Main), 0x109fc8f00, {{0.0, 0.0}, {402.0, 874.0}} <AX element pid: 27415, elementOrHash.elementID: 4339567616.4>
+    Other, 0x109fc9180, {{0.0, 0.0}, {402.0, 874.0}} <AX element pid: 27415, elementOrHash.elementID: 4485220352.5>
+      Other, 0x109fc92c0, {{0.0, 0.0}, {402.0, 874.0}} <AX element pid: 27415, elementOrHash.elementID: 4398216320.6>
+        Other, 0x109fc9400, {{0.0, 0.0}, {402.0, 874.0}} <AX element pid: 27415, elementOrHash.elementID: 4340696384.7>
+          Other, 0x109fc9540, {{0.0, 0.0}, {402.0, 874.0}} <AX element pid: 27415, elementOrHash.elementID: 4396825920.66>
+            Other, 0x109fc9680, {{0.0, 0.0}, {402.0, 874.0}} <AX element pid: 27415, elementOrHash.elementID: 4395867136.67>
+              Other, 0x109fc97c0, {{0.0, 0.0}, {402.0, 874.0}} <AX element pid: 27415, elementOrHash.elementID: 4396306368.69>
+                Other, 0x109fc9900, {{0.0, 0.0}, {402.0, 874.0}} <AX element pid: 27415, elementOrHash.elementID: 4396325440.123>
+                  ScrollView, 0x109fc9a40, {{0.0, 62.0}, {402.0, 778.0}} <AX element pid: 27415, elementOrHash.elementID: 4398390784.124>
+                    Other, 0x109fc9b80, {{20.0, 74.0}, {362.0, 730.0}} <AX element pid: 27415, elementOrHash.elementID: 4396331712.125>
+                      Other, 0x109fc9cc0, {{20.0, 74.0}, {362.0, 46.3}} <AX element pid: 27415, elementOrHash.elementID: 4396302784.127>
+                        Button, 0x109fc9e00, {{20.0, 74.0}, {48.0, 46.3}}, label: '返回' <AX element pid: 27415, elementOrHash.elementID: 4486933760.131>
+                        StaticText, 0x109fc9f40, {{76.0, 74.0}, {250.0, 46.3}}, label: '每日 · 10-12' <AX element pid: 27415, elementOrHash.elementID: 4812350208.132>
+                        Button, 0x109fca080, {{334.0, 74.0}, {48.0, 46.3}}, identifier: 'game.pause', label: '暂停' <AX element pid: 27415, elementOrHash.elementID: 4486932992.133>
+                      Other, 0x109fca1c0, {{20.0, 132.3}, {362.0, 75.3}} <AX element pid: 27415, elementOrHash.elementID: 4396303680.128>
+                        Other, 0x109fca300, {{33.0, 145.3}, {336.0, 49.3}} <AX element pid: 27415, elementOrHash.elementID: 4396328576.134>
+                          Other, 0x109fca440, {{33.0, 145.3}, {62.3, 49.3}} <AX element pid: 27415, elementOrHash.elementID: 4396297152.365>
+                            StaticText, 0x109fca580, {{33.0, 145.3}, {29.3, 49.3}}, label: '剩余步数' <AX element pid: 27415, elementOrHash.elementID: 4929570560.370>
+                            StaticText, 0x109fca6c0, {{66.3, 145.3}, {29.0, 49.3}}, identifier: 'game.remaining', label: '5' <AX element pid: 27415, elementOrHash.elementID: 4929571456.371>
+                          StaticText, 0x109fca800, {{101.3, 145.3}, {62.3, 49.3}}, label: '点亮 3 座灯塔' <AX element pid: 27415, elementOrHash.elementID: 4929572352.366>
+                          Other, 0x109fca940, {{169.7, 145.3}, {62.7, 49.3}}, label: '灯 A，0 / 1，第 4 行第 1 列' <AX element pid: 27415, elementOrHash.elementID: 4396372352.367>
+                          Other, 0x109fcaa80, {{238.3, 145.3}, {62.3, 49.3}}, label: '灯 B，0 / 1，第 5 行第 1 列' <AX element pid: 27415, elementOrHash.elementID: 4396373248.368>
+                          Other, 0x109fcabc0, {{306.7, 145.3}, {62.3, 49.3}}, label: '灯 C，1 / 1，第 6 行第 1 列' <AX element pid: 27415, elementOrHash.elementID: 4396372800.369>
+                      Other, 0x109fcad00, {{20.0, 219.7}, {362.0, 584.3}} <AX element pid: 27415, elementOrHash.elementID: 4396329024.129>
+                        Other, 0x109fcae40, {{20.0, 219.7}, {362.0, 362.0}} <AX element pid: 27415, elementOrHash.elementID: 4396329920.135>
+                          Other, 0x109fcaf80, {{20.0, 219.7}, {362.0, 362.0}}, identifier: 'game.board' <AX element pid: 27415, elementOrHash.elementID: 4812348416.142>
+                            Button, 0x109fcb0c0, {{28.0, 227.7}, {39.8, 39.8}}, identifier: 'cell.0.0', label: '第 1 行，第 1 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4814995968.372>
+                            Button, 0x109fcb200, {{71.8, 227.7}, {39.8, 39.8}}, identifier: 'cell.0.1', label: '第 1 行，第 2 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815002368.373>
+                            Button, 0x109fcb340, {{115.5, 227.7}, {39.8, 39.8}}, identifier: 'cell.0.2', label: '第 1 行，第 3 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815002304.374>
+                            Button, 0x109fcb480, {{159.2, 227.7}, {39.8, 39.8}}, identifier: 'cell.0.3', label: '第 1 行，第 4 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815002816.375>
+                            Button, 0x109fcb5c0, {{203.0, 227.7}, {39.8, 39.8}}, identifier: 'cell.0.4', label: '第 1 行，第 5 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4814997248.376>
+                            Button, 0x109fcb700, {{246.8, 227.7}, {39.8, 39.8}}, identifier: 'cell.0.5', label: '第 1 行，第 6 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815002560.377>
+                            Button, 0x109fcb840, {{290.5, 227.7}, {39.8, 39.8}}, identifier: 'cell.0.6', label: '第 1 行，第 7 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815001984.378>
+                            Button, 0x109fcb980, {{334.2, 227.7}, {39.8, 39.8}}, identifier: 'cell.0.7', label: '第 1 行，第 8 列，已占用，光源入口' <AX element pid: 27415, elementOrHash.elementID: 4815002112.379>
+                            Button, 0x109fcbac0, {{28.0, 271.4}, {39.8, 39.8}}, identifier: 'cell.1.0', label: '第 2 行，第 1 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815002048.380>
+                            Button, 0x109fcbc00, {{71.8, 271.4}, {39.8, 39.8}}, identifier: 'cell.1.1', label: '第 2 行，第 2 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815002240.381>
+                            Button, 0x109fcbd40, {{115.5, 271.4}, {39.8, 39.8}}, identifier: 'cell.1.2', label: '第 2 行，第 3 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815006336.382>
+                            Button, 0x109fcbe80, {{159.2, 271.4}, {39.8, 39.8}}, identifier: 'cell.1.3', label: '第 2 行，第 4 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815007744.383>
+                            Button, 0x109e6d400, {{203.0, 271.4}, {39.8, 39.8}}, identifier: 'cell.1.4', label: '第 2 行，第 5 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815006784.384>
+                            Button, 0x116a34000, {{246.8, 271.4}, {39.8, 39.8}}, identifier: 'cell.1.5', label: '第 2 行，第 6 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815002944.385>
+                            Button, 0x116a34140, {{290.5, 271.4}, {39.8, 39.8}}, identifier: 'cell.1.6', label: '第 2 行，第 7 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815007104.386>
+                            Button, 0x116a34280, {{334.2, 271.4}, {39.8, 39.8}}, identifier: 'cell.1.7', label: '第 2 行，第 8 列，已占用' <AX element pid: 27415, elementOrHash.elementID: 4815008704.387>
+                            Button, 0x116a343c0, {{28.0, 315.2}, {39.8, 39.8}}, identifier: 'cell.2.0', label: '第 3 行，第 1 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815007616.388>
+                            Button, 0x116a34500, {{71.8, 315.2}, {39.8, 39.8}}, identifier: 'cell.2.1', label: '第 3 行，第 2 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815007552.389>
+                            Button, 0x116a34640, {{115.5, 315.2}, {39.8, 39.8}}, identifier: 'cell.2.2', label: '第 3 行，第 3 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815006592.390>
+                            Button, 0x116a34780, {{159.2, 315.2}, {39.8, 39.8}}, identifier: 'cell.2.3', label: '第 3 行，第 4 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815006528.391>
+                            Button, 0x116a348c0, {{203.0, 315.2}, {39.8, 39.8}}, identifier: 'cell.2.4', label: '第 3 行，第 5 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815008768.392>
+                            Button, 0x116a34a00, {{246.8, 315.2}, {39.8, 39.8}}, identifier: 'cell.2.5', label: '第 3 行，第 6 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815003008.393>
+                            Button, 0x116a34b40, {{290.5, 315.2}, {39.8, 39.8}}, identifier: 'cell.2.6', label: '第 3 行，第 7 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815003200.394>
+                            Button, 0x116a34c80, {{334.2, 315.2}, {39.8, 39.8}}, identifier: 'cell.2.7', label: '第 3 行，第 8 列，已占用' <AX element pid: 27415, elementOrHash.elementID: 4815002624.395>
+                            Button, 0x116a34dc0, {{28.0, 358.9}, {39.8, 39.8}}, identifier: 'cell.3.0', label: '第 4 行，第 1 列，已占用, A, 0/1' <AX element pid: 27415, elementOrHash.elementID: 4815008000.396>
+                            Button, 0x116a34f00, {{71.8, 358.9}, {39.8, 39.8}}, identifier: 'cell.3.1', label: '第 4 行，第 2 列，已占用' <AX element pid: 27415, elementOrHash.elementID: 4815008128.397>
+                            Button, 0x116a35040, {{115.5, 358.9}, {39.8, 39.8}}, identifier: 'cell.3.2', label: '第 4 行，第 3 列，已占用' <AX element pid: 27415, elementOrHash.elementID: 4815008256.398>
+                            Button, 0x116a35180, {{159.2, 358.9}, {39.8, 39.8}}, identifier: 'cell.3.3', label: '第 4 行，第 4 列，已占用' <AX element pid: 27415, elementOrHash.elementID: 4815008064.399>
+                            Button, 0x116a352c0, {{203.0, 358.9}, {39.8, 39.8}}, identifier: 'cell.3.4', label: '第 4 行，第 5 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815002752.400>
+                            Button, 0x116a35400, {{246.8, 358.9}, {39.8, 39.8}}, identifier: 'cell.3.5', label: '第 4 行，第 6 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815002688.401>
+                            Button, 0x116a35540, {{290.5, 358.9}, {39.8, 39.8}}, identifier: 'cell.3.6', label: '第 4 行，第 7 列，已占用' <AX element pid: 27415, elementOrHash.elementID: 4815006848.402>
+                            Button, 0x116a35680, {{334.2, 358.9}, {39.8, 39.8}}, identifier: 'cell.3.7', label: '第 4 行，第 8 列，已占用' <AX element pid: 27415, elementOrHash.elementID: 4815002880.403>
+                            Button, 0x116a357c0, {{28.0, 402.7}, {39.8, 39.8}}, identifier: 'cell.4.0', label: '第 5 行，第 1 列，空格, B, 0/1' <AX element pid: 27415, elementOrHash.elementID: 4815009600.404>
+                            Button, 0x116a35900, {{71.8, 402.7}, {39.8, 39.8}}, identifier: 'cell.4.1', label: '第 5 行，第 2 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815007808.405>
+                            Button, 0x116a35a40, {{115.5, 402.7}, {39.8, 39.8}}, identifier: 'cell.4.2', label: '第 5 行，第 3 列，已占用' <AX element pid: 27415, elementOrHash.elementID: 4815006208.406>
+                            Button, 0x116a35b80, {{159.2, 402.7}, {39.8, 39.8}}, identifier: 'cell.4.3', label: '第 5 行，第 4 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815010048.407>
+                            Button, 0x116a35cc0, {{203.0, 402.7}, {39.8, 39.8}}, identifier: 'cell.4.4', label: '第 5 行，第 5 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815003520.408>
+                            Button, 0x116a35e00, {{246.8, 402.7}, {39.8, 39.8}}, identifier: 'cell.4.5', label: '第 5 行，第 6 列，已占用' <AX element pid: 27415, elementOrHash.elementID: 4815009152.409>
+                            Button, 0x116a35f40, {{290.5, 402.7}, {39.8, 39.8}}, identifier: 'cell.4.6', label: '第 5 行，第 7 列，已占用' <AX element pid: 27415, elementOrHash.elementID: 4815010112.410>
+                            Button, 0x116a36080, {{334.2, 402.7}, {39.8, 39.8}}, identifier: 'cell.4.7', label: '第 5 行，第 8 列，已占用' <AX element pid: 27415, elementOrHash.elementID: 4815010560.411>
+                            Button, 0x116a361c0, {{28.0, 446.4}, {39.8, 39.8}}, identifier: 'cell.5.0', label: '第 6 行，第 1 列，空格, C, 1/1' <AX element pid: 27415, elementOrHash.elementID: 4815006272.412>
+                            Button, 0x116a36300, {{71.8, 446.4}, {39.8, 39.8}}, identifier: 'cell.5.1', label: '第 6 行，第 2 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815003712.413>
+                            Button, 0x116a36440, {{115.5, 446.4}, {39.8, 39.8}}, identifier: 'cell.5.2', label: '第 6 行，第 3 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815005952.414>
+                            Button, 0x116a36580, {{159.2, 446.4}, {39.8, 39.8}}, identifier: 'cell.5.3', label: '第 6 行，第 4 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815003904.415>
+                            Button, 0x116a366c0, {{203.0, 446.4}, {39.8, 39.8}}, identifier: 'cell.5.4', label: '第 6 行，第 5 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815003328.416>
+                            Button, 0x116a36800, {{246.8, 446.4}, {39.8, 39.8}}, identifier: 'cell.5.5', label: '第 6 行，第 6 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815009344.417>
+                            Button, 0x116a36940, {{290.5, 446.4}, {39.8, 39.8}}, identifier: 'cell.5.6', label: '第 6 行，第 7 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815009280.418>
+                            Button, 0x116a36a80, {{334.2, 446.4}, {39.8, 39.8}}, identifier: 'cell.5.7', label: '第 6 行，第 8 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815009472.419>
+                            Button, 0x116a36bc0, {{28.0, 490.2}, {39.8, 39.8}}, identifier: 'cell.6.0', label: '第 7 行，第 1 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815009408.420>
+                            Button, 0x116a36d00, {{71.8, 490.2}, {39.8, 39.8}}, identifier: 'cell.6.1', label: '第 7 行，第 2 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815003456.421>
+                            Button, 0x116a36e40, {{115.5, 490.2}, {39.8, 39.8}}, identifier: 'cell.6.2', label: '第 7 行，第 3 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815010304.422>
+                            Button, 0x116a36f80, {{159.2, 490.2}, {39.8, 39.8}}, identifier: 'cell.6.3', label: '第 7 行，第 4 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815008960.423>
+                            Button, 0x116a370c0, {{203.0, 490.2}, {39.8, 39.8}}, identifier: 'cell.6.4', label: '第 7 行，第 5 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815003392.424>
+                            Button, 0x116a37200, {{246.8, 490.2}, {39.8, 39.8}}, identifier: 'cell.6.5', label: '第 7 行，第 6 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815010368.425>
+                            Button, 0x116a37340, {{290.5, 490.2}, {39.8, 39.8}}, identifier: 'cell.6.6', label: '第 7 行，第 7 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815008320.426>
+                            Button, 0x116a37480, {{334.2, 490.2}, {39.8, 39.8}}, identifier: 'cell.6.7', label: '第 7 行，第 8 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815008192.427>
+                            Button, 0x116a375c0, {{28.0, 533.9}, {39.8, 39.8}}, identifier: 'cell.7.0', label: '第 8 行，第 1 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815010432.428>
+                            Button, 0x116a37700, {{71.8, 533.9}, {39.8, 39.8}}, identifier: 'cell.7.1', label: '第 8 行，第 2 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815008448.429>
+                            Button, 0x116a37840, {{115.5, 533.9}, {39.8, 39.8}}, identifier: 'cell.7.2', label: '第 8 行，第 3 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815009792.430>
+                            Button, 0x116a37980, {{159.2, 533.9}, {39.8, 39.8}}, identifier: 'cell.7.3', label: '第 8 行，第 4 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815009024.431>
+                            Button, 0x116a37ac0, {{203.0, 533.9}, {39.8, 39.8}}, identifier: 'cell.7.4', label: '第 8 行，第 5 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815003648.432>
+                            Button, 0x116a37c00, {{246.8, 533.9}, {39.8, 39.8}}, identifier: 'cell.7.5', label: '第 8 行，第 6 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815009664.433>
+                            Button, 0x116a37d40, {{290.5, 533.9}, {39.8, 39.8}}, identifier: 'cell.7.6', label: '第 8 行，第 7 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815009856.434>
+                            Button, 0x116a37e80, {{334.2, 533.9}, {39.8, 39.8}}, identifier: 'cell.7.7', label: '第 8 行，第 8 列，空格' <AX element pid: 27415, elementOrHash.elementID: 4815009984.435>
+                        Other, 0x116a3c000, {{20.0, 593.7}, {362.0, 210.3}} <AX element pid: 27415, elementOrHash.elementID: 4396329472.136>
+                          StaticText, 0x116a3c140, {{20.0, 593.7}, {362.0, 40.0}}, identifier: 'game.status', label: '先观察入口与各条线路的连接。消除上游可能切断下游，安排好点亮顺序。' <AX element pid: 27415, elementOrHash.elementID: 4812347520.143>
+                          Other, 0x116a3c280, {{20.0, 645.7}, {362.0, 100.0}} <AX element pid: 27415, elementOrHash.elementID: 4396304576.144>
+                            Button, 0x116a3c3c0, {{20.0, 645.7}, {114.0, 100.0}}, identifier: 'piece.0', label: '候选 1，2 格，相对位置 1,1; 1,2' <AX element pid: 27415, elementOrHash.elementID: 4812799488.212>
+                            Button, 0x116a3c500, {{144.0, 645.7}, {114.0, 100.0}}, identifier: 'piece.1', label: '候选 2，2 格，相对位置 1,1; 1,2' <AX element pid: 27415, elementOrHash.elementID: 4486663168.213>
+                            Button, 0x116a3c640, {{268.0, 645.7}, {114.0, 100.0}}, identifier: 'piece.2', label: '候选 3，2 格，相对位置 1,1; 1,2' <AX element pid: 27415, elementOrHash.elementID: 4485228032.214>
+                          Other, 0x116a3c780, {{20.0, 757.7}, {362.0, 46.3}} <AX element pid: 27415, elementOrHash.elementID: 4340728256.145>
+                            Button, 0x116a3c8c0, {{20.0, 757.7}, {175.0, 46.3}}, identifier: 'game.undo', label: '撤销' <AX element pid: 27415, elementOrHash.elementID: 4486934528.215>
+                              StaticText, 0x116a3ca00, {{108.3, 771.3}, {32.0, 19.3}}, label: '撤销' <AX element pid: 27415, elementOrHash.elementID: 4812352000.217>
+                            Button, 0x116a3cb40, {{207.0, 757.7}, {175.0, 46.3}}, identifier: 'game.hint', label: '提示' <AX element pid: 27415, elementOrHash.elementID: 4486935296.216>
+                              StaticText, 0x116a3cc80, {{292.3, 771.3}, {32.0, 19.3}}, label: '提示' <AX element pid: 27415, elementOrHash.elementID: 4812352896.218>
+                    Other, 0x116a3cdc0, {{28.0, 807.0}, {346.0, 30.0}}, label: '水平滚动条, 1页', value: 0% <AX element pid: 27415, elementOrHash.elementID: 4813735936.126>
+                      Other, 0x116a3cf00, {{-39.0, 834.0}, {36.0, 3.0}} <AX element pid: 27415, elementOrHash.elementID: 4340705792.130>
+                    Other, 0x116a3d040, {{28.0, 807.0}, {346.0, 30.0}}, label: '水平滚动条, 1页', value: 0% <AX element pid: 27415, elementOrHash.elementID: 4813735936.126>
+                      Other, 0x116a3d180, {{-39.0, 834.0}, {36.0, 3.0}} <AX element pid: 27415, elementOrHash.elementID: 4340705792.130>
+            Other, 0x116a3d2c0, {{0.0, 0.0}, {402.0, 874.0}} <AX element pid: 27415, elementOrHash.elementID: 4397163520.68>
+              Other, 0x116a3d400, {{0.0, 0.0}, {402.0, 874.0}} <AX element pid: 27415, elementOrHash.elementID: 4397165568.70>
