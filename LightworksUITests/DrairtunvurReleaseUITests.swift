@@ -3,41 +3,45 @@ import XCTest
 final class DrairtunvurReleaseUITests: XCTestCase {
   func testCompletedCityAndEveryRestoredKeepsake() {
     let app = XCUIApplication()
-    app.launchArguments = ["-ui-testing", "-reset-test-save", "-ui-test-completed", "-ui-language", "zh-Hans"]
+    app.launchArguments = [
+      "-ui-testing", "-reset-test-save", "-ui-test-completed", "-AppleLanguages", "(en)",
+    ]
     app.launch()
     XCTAssertTrue(app.buttons["city.continue"].waitForExistence(timeout: 15))
-    XCTAssertTrue(app.buttons["city.continue"].label.contains("回顾光路"))
+    XCTAssertTrue(app.buttons["city.continue"].label.contains("Revisit the paths"))
     app.buttons["tab.collection"].tap()
-    XCTAssertTrue(app.staticTexts["已收藏 9 / 9"].waitForExistence(timeout:5))
-    for milestone in [5,10,15] {
+    XCTAssertTrue(app.staticTexts["9 / 9 collected"].waitForExistence(timeout: 5))
+    for milestone in [5, 10, 15] {
       for chapter in 1...3 {
-        let card=app.buttons["collection.\(chapter).\(milestone)"]
+        let card = app.buttons["collection.\(chapter).\(milestone)"]
         for _ in 0..<6 {
           let tabTop = app.buttons["tab.collection"].frame.minY
           if card.isHittable && card.frame.maxY < tabTop { break }
           app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.75))
-            .press(forDuration: 0.05, thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.45)))
+            .press(
+              forDuration: 0.05,
+              thenDragTo: app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.45)))
         }
         XCTAssertTrue(card.isHittable)
         card.tap()
-        let restoration=app.segmentedControls["collection.restoration"]
-        XCTAssertTrue(restoration.waitForExistence(timeout:5))
-        restoration.buttons["点亮之前"].tap()
-        XCTAssertTrue(restoration.buttons["点亮之前"].isSelected)
-        restoration.buttons["修复之后"].tap()
-        XCTAssertTrue(restoration.buttons["修复之后"].isSelected)
-        let attachment=XCTAttachment(screenshot:XCUIScreen.main.screenshot())
-        attachment.name="Drairtunvur-keepsake-\(chapter)-\(milestone)"
+        let restoration = app.segmentedControls["collection.restoration"]
+        XCTAssertTrue(restoration.waitForExistence(timeout: 5))
+        restoration.buttons["Before"].tap()
+        XCTAssertTrue(restoration.buttons["Before"].isSelected)
+        restoration.buttons["Restored"].tap()
+        XCTAssertTrue(restoration.buttons["Restored"].isSelected)
+        let attachment = XCTAttachment(screenshot: XCUIScreen.main.screenshot())
+        attachment.name = "Drairtunvur-keepsake-\(chapter)-\(milestone)"
         attachment.lifetime = .keepAlways
         add(attachment)
-        app.buttons["返回"].tap()
+        app.buttons["Back"].tap()
       }
     }
   }
   func testCorruptSaveRecoveryAndHelp() {
     let app = XCUIApplication()
     app.launchArguments = [
-      "-ui-testing", "-reset-test-save", "-ui-test-corrupt-save", "-ui-language", "en",
+      "-ui-testing", "-reset-test-save", "-ui-test-corrupt-save", "-AppleLanguages", "(en)",
     ]
     app.launch()
     XCTAssertTrue(app.buttons["city.settings"].waitForExistence(timeout: 15))
@@ -57,7 +61,7 @@ final class DrairtunvurReleaseUITests: XCTestCase {
     app.alerts.buttons.firstMatch.tap()
     XCTAssertFalse(app.buttons["settings.reset"].exists)
     app.terminate()
-    app.launchArguments = ["-ui-testing", "-ui-language", "en"]
+    app.launchArguments = ["-ui-testing", "-AppleLanguages", "(en)"]
     app.launch()
     XCTAssertTrue(app.buttons["game.pause"].waitForExistence(timeout: 15))
     app.buttons["cell.3.6"].tap()

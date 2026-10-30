@@ -9,12 +9,6 @@
             "state": "translated",
             "value": "Lightworks"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "光路工坊"
-          }
         }
       }
     },
@@ -25,12 +19,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "City"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "城市"
           }
         }
       }
@@ -43,12 +31,6 @@
             "state": "translated",
             "value": "Collection"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "图鉴"
-          }
         }
       }
     },
@@ -59,12 +41,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Daily"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "每日"
           }
         }
       }
@@ -77,12 +53,6 @@
             "state": "translated",
             "value": "Pause"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "暂停"
-          }
         }
       }
     },
@@ -93,12 +63,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Undo"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "撤销"
           }
         }
       }
@@ -111,12 +75,6 @@
             "state": "translated",
             "value": "Hint"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "提示"
-          }
         }
       }
     },
@@ -127,12 +85,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "MOVES LEFT"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "剩余步数"
           }
         }
       }
@@ -145,12 +97,6 @@
             "state": "translated",
             "value": "Double tap to select, then activate the top-left anchor on the board."
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "双击选择，再在棋盘中双击左上锚点。"
-          }
         }
       }
     },
@@ -161,12 +107,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Select a piece below first."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "先在下方选择一个方块。"
           }
         }
       }
@@ -179,12 +119,6 @@
             "state": "translated",
             "value": "That piece does not fit here. Try an empty space."
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "这里放不下，请选择空白位置。"
-          }
         }
       }
     },
@@ -195,12 +129,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Path extended · Complete a row or column to pulse"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "光路已延伸 · 补满一行或一列可触发脉冲"
           }
         }
       }
@@ -213,12 +141,6 @@
             "state": "translated",
             "value": "Fits here · No line completed yet"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "可以放置 · 尚未形成消除"
-          }
         }
       }
     },
@@ -229,12 +151,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Move over empty cells. Preview sits above your finger."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "移动到空白格，方块预览在手指上方。"
           }
         }
       }
@@ -247,12 +163,6 @@
             "state": "translated",
             "value": "Looking for a complete path to success…"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "正在寻找可通关的后续步骤…"
-          }
         }
       }
     },
@@ -263,12 +173,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "No winning continuation exists. Try undoing a move."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "当前局面已确认无法通关，试着撤销一步。"
           }
         }
       }
@@ -281,12 +185,6 @@
             "state": "translated",
             "value": "Back to city"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "回到城市"
-          }
         }
       }
     },
@@ -297,12 +195,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Back to daily"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "回到每日"
           }
         }
       }
@@ -315,12 +207,6 @@
             "state": "translated",
             "value": "No moves left. Undo to try a different path."
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "步数用完了。已充入的光仍在，撤销后可以换一种铺法。"
-          }
         }
       }
     },
@@ -331,12 +217,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "None of the remaining pieces fit. Undo to make room."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "剩余候选都放不下了。撤销后给大块留出空间。"
           }
         }
       }
@@ -349,12 +229,6 @@
             "state": "translated",
             "value": "The piece sequence is exhausted before all lights are charged."
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "固定方块序列已用完，目标尚未充满。"
-          }
         }
       }
     },
@@ -365,12 +239,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Try another path"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "再试一条光路"
           }
         }
       }
@@ -383,12 +251,6 @@
             "state": "translated",
             "value": "Undo last move"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "撤销一步"
-          }
         }
       }
     },
@@ -399,12 +261,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Try again"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "重新挑战"
           }
         }
       }
@@ -417,12 +273,6 @@
             "state": "translated",
             "value": "Repair paused"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "暂停修复"
-          }
         }
       }
     },
@@ -433,12 +283,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Your progress is saved on this device."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "进度已保存在本机。"
           }
         }
       }
@@ -451,12 +295,6 @@
             "state": "translated",
             "value": "Continue"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "继续"
-          }
         }
       }
     },
@@ -467,12 +305,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Restart"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "重新开始"
           }
         }
       }
@@ -485,12 +317,6 @@
             "state": "translated",
             "value": "How to play"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "玩法说明"
-          }
         }
       }
     },
@@ -501,12 +327,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "A little light. A city brought to life."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "拼出光的道路，点亮一座城市"
           }
         }
       }
@@ -519,12 +339,6 @@
             "state": "translated",
             "value": "Settings"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "设置"
-          }
         }
       }
     },
@@ -535,12 +349,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Previous six levels"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "前六关"
           }
         }
       }
@@ -553,12 +361,6 @@
             "state": "translated",
             "value": "Next six levels"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "后六关"
-          }
         }
       }
     },
@@ -569,12 +371,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Choose chapter"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "选择章节"
           }
         }
       }
@@ -587,12 +383,6 @@
             "state": "translated",
             "value": "Revisit the paths"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "回顾光路"
-          }
         }
       }
     },
@@ -603,12 +393,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Continue restoring"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "继续修复"
           }
         }
       }
@@ -621,12 +405,6 @@
             "state": "translated",
             "value": "Chapter locked"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "章节未解锁"
-          }
         }
       }
     },
@@ -637,12 +415,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Complete the previous chapter"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "完成前一章后开放"
           }
         }
       }
@@ -655,12 +427,6 @@
             "state": "translated",
             "value": "Cancel"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "取消"
-          }
         }
       }
     },
@@ -671,12 +437,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "The light has not reached here"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "光路尚未抵达"
           }
         }
       }
@@ -689,12 +449,6 @@
             "state": "translated",
             "value": "Complete the previous level to unlock this one."
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "先完成前一关，再来修复这里。"
-          }
         }
       }
     },
@@ -705,12 +459,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "The city shines"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "城市已点亮"
           }
         }
       }
@@ -723,12 +471,6 @@
             "state": "translated",
             "value": "A little brighter"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "灯塔亮了"
-          }
         }
       }
     },
@@ -739,12 +481,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "The glasshouse glows"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "温室亮了"
           }
         }
       }
@@ -757,12 +493,6 @@
             "state": "translated",
             "value": "The station shines"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "站台亮了"
-          }
         }
       }
     },
@@ -773,12 +503,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Moves used"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "使用步数"
           }
         }
       }
@@ -791,12 +515,6 @@
             "state": "translated",
             "value": "Lights restored"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "点亮目标"
-          }
         }
       }
     },
@@ -807,12 +525,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Play again"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "再挑战一次"
           }
         }
       }
@@ -825,12 +537,6 @@
             "state": "translated",
             "value": "Describe the issue and steps to reproduce:"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "问题描述与复现步骤（请填写）："
-          }
         }
       }
     },
@@ -841,12 +547,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Build a path"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "铺出光路"
           }
         }
       }
@@ -859,12 +559,6 @@
             "state": "translated",
             "value": "Complete a line"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "补满一行或一列"
-          }
         }
       }
     },
@@ -875,12 +569,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Restore every light"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "点亮所有灯"
           }
         }
       }
@@ -893,12 +581,6 @@
             "state": "translated",
             "value": "Explore, undo and get hints"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "尝试、撤销与提示"
-          }
         }
       }
     },
@@ -909,12 +591,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "City and daily challenges"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "主线与每日"
           }
         }
       }
@@ -927,12 +603,6 @@
             "state": "translated",
             "value": "Daily Restoration"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "每日修复"
-          }
         }
       }
     },
@@ -943,12 +613,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "A new path awaits your light"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今日光路，等你点亮"
           }
         }
       }
@@ -961,12 +625,6 @@
             "state": "translated",
             "value": "Completed today ✓"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今日已完成 ✓"
-          }
         }
       }
     },
@@ -977,12 +635,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Continue today's challenge"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "继续今日挑战"
           }
         }
       }
@@ -995,12 +647,6 @@
             "state": "translated",
             "value": "Start today's challenge"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "开始今日挑战"
-          }
         }
       }
     },
@@ -1011,12 +657,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Days completed"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "累计完成"
           }
         }
       }
@@ -1029,12 +669,6 @@
             "state": "translated",
             "value": "Current streak"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "连续完成"
-          }
         }
       }
     },
@@ -1045,12 +679,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Today's best"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今日最好"
           }
         }
       }
@@ -1063,12 +691,6 @@
             "state": "translated",
             "value": "The last seven days"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "最近七天"
-          }
         }
       }
     },
@@ -1079,12 +701,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Completed"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "已完成"
           }
         }
       }
@@ -1097,12 +713,6 @@
             "state": "translated",
             "value": "Not completed"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "未完成"
-          }
         }
       }
     },
@@ -1113,12 +723,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Today's path is shining"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "今日光路已点亮"
           }
         }
       }
@@ -1131,12 +735,6 @@
             "state": "translated",
             "value": "City Collection"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "城市图鉴"
-          }
         }
       }
     },
@@ -1147,12 +745,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "All paths restored · 45 / 45"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "全部光路已修复 · 45 / 45"
           }
         }
       }
@@ -1165,12 +757,6 @@
             "state": "translated",
             "value": "A view waiting for light"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "待点亮的风景"
-          }
         }
       }
     },
@@ -1181,12 +767,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Collected · View scene"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "已收藏 · 查看风景"
           }
         }
       }
@@ -1199,12 +779,6 @@
             "state": "translated",
             "value": "Homeward light"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "归航的灯"
-          }
         }
       }
     },
@@ -1215,12 +789,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Harbor pathways"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "港湾小径"
           }
         }
       }
@@ -1233,12 +801,6 @@
             "state": "translated",
             "value": "Quiet Harbor"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "静谧港湾"
-          }
         }
       }
     },
@@ -1249,12 +811,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Stars among leaves"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "叶间星光"
           }
         }
       }
@@ -1267,12 +823,6 @@
             "state": "translated",
             "value": "The reflecting pool"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "池畔微光"
-          }
         }
       }
     },
@@ -1283,12 +833,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Glasshouse Glow"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "温室微光"
           }
         }
       }
@@ -1301,12 +845,6 @@
             "state": "translated",
             "value": "Platform lights"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "站台灯影"
-          }
         }
       }
     },
@@ -1317,12 +855,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "The midnight clock"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "午夜钟声"
           }
         }
       }
@@ -1335,12 +867,6 @@
             "state": "translated",
             "value": "Midnight Station"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "候车之夜"
-          }
         }
       }
     },
@@ -1351,12 +877,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "The paths you built are now part of the city."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "光沿着你铺设的路，成为城市的一部分。"
           }
         }
       }
@@ -1369,12 +889,6 @@
             "state": "translated",
             "value": "Make yourself at home"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "以喜欢的方式点亮城市"
-          }
         }
       }
     },
@@ -1385,12 +899,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sound effects"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "音效"
           }
         }
       }
@@ -1403,12 +911,6 @@
             "state": "translated",
             "value": "Haptic feedback"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "触觉反馈"
-          }
         }
       }
     },
@@ -1419,12 +921,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Reduce motion"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "减少动画"
           }
         }
       }
@@ -1437,12 +933,6 @@
             "state": "translated",
             "value": "Language"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "语言"
-          }
         }
       }
     },
@@ -1453,12 +943,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "System"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "跟随系统"
           }
         }
       }
@@ -1471,12 +955,6 @@
             "state": "translated",
             "value": "Save needs recovery"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "存档需要处理"
-          }
         }
       }
     },
@@ -1487,12 +965,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Try reading again"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "重新读取存档"
           }
         }
       }
@@ -1505,12 +977,6 @@
             "state": "translated",
             "value": "Unable to read save"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "仍无法读取"
-          }
         }
       }
     },
@@ -1521,12 +987,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "The original files are unchanged. You can keep copies and start fresh."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "原文件未改动。你可以保留副本并开始新的进度。"
           }
         }
       }
@@ -1539,12 +999,6 @@
             "state": "translated",
             "value": "Keep copies and start fresh"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "保留副本并开始新进度"
-          }
         }
       }
     },
@@ -1555,12 +1009,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Retry saving"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "重试保存"
           }
         }
       }
@@ -1573,12 +1021,6 @@
             "state": "translated",
             "value": "Saved"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "保存成功"
-          }
         }
       }
     },
@@ -1589,12 +1031,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "About Lightworks"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "关于光路工坊"
           }
         }
       }
@@ -1607,12 +1043,6 @@
             "state": "translated",
             "value": "Export issue details"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "导出问题信息"
-          }
         }
       }
     },
@@ -1623,12 +1053,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Privacy"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "隐私说明"
           }
         }
       }
@@ -1641,12 +1065,6 @@
             "state": "translated",
             "value": "Start fresh?"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "开始新进度？"
-          }
         }
       }
     },
@@ -1657,12 +1075,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Keep copies and reset"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "保留副本并重置"
           }
         }
       }
@@ -1675,12 +1087,6 @@
             "state": "translated",
             "value": "New save created"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "已建立新进度"
-          }
         }
       }
     },
@@ -1691,12 +1097,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Recovery failed"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "操作未完成"
           }
         }
       }
@@ -1709,12 +1109,6 @@
             "state": "translated",
             "value": "Copies of the original save files were kept on this device."
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "原存档副本已保留在本机。"
-          }
         }
       }
     },
@@ -1725,12 +1119,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Check the available device storage and try again."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "请检查设备存储空间后重试。"
           }
         }
       }
@@ -1743,12 +1131,6 @@
             "state": "translated",
             "value": ", occupied"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "，已占用"
-          }
         }
       }
     },
@@ -1759,12 +1141,6 @@
           "stringUnit": {
             "state": "translated",
             "value": ", empty"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "，空格"
           }
         }
       }
@@ -1777,12 +1153,6 @@
             "state": "translated",
             "value": ", light source"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "，光源入口"
-          }
         }
       }
     },
@@ -1793,12 +1163,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Back"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "返回"
           }
         }
       }
@@ -1811,12 +1175,6 @@
             "state": "translated",
             "value": "OK"
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "知道了"
-          }
         }
       }
     },
@@ -1827,12 +1185,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Progress restored from backup."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "已从备份恢复进度。"
           }
         }
       }
@@ -1845,12 +1197,6 @@
             "state": "translated",
             "value": "This level was updated. Your completed progress is preserved."
           }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "关卡已更新，当前关卡将重新开始。已完成进度保留。"
-          }
         }
       }
     },
@@ -1861,12 +1207,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Could not save progress. Retry in Settings."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "进度保存失败，请在设置中重试。"
           }
         }
       }

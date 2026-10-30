@@ -40,11 +40,11 @@ final class GameViewController: ScreenController {
     super.viewDidLoad()
     content.spacing = 12
     let pause = Theme.button("", symbol: "pause.fill") { [weak self] in self?.pauseGame() }
-    pause.accessibilityLabel = L.text("暂停", "Pause")
+    pause.accessibilityLabel = "Pause"
     pause.accessibilityIdentifier = "game.pause"
     pause.widthAnchor.constraint(equalToConstant: 48).isActive = true
     header(
-      dailyDay.map { L.text("每日 · \($0.suffix(5))", "Daily · \($0.suffix(5))") }
+      dailyDay.map { "Daily · \($0.suffix(5))" }
         ?? "\(L.chapter(level.chapter)) · \(String(format:"%02d",level.number))", trailing: pause)
     hud.axis = .horizontal
     hud.distribution = .fillEqually
@@ -91,11 +91,11 @@ final class GameViewController: ScreenController {
     trayHeight = tray.heightAnchor.constraint(equalToConstant: 100)
     trayHeight.isActive = true
     controls.addArrangedSubview(tray)
-    undoButton = Theme.button(L.text("撤销", "Undo"), symbol: "arrow.uturn.backward") { [weak self] in
+    undoButton = Theme.button("Undo", symbol: "arrow.uturn.backward") { [weak self] in
       self?.undo()
     }
     undoButton.accessibilityIdentifier = "game.undo"
-    hintButton = Theme.button(L.text("提示", "Hint"), symbol: "lightbulb") { [weak self] in
+    hintButton = Theme.button("Hint", symbol: "lightbulb") { [weak self] in
       self?.hint()
     }
     hintButton.accessibilityIdentifier = "game.hint"
@@ -170,11 +170,11 @@ final class GameViewController: ScreenController {
       color: Theme.gold)
     moves.textAlignment = .center
     moves.accessibilityIdentifier = "game.remaining"
-    let caption = Theme.label(L.text("剩余步数", "MOVES LEFT"), size: 10, color: Theme.muted)
+    let caption = Theme.label("MOVES LEFT", size: 10, color: Theme.muted)
     caption.textAlignment = .center
     hud.addArrangedSubview(Theme.stack([caption, moves], axis: .horizontal, spacing: 4))
     let objective = Theme.label(
-      L.text("点亮 \(level.targets.count) 座灯塔", "Restore \(level.targets.count) lights"), size: 12)
+      "Restore \(level.targets.count) lights", size: 12)
     objective.textAlignment = .center
     hud.addArrangedSubview(objective)
     for (i, t) in level.targets.enumerated() {
@@ -186,10 +186,8 @@ final class GameViewController: ScreenController {
       value.textAlignment = .center
       let stack = Theme.stack([title, value], spacing: 3)
       stack.isAccessibilityElement = true
-      stack.accessibilityLabel = L.text(
-        "灯 \(t.id)，\(session.state.energy[i]) / \(t.capacity)，第 \(t.cell.row+1) 行第 \(t.cell.col+1) 列",
+      stack.accessibilityLabel =
         "Light \(t.id), \(session.state.energy[i]) of \(t.capacity), row \(t.cell.row+1) column \(t.cell.col+1)"
-      )
       hud.addArrangedSubview(stack)
     }
     updatePieces()
@@ -206,14 +204,12 @@ final class GameViewController: ScreenController {
       pieces[i].highlightedPiece = selected == i
       if let p = pieces[i].piece {
         let coordinates = p.cells.map { "\($0.row+1),\($0.col+1)" }.joined(separator: "; ")
-        pieces[i].accessibilityLabel = L.text(
-          "候选 \(i+1)，\(p.cells.count) 格，相对位置 \(coordinates)",
-          "Piece \(i+1), \(p.cells.count) cells, relative positions \(coordinates)")
-        pieces[i].accessibilityHint = L.text(
-          "双击选择，再在棋盘中双击左上锚点。",
-          "Double tap to select, then activate the top-left anchor on the board.")
+        pieces[i].accessibilityLabel =
+          "Piece \(i+1), \(p.cells.count) cells, relative positions \(coordinates)"
+        pieces[i].accessibilityHint =
+          "Double tap to select, then activate the top-left anchor on the board."
       } else {
-        pieces[i].accessibilityLabel = L.text("候选 \(i+1) 已使用", "Piece \(i+1) used")
+        pieces[i].accessibilityLabel = "Piece \(i+1) used"
       }
     }
   }
@@ -226,20 +222,18 @@ final class GameViewController: ScreenController {
     board.invalidCells = []
     board.hintMove = nil
     updatePieces()
-    status.text = L.text(
-      "已选候选 \(slot+1) · 点选棋盘上的左上锚点",
-      "Piece \(slot+1) selected · Tap its top-left anchor on the board")
+    status.text = "Piece \(slot+1) selected · Tap its top-left anchor on the board"
     Feedback.shared.select()
   }
   func place(at cell: Cell) {
     guard !locked, session.state.outcome == .playing else { return }
     guard let slot = selected else {
-      status.text = L.text("先在下方选择一个方块。", "Select a piece below first.")
+      status.text = "Select a piece below first."
       return
     }
     let move = Move(slot: slot, anchor: cell)
     guard let resolution = try? session.place(move, level: level) else {
-      status.text = L.text("这里放不下，请选择空白位置。", "That piece does not fit here. Try an empty space.")
+      status.text = "That piece does not fit here. Try an empty space."
       board.invalidCells = session.state.candidates[slot]?.translated(to: cell) ?? []
       Feedback.shared.invalid()
       return
@@ -254,10 +248,8 @@ final class GameViewController: ScreenController {
     board.pulse = resolution
     status.text =
       resolution.hasPulse
-      ? L.text(
-        "光脉冲 · \(resolution.chargedTargets.count) 盏灯获得能量",
-        "Light pulse · \(resolution.chargedTargets.count) lights charged")
-      : L.text("光路已延伸 · 补满一行或一列可触发脉冲", "Path extended · Complete a row or column to pulse")
+      ? "Light pulse · \(resolution.chargedTargets.count) lights charged"
+      : "Path extended · Complete a row or column to pulse"
     Feedback.shared.play(resolution.hasPulse ? .pulse : .place)
     let token = revision
     animationTask = Task { [weak self] in
@@ -290,15 +282,12 @@ final class GameViewController: ScreenController {
       board.invalidCells = []
       status.text =
         preview.hasPulse
-        ? L.text(
-          "落下后可为 \(preview.chargedTargets.count) 盏灯充能",
-          "Release to charge \(preview.chargedTargets.count) lights")
-        : L.text("可以放置 · 尚未形成消除", "Fits here · No line completed yet")
+        ? "Release to charge \(preview.chargedTargets.count) lights"
+        : "Fits here · No line completed yet"
     } else {
       board.preview = nil
       board.invalidCells = anchor.map { piece.translated(to: $0) } ?? []
-      status.text = L.text(
-        "移动到空白格，方块预览在手指上方。", "Move over empty cells. Preview sits above your finger.")
+      status.text = "Move over empty cells. Preview sits above your finger."
     }
     if gesture.state == .ended {
       scroll.isScrollEnabled = true
@@ -330,7 +319,7 @@ final class GameViewController: ScreenController {
     let state = session.state
     let level = level
     let token = revision
-    status.text = L.text("正在寻找可通关的后续步骤…", "Looking for a complete path to success…")
+    status.text = "Looking for a complete path to success…"
     hintButton.isEnabled = false
     hintTask = Task { [weak self] in
       let worker = Task.detached(priority: .userInitiated) {
@@ -347,19 +336,14 @@ final class GameViewController: ScreenController {
         self.updatePieces()
         self.board.hintMove = move
         self.board.preview = try? Rules.apply(move, to: state, level: level)
-        self.status.text = L.text(
-          "已验证提示：候选 \(move.slot+1)，第 \(move.anchor.row+1) 行第 \(move.anchor.col+1) 列。",
+        self.status.text =
           "Verified hint: piece \(move.slot+1), row \(move.anchor.row+1), column \(move.anchor.col+1)."
-        )
         UIAccessibility.post(notification: .announcement, argument: self.status.text)
       case .noSolution:
-        self.status.text = L.text(
-          "当前局面已确认无法通关，试着撤销一步。", "No winning continuation exists. Try undoing a move.")
+        self.status.text = "No winning continuation exists. Try undoing a move."
       case .timedOut:
-        self.status.text = L.text(
-          "暂未找到完整解法。可继续尝试或撤销；这不代表无解。",
+        self.status.text =
           "No complete solution found within the search time. Try exploring or undoing; this does not mean it is unsolvable."
-        )
       case .cancelled: break
       }
     }
@@ -372,7 +356,7 @@ final class GameViewController: ScreenController {
     }
   }
   private var returnTitle: String {
-    dailyDay == nil ? L.text("回到城市", "Back to city") : L.text("回到每日", "Back to daily")
+    dailyDay == nil ? "Back to city" : "Back to daily"
   }
   func settleAnimation() {
     animationTask?.cancel()
@@ -410,25 +394,23 @@ final class GameViewController: ScreenController {
       let reason: String
       switch session.state.outcome {
       case .outOfMoves:
-        reason = L.text("步数用完了。已充入的光仍在，撤销后可以换一种铺法。", "No moves left. Undo to try a different path.")
+        reason = "No moves left. Undo to try a different path."
       case .noSpace:
-        reason = L.text(
-          "剩余候选都放不下了。撤销后给大块留出空间。", "None of the remaining pieces fit. Undo to make room.")
+        reason = "None of the remaining pieces fit. Undo to make room."
       default:
-        reason = L.text(
-          "固定方块序列已用完，目标尚未充满。", "The piece sequence is exhausted before all lights are charged.")
+        reason = "The piece sequence is exhausted before all lights are charged."
       }
       let alert = UIAlertController(
-        title: L.text("再试一条光路", "Try another path"), message: reason, preferredStyle: .alert)
+        title: "Try another path", message: reason, preferredStyle: .alert)
       if !session.history.isEmpty {
         alert.addAction(
-          UIAlertAction(title: L.text("撤销一步", "Undo last move"), style: .default) { [weak self] _ in
+          UIAlertAction(title: "Undo last move", style: .default) { [weak self] _ in
             self?.resultShown = false
             self?.undo()
           })
       }
       alert.addAction(
-        UIAlertAction(title: L.text("重新挑战", "Try again"), style: .default) { [weak self] _ in
+        UIAlertAction(title: "Try again", style: .default) { [weak self] _ in
           self?.restart()
         })
       alert.addAction(
@@ -443,15 +425,15 @@ final class GameViewController: ScreenController {
     hintTask?.cancel()
     revision += 1
     let panel = UIAlertController(
-      title: L.text("暂停修复", "Repair paused"),
-      message: L.text("当前进度会保存在本机。", "Your progress is saved on this device."),
+      title: "Repair paused",
+      message: "Your progress is saved on this device.",
       preferredStyle: .alert)
     panel.addAction(
-      UIAlertAction(title: L.text("继续", "Continue"), style: .cancel) { [weak self] _ in
+      UIAlertAction(title: "Continue", style: .cancel) { [weak self] _ in
         self?.finishIfNeeded()
       })
     panel.addAction(
-      UIAlertAction(title: L.text("重新开始", "Restart"), style: .destructive) { [weak self] _ in
+      UIAlertAction(title: "Restart", style: .destructive) { [weak self] _ in
         self?.restart()
       })
     panel.addAction(
@@ -459,7 +441,7 @@ final class GameViewController: ScreenController {
         self?.navigationController?.popToRootViewController(animated: true)
       })
     panel.addAction(
-      UIAlertAction(title: L.text("玩法说明", "How to play"), style: .default) { [weak self] _ in
+      UIAlertAction(title: "How to play", style: .default) { [weak self] _ in
         self?.showRules()
       })
     present(panel, animated: true)

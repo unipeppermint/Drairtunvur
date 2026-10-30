@@ -29,7 +29,7 @@
 - 三章 45 关 JSON 内容，逐关附可重放参考解；前 10 关通过模拟器逐步实际操作验证。
 - 城市地图、原生节点、真实章节进度、结算、最好步数、9 个按 5／10／15 关里程碑解锁的场景收藏。
 - 独立夜景（含新版港湾和双灯塔结算背景）、原生玻璃方块与金色光路、Core Animation 脉冲、合成音效、触觉、减少动画设置。
-- 简体中文／英语与系统语言，String Catalog、动态字体、VoiceOver 棋盘格／候选标签和替代拖动操作。
+- 应用仅显示英文，支持动态字体、英文 VoiceOver 棋盘格／候选标签和替代拖动操作。
 - 版本化 JSON 存档、actor 串行原子写入、递增版本拒绝旧写入、备份恢复、坏档保留、内容版本变化时保留长期进度。
 
 首版无业务服务器、广告、账号和第三方运行时依赖。图鉴包含九幅与首页同风格的精细夜景建筑插画收藏、九段独立修复故事和点亮前后对比；三个章节的城市场景继续作为背景。
@@ -49,7 +49,7 @@
 | `Packages/LightworksCore` | Foundation 规则、模型、存档、提示；独立于 UI 的本地 Swift Package |
 | `Drairtunvur/Features` | 地图、对局、结算、图鉴、设置 |
 | `Drairtunvur/Rendering` | 原生棋盘、玻璃方块、场景和通用视觉组件 |
-| `Drairtunvur/Services` | AppModel、音效、偏好与语言 |
+| `Drairtunvur/Services` | AppModel、音效、偏好与章节文案 |
 | `Drairtunvur/Resources/levels.json` | 45 关及其固定序列和参考解 |
 | `Drairtunvur/Assets.xcassets` | 章节场景、按原型重建的港湾与双灯塔结算背景，以及应用图标 |
 | `design/asset-prompts.txt` | 生成资源的完整提示词与文件映射 |
@@ -66,11 +66,11 @@ xcodebuild -project Drairtunvur.xcodeproj -scheme Drairtunvur \
   -parallel-testing-enabled NO test
 ```
 
-构建单独使用 `build`；Release 可加 `-configuration Release`。UI 测试使用独立的 `Lightworks-UITests` 存档目录，不擦除正常游戏进度。仅 Debug 支持 `-ui-testing`、`-reset-test-save`、`-ui-language` 和 `-ui-test-level`，不进入 Release。
+构建单独使用 `build`；Release 可加 `-configuration Release`。UI 测试使用独立的 `Lightworks-UITests` 存档目录，不擦除正常游戏进度。仅 Debug 支持 `-ui-testing`、`-reset-test-save` 和 `-ui-test-level`，不进入 Release。
 
 关卡生成器 `python3 scripts/generate_levels.py` 调用 `scripts/Drairtunvur_content.py`，保留教学并生成多线路、交叉、接力、折返、双线重建等关卡；生成后必须运行核心测试重放 45 个主线和 365 个每日参考解。关卡数量不等同于已经完成玩家难度测试。参考解证明可解，不宣称最短，也不保证任何偏离操作后仍可通关。
 
-语言文本在 `L.text` 中保留双语值，静态键由 `scripts/localize.py` 同步到 String Catalog；包含运行时数字的句子由双语格式直接生成。
+界面与辅助功能文案直接使用英文，String Catalog 仅保留英文资源。应用不再提供语言切换，也不读取旧版语言偏好；中文系统环境下同样显示英文。旧双语目录生成脚本已移除，避免再次生成中文资源。
 
 ## 当前验证范围和后续实测
 

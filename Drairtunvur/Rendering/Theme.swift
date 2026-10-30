@@ -193,7 +193,7 @@ class ScreenController: UIViewController {
       let b = Theme.button("", symbol: "chevron.left") { [weak self] in
         self?.navigationController?.popViewController(animated: true)
       }
-      b.accessibilityLabel = L.text("返回", "Back")
+      b.accessibilityLabel = "Back"
       b.widthAnchor.constraint(equalToConstant: 48).isActive = true
       items.append(b)
     }
@@ -203,7 +203,7 @@ class ScreenController: UIViewController {
   }
   func alert(_ title: String, _ message: String) {
     let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-    alert.addAction(UIAlertAction(title: L.text("知道了", "OK"), style: .default))
+    alert.addAction(UIAlertAction(title: "OK", style: .default))
     present(alert, animated: true)
   }
 }

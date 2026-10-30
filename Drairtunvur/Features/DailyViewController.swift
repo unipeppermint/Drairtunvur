@@ -7,7 +7,7 @@ final class DailyViewController: ScreenController {
     super.viewDidLoad()
     background.picture.alpha = 0.22
     for name in [
-      Notification.Name.languageChanged, UIApplication.didBecomeActiveNotification,
+      UIApplication.didBecomeActiveNotification,
       UIApplication.significantTimeChangeNotification, .NSCalendarDayChanged,
     ] {
       NotificationCenter.default.addObserver(
@@ -26,7 +26,7 @@ final class DailyViewController: ScreenController {
     let level = model.dailyLevel(day)
     let progress = model.daily
     background.chapter = level.chapter
-    let title = Theme.label(L.text("每日修复", "Daily Restoration"), size: 32, weight: .bold)
+    let title = Theme.label("Daily Restoration", size: 32, weight: .bold)
     title.accessibilityIdentifier = "daily.title"
     content.addArrangedSubview(title)
     let date = Theme.label(day, size: 14, color: Theme.gold)
@@ -39,14 +39,12 @@ final class DailyViewController: ScreenController {
     artwork.layer.cornerRadius = 16
     let name = Theme.label(L.chapter(level.chapter), size: 23, weight: .semibold)
     let caption = Theme.label(
-      L.text(
-        "点亮 \(level.targets.count) 盏灯 · 限 \(level.moveLimit) 步",
-        "Restore \(level.targets.count) lights · \(level.moveLimit) moves"), size: 14,
+      "Restore \(level.targets.count) lights · \(level.moveLimit) moves", size: 14,
       color: Theme.muted)
     let state = Theme.label(
       progress.bestMoves[day] == nil
-        ? L.text("今日光路，等你点亮", "A new path awaits your light")
-        : L.text("今日已完成 ✓", "Completed today ✓"), size: 15, weight: .semibold, color: Theme.gold)
+        ? "A new path awaits your light"
+        : "Completed today ✓", size: 15, weight: .semibold, color: Theme.gold)
     state.accessibilityIdentifier = "daily.state"
     let details = Theme.inset(Theme.stack([name, caption, state], spacing: 8))
     Theme.panel(details)
@@ -56,9 +54,9 @@ final class DailyViewController: ScreenController {
       session != nil && session?.state.outcome != .won && (session?.state.movesUsed ?? 0) > 0
     let play = Theme.button(
       resumable
-        ? L.text("继续今日挑战", "Continue today's challenge")
+        ? "Continue today's challenge"
         : progress.bestMoves[day] == nil
-          ? L.text("开始今日挑战", "Start today's challenge") : L.text("再挑战一次", "Play again"),
+          ? "Start today's challenge" : "Play again",
       symbol: "chevron.right", primary: true
     ) { [weak self] in
       guard let self else { return }
@@ -76,16 +74,16 @@ final class DailyViewController: ScreenController {
     content.addArrangedSubview(play)
     let stats = Theme.stack(
       [
-        metric(L.text("累计完成", "Days completed"), "\(progress.bestMoves.count)"),
-        metric(L.text("连续完成", "Current streak"), "\(progress.streak(through: day))"),
-        metric(L.text("今日最好", "Today's best"), progress.bestMoves[day].map(String.init) ?? "—"),
+        metric("Days completed", "\(progress.bestMoves.count)"),
+        metric("Current streak", "\(progress.streak(through: day))"),
+        metric("Today's best", progress.bestMoves[day].map(String.init) ?? "—"),
       ], axis: .horizontal)
     stats.distribution = .fillEqually
     let statsPanel = Theme.inset(stats, by: 14)
     Theme.panel(statsPanel)
     content.addArrangedSubview(statsPanel)
     content.addArrangedSubview(
-      Theme.label(L.text("最近七天", "The last seven days"), size: 18, weight: .semibold))
+      Theme.label("The last seven days", size: 18, weight: .semibold))
     let days = Theme.stack([], axis: .horizontal, spacing: 4)
     days.distribution = .fillEqually
     for offset in -6...0 {
@@ -102,16 +100,14 @@ final class DailyViewController: ScreenController {
       if offset == 0 { tile.layer.borderColor = Theme.gold.cgColor }
       tile.isAccessibilityElement = true
       tile.accessibilityLabel =
-        "\(key), \(done ? L.text("已完成", "Completed") : L.text("未完成", "Not completed"))"
+        "\(key), \(done ? "Completed" : "Not completed")"
       days.addArrangedSubview(tile)
     }
     content.addArrangedSubview(days)
     content.addArrangedSubview(
       Theme.label(
-        L.text(
-          "独立的 365 道光路题目，每天本地零点轮换，365 天后循环。完成后可挑战最佳步数；跨日对局仍记在开始当天。",
-          "365 dedicated puzzles rotate at local midnight, repeating after 365 days. Replay to improve your best. Games started before midnight count toward their original day."
-        ), size: 12, color: Theme.muted))
+        "365 dedicated puzzles rotate at local midnight, repeating after 365 days. Replay to improve your best. Games started before midnight count toward their original day.",
+        size: 12, color: Theme.muted))
     if let error = model.saveError {
       content.addArrangedSubview(Theme.label(error, size: 12, color: Theme.gold))
     }
@@ -142,9 +138,9 @@ final class DailyResultViewController: ScreenController {
   override func viewDidLoad() {
     super.viewDidLoad()
     if level.chapter == 1 { background.picture.image = UIImage(named: "harbor-victory") }
-    header(L.text("每日修复 · \(day.suffix(5))", "Daily · \(day.suffix(5))"), back: false)
+    header("Daily · \(day.suffix(5))", back: false)
     let title = Theme.label(
-      L.text("今日光路已点亮", "Today's path is shining"), size: 34, weight: .semibold, color: Theme.gold)
+      "Today's path is shining", size: 34, weight: .semibold, color: Theme.gold)
     title.textAlignment = .center
     title.accessibilityIdentifier = "daily.result.title"
     content.addArrangedSubview(title)
@@ -154,21 +150,19 @@ final class DailyResultViewController: ScreenController {
     content.addArrangedSubview(space)
     let best = AppModel.shared.daily.bestMoves[day] ?? moves
     let summary = Theme.label(
-      L.text(
-        "本次 \(moves) 步  ·  最好 \(best) 步\n全部 \(level.targets.count) 盏灯已点亮",
-        "\(moves) moves · Best \(best)\nAll \(level.targets.count) lights restored"), size: 20,
+      "\(moves) moves · Best \(best)\nAll \(level.targets.count) lights restored", size: 20,
       weight: .semibold)
     summary.textAlignment = .center
     let panel = Theme.inset(summary)
     Theme.panel(panel)
     content.addArrangedSubview(panel)
-    let back = Theme.button(L.text("回到每日", "Back to daily"), symbol: "calendar", primary: true) {
+    let back = Theme.button("Back to daily", symbol: "calendar", primary: true) {
       [weak self] in
       self?.navigationController?.popToRootViewController(animated: true)
     }
     back.accessibilityIdentifier = "daily.result.back"
     content.addArrangedSubview(back)
-    let replay = Theme.button(L.text("再挑战一次", "Play again"), symbol: "arrow.clockwise") {
+    let replay = Theme.button("Play again", symbol: "arrow.clockwise") {
       [weak self] in
       guard let self, let nav = self.navigationController else { return }
       nav.setViewControllers(
@@ -181,9 +175,7 @@ final class DailyResultViewController: ScreenController {
     content.addArrangedSubview(replay)
     content.addArrangedSubview(
       Theme.label(
-        L.text(
-          "完成记录已计入 \(day)。明天再来点亮新的光路。",
-          "Completion recorded for \(day). Come back tomorrow for another path."), size: 13,
+        "Completion recorded for \(day). Come back tomorrow for another path.", size: 13,
         color: Theme.muted))
   }
 }

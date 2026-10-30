@@ -9,12 +9,6 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     options connectionOptions: UIScene.ConnectionOptions
   ) {
     guard let scene = scene as? UIWindowScene else { return }
-    #if DEBUG
-      let args = ProcessInfo.processInfo.arguments
-      if let index = args.firstIndex(of: "-ui-language"), args.count > index + 1 {
-        Preferences.language = args[index + 1]
-      }
-    #endif
     let window = UIWindow(windowScene: scene)
     self.window = window
     window.overrideUserInterfaceStyle = .dark
@@ -39,7 +33,7 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let launch = UIViewController()
     launch.view.backgroundColor = Theme.navy
     let label = Theme.label(
-      L.text("光路工坊", "Lightworks"), size: 34, weight: .bold, color: Theme.gold)
+      "Lightworks", size: 34, weight: .bold, color: Theme.gold)
     label.translatesAutoresizingMaskIntoConstraints = false
     launch.view.addSubview(label)
     NSLayoutConstraint.activate([
@@ -62,16 +56,14 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
       nav.interactivePopGestureRecognizer?.isEnabled = false
     }
     city.tabBarItem = UITabBarItem(
-      title: L.text("城市", "City"), image: UIImage(systemName: "house"),
+      title: "City", image: UIImage(systemName: "house"),
       selectedImage: UIImage(systemName: "house.fill"))
     collection.tabBarItem = UITabBarItem(
-      title: L.text("图鉴", "Collection"), image: UIImage(systemName: "book.closed"),
+      title: "Collection", image: UIImage(systemName: "book.closed"),
       selectedImage: UIImage(systemName: "book.closed.fill"))
     tabs.viewControllers = [city, daily, collection]
     window.rootViewController = tabs
     updateTitles()
-    NotificationCenter.default.addObserver(
-      self, selector: #selector(updateTitles), name: .languageChanged, object: nil)
     if !AppModel.shared.save.tutorialCompleted && !AppModel.shared.storageNeedsRecovery {
       city.pushViewController(GameViewController(level: AppModel.shared.levels[0]), animated: false)
     }
@@ -87,11 +79,11 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     #endif
   }
   @objc private func updateTitles() {
-    tabs.viewControllers?[0].tabBarItem.title = L.text("城市", "City")
+    tabs.viewControllers?[0].tabBarItem.title = "City"
     tabs.viewControllers?[0].tabBarItem.accessibilityIdentifier = "tab.city"
-    tabs.viewControllers?[1].tabBarItem.title = L.text("每日", "Daily")
+    tabs.viewControllers?[1].tabBarItem.title = "Daily"
     tabs.viewControllers?[1].tabBarItem.accessibilityIdentifier = "tab.daily"
-    tabs.viewControllers?[2].tabBarItem.title = L.text("图鉴", "Collection")
+    tabs.viewControllers?[2].tabBarItem.title = "Collection"
     tabs.viewControllers?[2].tabBarItem.accessibilityIdentifier = "tab.collection"
     tabs.updateButtons()
   }

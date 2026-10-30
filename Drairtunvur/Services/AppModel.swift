@@ -20,7 +20,10 @@ import UIKit
         throw RuleError.invalidLevel("Missing levels")
       }
       levels = try LevelCatalog.decode(Data(contentsOf: url))
-      guard let dailyURL = Bundle.main.url(forResource: "Drairtunvur-daily-levels", withExtension: "json") else {
+      guard
+        let dailyURL = Bundle.main.url(
+          forResource: "Drairtunvur-daily-levels", withExtension: "json")
+      else {
         throw RuleError.invalidLevel("Missing daily catalogue")
       }
       dailyLevels = try LevelCatalog.decode(Data(contentsOf: dailyURL))
@@ -49,25 +52,19 @@ import UIKit
       let report = try await repository.load(levels: levels)
       save = report.save
       if report.recoveredBackup {
-        loadMessage = L.text("已从备份恢复进度。", "Progress restored from backup.")
+        loadMessage = "Progress restored from backup."
       }
       if report.resetActive {
-        loadMessage = L.text(
-          "关卡已更新，当前关卡将重新开始。已完成进度保留。",
-          "This level was updated. Your completed progress is preserved.")
+        loadMessage = "This level was updated. Your completed progress is preserved."
       }
     } catch SaveError.unsupportedVersion {
       storageNeedsRecovery = true
-      loadMessage = L.text(
-        "存档来自较新的应用版本。请先更新应用；原文件已保留，更新前无法继续游玩。",
+      loadMessage =
         "This save was created by a newer app version. Update the app to continue. The original files are preserved."
-      )
     } catch {
       storageNeedsRecovery = true
-      loadMessage = L.text(
-        "存档无法读取，原文件已保留。请先在设置中处理存档，再继续游玩。",
+      loadMessage =
         "Your save could not be read. Original files are preserved. Open Settings to recover before playing."
-      )
     }
     loaded = true
     #if DEBUG
@@ -152,7 +149,7 @@ import UIKit
           self?.saveError = nil
         }
       } catch {
-        self?.saveError = L.text("进度保存失败，请在设置中重试。", "Could not save progress. Retry in Settings.")
+        self?.saveError = "Could not save progress. Retry in Settings."
         self?.onChange?()
       }
     }
@@ -191,66 +188,40 @@ import UIKit
     }
     set { UserDefaults.standard.set(newValue, forKey: "reduceMotion") }
   }
-  static var language: String {
-    get { UserDefaults.standard.string(forKey: "language") ?? "system" }
-    set {
-      UserDefaults.standard.set(newValue, forKey: "language")
-      NotificationCenter.default.post(name: .languageChanged, object: nil)
-    }
-  }
 }
-extension Notification.Name {
-  static let languageChanged = Notification.Name("LightworksLanguageChanged")
-}
+
 @MainActor enum L {
-  static var english: Bool {
-    Preferences.language == "en"
-      || (Preferences.language == "system"
-        && !(Locale.preferredLanguages.first ?? "en").hasPrefix("zh"))
-  }
-  static func text(_ zh: String, _ en: String) -> String {
-    let locale = L.english ? "en" : "zh-Hans"
-    if let path = Bundle.main.path(forResource: locale, ofType: "lproj"),
-      let bundle = Bundle(path: path)
-    {
-      return bundle.localizedString(forKey: en, value: english ? en : zh, table: "Localizable")
-    }
-    return english ? en : zh
-  }
   static func chapter(_ number: Int) -> String {
     [
-      text("静谧港湾", "Quiet Harbor"), text("温室微光", "Glasshouse Glow"),
-      text("候车之夜", "Midnight Station"),
+      "Quiet Harbor", "Glasshouse Glow",
+      "Midnight Station",
     ][max(0, min(2, number - 1))]
   }
   static func lesson(_ key: String) -> String {
     switch key {
     case "cascade":
-      return text("先观察入口与各条线路的连接。消除上游可能切断下游，安排好点亮顺序。", "Trace the source to each line. Clearing upstream can disconnect lights downstream; plan the order.")
+      return
+        "Trace the source to each line. Clearing upstream can disconnect lights downstream; plan the order."
     case "relay":
-      return text("消除会留下断口。点亮一段后补回连接，再把光送到下一盏灯。", "Clearing leaves a gap. Repair the connection before carrying light to the next target.")
+      return
+        "Clearing leaves a gap. Repair the connection before carrying light to the next target."
     case "cross":
-      return text("准备好分支，再补齐交汇处。一次同时消除多条线，仍只产生一次充能。", "Prepare the branches, then finish the crossing. Clearing several lines together still gives just one charge.")
+      return
+        "Prepare the branches, then finish the crossing. Clearing several lines together still gives just one charge."
     case "switchback":
-      return text("不同的灯需要不同次数的充能。先接通第一条线路，再补回交汇处，改变送光方向。", "Lights need different charge counts. Send light along one axis, then rebuild the crossing to use the other route.")
+      return
+        "Lights need different charge counts. Send light along one axis, then rebuild the crossing to use the other route."
     case "double-rebuild":
-      return text("双线消除只充能一次。留意下一批方块，重建两条线路完成第二次脉冲。", "A double clear charges once. Use the next batch to rebuild both lines for a second pulse.")
+      return
+        "A double clear charges once. Use the next batch to rebuild both lines for a second pulse."
     case "first":
-      return text(
-        "点选横向方块，再点亮起的空格。补满一行，让光抵达 A。",
-        "Select the horizontal piece, then tap the glowing gap. Complete the row to charge A.")
+      return "Select the horizontal piece, then tap the glowing gap. Complete the row to charge A."
     case "branches":
-      return text(
-        "先接通分支，再补满一行或一列，让一次脉冲点亮多盏灯。",
-        "Connect the branches before completing a line to charge several lights at once.")
+      return "Connect the branches before completing a line to charge several lights at once."
     case "rebuild":
-      return text(
-        "目标需要两次脉冲。消除后重建光路，已获得的能量会保留。",
-        "Targets need two pulses. Rebuild the cleared path; stored energy is kept.")
+      return "Targets need two pulses. Rebuild the cleared path; stored energy is kept."
     default:
-      return text(
-        "方块上下左右导光。只有补满整行或整列，才会为相连的灯充能。",
-        "Blocks carry light orthogonally. Complete a row or column to charge connected lights.")
+      return "Blocks carry light orthogonally. Complete a row or column to charge connected lights."
     }
   }
 }

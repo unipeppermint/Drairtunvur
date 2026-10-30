@@ -104,10 +104,9 @@ final class BoardView: UIView {
     axCells = (0..<64).map { index in
       let cell = Cell(index / 8, index % 8)
       let element = BoardCellElement(accessibilityContainer: self)
-      var description = L.text(
-        "第 \(cell.row+1) 行，第 \(cell.col+1) 列", "Row \(cell.row+1), column \(cell.col+1)")
-      description += state.contains(cell) ? L.text("，已占用", ", occupied") : L.text("，空格", ", empty")
-      if cell == level.sourceEntry { description += L.text("，光源入口", ", light source") }
+      var description = "Row \(cell.row+1), column \(cell.col+1)"
+      description += state.contains(cell) ? ", occupied" : ", empty"
+      if cell == level.sourceEntry { description += ", light source" }
       if let i = level.targets.firstIndex(where: { $0.cell == cell }) {
         description += ", \(level.targets[i].id), \(state.energy[i])/\(level.targets[i].capacity)"
       }

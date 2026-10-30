@@ -1,11 +1,11 @@
 import XCTest
 
 final class LightworksUITests: XCTestCase {
-  func launch(level: String? = nil, language: String = "zh-Hans", reset: Bool = true)
+  func launch(level: String? = nil, language: String = "en", reset: Bool = true)
     -> XCUIApplication
   {
     let app = XCUIApplication()
-    app.launchArguments = ["-ui-testing", "-ui-language", language]
+    app.launchArguments = ["-ui-testing", "-AppleLanguages", "(\(language))"]
     if reset { app.launchArguments.append("-reset-test-save") }
     if let level { app.launchArguments += ["-ui-test-level", level] }
     app.launch()
@@ -20,8 +20,35 @@ final class LightworksUITests: XCTestCase {
   }
   func waitForPiece(_ piece: XCUIElement) {
     let ready = NSPredicate(format: "exists == true AND enabled == true")
-    XCTAssertEqual(XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: piece)], timeout: 4), .completed)
+    XCTAssertEqual(
+      XCTWaiter.wait(for: [XCTNSPredicateExpectation(predicate: ready, object: piece)], timeout: 4),
+      .completed)
   }
+  func testEnglishOnlyOnChineseDeviceWithLegacyPreference() {
+    let app = XCUIApplication()
+    app.launchArguments = [
+      "-ui-testing", "-reset-test-save", "-ui-test-completed",
+      "-AppleLanguages", "(zh-Hans)", "-AppleLocale", "zh_CN",
+      "-language", "zh-Hans",
+    ]
+    app.launch()
+    XCTAssertTrue(app.buttons["city.settings"].waitForExistence(timeout: 15))
+    XCTAssertTrue(app.buttons["city.continue"].label.contains("Revisit the paths"))
+    app.buttons["city.settings"].tap()
+    XCTAssertTrue(app.staticTexts["Settings"].waitForExistence(timeout: 5))
+    XCTAssertTrue(app.switches["Sound effects"].exists)
+    XCTAssertFalse(app.segmentedControls["settings.language"].exists)
+    app.buttons["How to play"].tap()
+    XCTAssertTrue(app.staticTexts["Build a path"].waitForExistence(timeout: 5))
+    app.buttons["Back"].tap()
+    screenshot("Drairtunvur-english-only-settings")
+    app.buttons["Back"].tap()
+    app.buttons["tab.daily"].tap()
+    XCTAssertEqual(app.staticTexts["daily.title"].label, "Daily Restoration")
+    app.buttons["tab.collection"].tap()
+    XCTAssertTrue(app.staticTexts["9 / 9 collected"].exists)
+  }
+
   func testTutorialWinReplayAndMap() {
     let app = launch()
     screenshot("01-tutorial")
@@ -36,7 +63,7 @@ final class LightworksUITests: XCTestCase {
     app.buttons["result.city"].tap()
     XCTAssertTrue(app.buttons["city.continue"].waitForExistence(timeout: 4))
     screenshot("03-city")
-    XCTAssertTrue(app.staticTexts["已点亮 1 / 15"].exists)
+    XCTAssertTrue(app.staticTexts["RESTORED  1 / 15"].exists)
     app.descendants(matching: .any)["tab.collection"].firstMatch.tap()
     screenshot("04-collection")
     app.buttons["collection.1.5"].tap()
@@ -47,7 +74,7 @@ final class LightworksUITests: XCTestCase {
     app.buttons["cell.0.0"].tap()
     XCTAssertTrue(app.alerts.firstMatch.waitForExistence(timeout: 5))
     screenshot("05-failure")
-    app.alerts.buttons["撤销一步"].tap()
+    app.alerts.buttons["Undo last move"].tap()
     XCTAssertEqual(app.staticTexts["game.remaining"].label, "1")
     app.buttons["game.hint"].tap()
     XCTAssertTrue(app.staticTexts["game.status"].waitForExistence(timeout: 3))
@@ -70,7 +97,7 @@ final class LightworksUITests: XCTestCase {
     app.alerts.buttons["Back to city"].tap()
     app.buttons["city.settings"].tap()
     screenshot("07-settings")
-    XCTAssertTrue(app.segmentedControls["settings.language"].exists)
+    XCTAssertFalse(app.segmentedControls["settings.language"].exists)
   }
   func testColdLaunchRestoresStateAndUndo() {
     let app = launch()
@@ -82,7 +109,7 @@ final class LightworksUITests: XCTestCase {
     app.buttons["cell.0.0"].tap()
     XCTAssertEqual(app.staticTexts["game.remaining"].label, "3")
     app.terminate()
-    app.launchArguments = ["-ui-testing", "-ui-language", "zh-Hans"]
+    app.launchArguments = ["-ui-testing", "-AppleLanguages", "(en)"]
     app.launch()
     XCTAssertTrue(app.buttons["city.continue"].waitForExistence(timeout: 10))
     app.buttons["city.continue"].tap()
@@ -141,7 +168,7 @@ final class LightworksUITests: XCTestCase {
     let earned = app.buttons["collection.1.5"]
     XCTAssertTrue(earned.waitForExistence(timeout: 4))
     earned.tap()
-    XCTAssertTrue(app.staticTexts["归航的灯"].waitForExistence(timeout: 3))
+    XCTAssertTrue(app.staticTexts["Homeward light"].waitForExistence(timeout: 3))
     screenshot("08-earned-collection")
   }
   func testDailyChallengeResumeCompletionAndCampaignIsolation() throws {
@@ -163,7 +190,7 @@ final class LightworksUITests: XCTestCase {
     let fixture = try JSONDecoder().decode(Fixture.self, from: Data(contentsOf: url))
     let app = XCUIApplication()
     app.launchArguments = [
-      "-ui-testing", "-reset-test-save", "-ui-language", "zh-Hans", "-ui-test-date", fixture.day,
+      "-ui-testing", "-reset-test-save", "-AppleLanguages", "(en)", "-ui-test-date", fixture.day,
     ]
     app.launch()
     XCTAssertTrue(app.buttons["game.pause"].waitForExistence(timeout: 15))
@@ -173,7 +200,7 @@ final class LightworksUITests: XCTestCase {
     app.buttons["piece.0"].tap()
     app.buttons["cell.0.0"].tap()
     app.buttons["game.pause"].tap()
-    app.alerts.buttons["回到城市"].tap()
+    app.alerts.buttons["Back to city"].tap()
     app.buttons["tab.daily"].tap()
     XCTAssertTrue(app.staticTexts["daily.title"].waitForExistence(timeout: 4))
     XCTAssertEqual(app.staticTexts["daily.date"].label, fixture.day)
@@ -184,7 +211,7 @@ final class LightworksUITests: XCTestCase {
     app.buttons["cell.\(first.anchor.row).\(first.anchor.col)"].tap()
     XCTAssertEqual(app.staticTexts["game.remaining"].label, "\(fixture.moveLimit - 1)")
     app.buttons["game.pause"].tap()
-    app.alerts.buttons["回到每日"].tap()
+    app.alerts.buttons["Back to daily"].tap()
     app.terminate()
     app.launchArguments.removeAll { $0 == "-reset-test-save" }
     app.launch()
@@ -200,10 +227,10 @@ final class LightworksUITests: XCTestCase {
     XCTAssertTrue(app.staticTexts["daily.result.title"].waitForExistence(timeout: 5))
     screenshot("11-daily-completed")
     app.buttons["daily.result.back"].tap()
-    XCTAssertEqual(app.staticTexts["daily.state"].label, "今日已完成 ✓")
+    XCTAssertEqual(app.staticTexts["daily.state"].label, "Completed today ✓")
     screenshot("12-daily-record")
     app.buttons["tab.city"].tap()
-    XCTAssertTrue(app.staticTexts["已点亮 1 / 15"].exists)
+    XCTAssertTrue(app.staticTexts["RESTORED  1 / 15"].exists)
     app.buttons["city.continue"].tap()
     XCTAssertEqual(app.staticTexts["game.remaining"].label, "3")
   }
